@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://byyj0rd8n1v4l"]
+
+[ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Mouse Player/mouse_player.tscn" id="1_djfdu"]
+[ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Player/Player.tscn" id="2_08elu"]
+[ext_resource type="PackedScene" uid="uid://6l8fm316o2mb" path="res://PORTAL/Portal.tscn" id="2_egtac"]
+[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="3_08elu"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_egtac"]
+
+[node name="TestScene" type="Node2D" unique_id=1225925431]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317442735]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1203000478]
+shape = SubResource("WorldBoundaryShape2D_egtac")
+
+[node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("1_djfdu")]
+portal_scene = ExtResource("2_egtac")
+
+[node name="Player" parent="." unique_id=1088848127 instance=ExtResource("2_08elu")]
+position = Vector2(6, -80)
+
+[node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1652956208]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1923899983]
+position = Vector2(6, 154)
+scale = Vector2(9.8203125, 2.3515625)
+texture = ExtResource("3_08elu")
