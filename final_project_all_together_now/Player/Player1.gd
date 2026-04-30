@@ -1,6 +1,13 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+@export var player_speed: int
+#@export var player_jump_height:int
+#@export var player_gravity: int
+
+#we might wanna have gravity/jump height an export var-
+#in case we wanna make different levels with diff-
+#gravity/jump height
+
 const JUMP_VELOCITY = -400.0
 const GRAVITY = 980.0
 
@@ -14,8 +21,8 @@ func _physics_process(delta: float) -> void:
 	var direction = Input.get_axis("p1_left", "p1_right")
 	
 	if direction != 0:
-		velocity.x = direction * SPEED
+		velocity.x = direction * player_speed #SPEED
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, player_speed)
 	
 	move_and_slide()

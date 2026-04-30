@@ -1,31 +1,37 @@
-#I might scrap this bc this method is kinda mid. - mike
-
 extends Node2D
 
 @export var portal_scene: PackedScene
 
-var portals: Array = []  # stores the two placed portals
-var max_portals: int = 2
+var entry_portal = null
+var exit_portal = null
 
 func _input(event):
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			place_portal(get_global_mouse_position())
+	if event is InputEventMouseButton and event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			place_entry_portal(get_global_mouse_position())
+		elif event.button_index == MOUSE_BUTTON_RIGHT:
+			place_exit_portal(get_global_mouse_position())
 
-func place_portal(pos: Vector2):
-	# If we already have 2 portals, remove the oldest one
-	if portals.size() >= max_portals:
-		portals[0].queue_free()
-		portals.remove_at(0)
+func place_entry_portal(pos: Vector2):
+	if entry_portal:
+		entry_portal.queue_free()
 	
-	# Spawn new portal
-	var portal = portal_scene.instantiate()
-	get_tree().get_root().add_child(portal)
-	portal.global_position = pos
-	portals.append(portal)
+	# Spawn a blue square as placeholder
+	entry_portal = ColorRect.new()
+	entry_portal.size = Vector2(32, 32)
+	entry_portal.color = Color(0, 0.5, 1, 0.8)  # blue
+	get_tree().get_root().add_child(entry_portal)
+	entry_portal.global_position = pos - Vector2(16, 16)
+	print("ENTRY PORTAL PLACED AT: ", pos)
+
+func place_exit_portal(pos: Vector2):
+	if exit_portal:
+		exit_portal.queue_free()
 	
-	# If we now have 2, link them together
-	if portals.size() == 2:
-		portals[0].link_to(portals[1])
-		portals[1].link_to(portals[0])
-		print("PORTALS LINKED")
+	# Spawn an orange square as placeholder
+	exit_portal = ColorRect.new()
+	exit_portal.size = Vector2(32, 32)
+	exit_portal.color = Color(1, 0.5, 0, 0.8)  # orange
+	get_tree().get_root().add_child(exit_portal)
+	exit_portal.global_position = pos - Vector2(16, 16)
+	print("EXIT PORTAL PLACED AT: ", pos)
