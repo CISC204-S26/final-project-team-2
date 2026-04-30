@@ -1,3 +1,8 @@
+# All this script currently does is:
+# L Click = blue "portal"
+# R CLick = orange "portal"
+#currently doesnt do anything but make two squares. 
+
 extends Node2D
 
 @export var portal_scene: PackedScene

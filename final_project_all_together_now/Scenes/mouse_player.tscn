@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://476i256017mc"]
 
-[ext_resource type="Script" uid="uid://by0okuajqbg8r" path="res://Mouse Player/mouse_player.gd" id="1_0ltcj"]
+[ext_resource type="Script" uid="uid://by0okuajqbg8r" path="res://Scripts/mouse_player.gd" id="1_0ltcj"]
 
 [node name="Mouse Player" type="Node2D" unique_id=252770528]
 script = ExtResource("1_0ltcj")
