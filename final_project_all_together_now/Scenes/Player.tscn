@@ -6,7 +6,7 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q3lat"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
-radius = 190.26297
+radius = 64.070274
 
 [node name="Player" type="CharacterBody2D" unique_id=1088848127]
 script = ExtResource("1_3qydi")
@@ -17,6 +17,9 @@ shape = SubResource("CapsuleShape2D_q3lat")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1206228407]
+texture_filter = 1
+position = Vector2(-2.2737368e-13, 2.3841858e-07)
+scale = Vector2(0.3203125, 0.3046875)
 texture = ExtResource("2_q3lat")
 
 [node name="InteractableDetector" type="Area2D" parent="." unique_id=535421807]

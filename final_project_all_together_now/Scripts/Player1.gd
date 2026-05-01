@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, player_speed)
 	
-	if Input.is_action_just_pressed("Interact"):
+	if Input.is_action_just_pressed("interact"):
 		if interactables:
 			interactables.back().interact()
 	move_and_slide()
