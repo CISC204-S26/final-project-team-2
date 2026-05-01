@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c57f8iy2xmx4u"
-path="res://.godot/imported/BasicAhhTileSheet.png-7ec734baf11db40fff056663e0f647c8.ctex"
+uid="uid://cdkav3xb5qyol"
+path="res://.godot/imported/MysticPortal_CLOSE.png-025938587ca17022bdb5ab8e1fc5f87c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/BasicAhhTileSheet.png"
-dest_files=["res://.godot/imported/BasicAhhTileSheet.png-7ec734baf11db40fff056663e0f647c8.ctex"]
+source_file="res://ASSETS/Portals/Purple/MysticPortal_CLOSE.png"
+dest_files=["res://.godot/imported/MysticPortal_CLOSE.png-025938587ca17022bdb5ab8e1fc5f87c.ctex"]
 
 [params]
 
