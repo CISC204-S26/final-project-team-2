@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://er12v6sla646"
-path="res://.godot/imported/all.png-93bb4d30a39bed9b0cb7d965cd84cf42.ctex"
+path="res://.godot/imported/all.png-7428e4db1570ed247e71ee26e3b27b99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy-Fantasy - High Forest 2.3/Mob/Snail/all.png"
-dest_files=["res://.godot/imported/all.png-93bb4d30a39bed9b0cb7d965cd84cf42.ctex"]
+source_file="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Mob/Snail/all.png"
+dest_files=["res://.godot/imported/all.png-7428e4db1570ed247e71ee26e3b27b99.ctex"]
 
 [params]
 
