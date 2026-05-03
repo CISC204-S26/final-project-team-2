@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="4_a1llc"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="5_85qhp"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="5_krdor"]
+[ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="6_85qhp"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_egtac"]
 
@@ -31,3 +32,16 @@ player_speed = 500
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("5_85qhp")]
 position = Vector2(676, -237)
 scale = Vector2(3.88, 3.88)
+
+[node name="MovingPlatform" parent="." unique_id=302922826 instance=ExtResource("6_85qhp")]
+position = Vector2(-584, -249.00002)
+scale = Vector2(2.77, 2.77)
+
+[node name="Marker2D" type="Marker2D" parent="MovingPlatform" unique_id=1814207327]
+position = Vector2(33, 1)
+
+[node name="Marker2D2" type="Marker2D" parent="MovingPlatform" unique_id=588746473]
+position = Vector2(117, -12)
+
+[node name="Marker2D3" type="Marker2D" parent="MovingPlatform" unique_id=1010390295]
+position = Vector2(56.48855, -80.916016)

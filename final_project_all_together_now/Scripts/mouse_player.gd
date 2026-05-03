@@ -3,8 +3,18 @@ extends Node2D
 var entry_portal_scene: PackedScene = preload("res://Scenes/EntryPortal.tscn")
 var exit_portal_scene: PackedScene = preload("res://Scenes/ExitPortal.tscn")
 
+@export var portal_duration: float = 5.0
+
 var entry_portal: Portal = null
 var exit_portal: Portal = null
+var portal_timer: Timer = null
+
+func _ready():
+	# Set up the timer once
+	portal_timer = Timer.new()
+	portal_timer.one_shot = true
+	portal_timer.timeout.connect(_on_portal_timer_timeout)
+	add_child(portal_timer)
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -18,7 +28,6 @@ func place_entry_portal(pos: Vector2):
 		print("Cannot place entry portal here — blocked zone!")
 		return
 	if entry_portal:
-		# Play close animation then free
 		entry_portal.close()
 		await entry_portal.anim.animation_finished
 		entry_portal.queue_free()
@@ -33,7 +42,6 @@ func place_exit_portal(pos: Vector2):
 		print("Cannot place exit portal here — blocked zone!")
 		return
 	if exit_portal:
-		# Play close animation then free
 		exit_portal.close()
 		await exit_portal.anim.animation_finished
 		exit_portal.queue_free()
@@ -47,6 +55,23 @@ func _try_link_portals():
 	if entry_portal and exit_portal:
 		entry_portal.linked_portal = exit_portal
 		print("Portals linked!")
+		# Reset and start the timer every time both portals are active
+		portal_timer.stop()
+		portal_timer.start(portal_duration)
+		print("Portal timer started: ", portal_duration, " seconds")
+
+func _on_portal_timer_timeout():
+	print("Portal timer expired — closing both portals!")
+	await _close_and_free_portal(entry_portal)
+	await _close_and_free_portal(exit_portal)
+	entry_portal = null
+	exit_portal = null
+
+func _close_and_free_portal(portal: Portal):
+	if portal:
+		portal.close()
+		await portal.anim.animation_finished
+		portal.queue_free()
 
 func _is_in_no_portal_zone(pos: Vector2) -> bool:
 	var zones = get_tree().get_nodes_in_group("no_portal_zone")
