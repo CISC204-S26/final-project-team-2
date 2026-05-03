@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpygdrl5tomxw"
-path="res://.godot/imported/BlackGreyUISheet.png-5d5919fc2c69ec1b3951349ca9244d37.ctex"
+path="res://.godot/imported/BlackGreyUISheet.png-4bb2388a62dcc3fe4b722b82c94c835f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UIMenus/Ornate Retro UI/BlackGreyUISheet.png"
-dest_files=["res://.godot/imported/BlackGreyUISheet.png-5d5919fc2c69ec1b3951349ca9244d37.ctex"]
+source_file="res://ASSETS/UIMenus/Ornate Retro UI/BlackGreyUISheet.png"
+dest_files=["res://.godot/imported/BlackGreyUISheet.png-4bb2388a62dcc3fe4b722b82c94c835f.ctex"]
 
 [params]
 

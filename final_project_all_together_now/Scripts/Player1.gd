@@ -40,3 +40,7 @@ func _on_interactable_detector_area_entered(area: Area2D) -> void:
 
 func _on_interactable_detector_area_exited(area: Area2D) -> void:
 	interactables.erase(area)
+
+func teleport_to(pos: Vector2):
+	global_position = pos
+	print("Player 1 teleported to: ", pos)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7f0rlvy3dwb"
-path="res://.godot/imported/red hood itch free Copy-Sheet.png-d2cb11a5d0033663e38eaca843864055.ctex"
+path="res://.godot/imported/red hood itch free Copy-Sheet.png-eb39f9276c63a4f6e51a7ba60a394fe6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player1/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png"
-dest_files=["res://.godot/imported/red hood itch free Copy-Sheet.png-d2cb11a5d0033663e38eaca843864055.ctex"]
+source_file="res://ASSETS/Player1/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png"
+dest_files=["res://.godot/imported/red hood itch free Copy-Sheet.png-eb39f9276c63a4f6e51a7ba60a394fe6.ctex"]
 
 [params]
 

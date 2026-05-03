@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1np0o6q1gp03"
-path="res://.godot/imported/decorative_obj.png-f30dfef74ed5bca96d71a552450c92ba.ctex"
+path="res://.godot/imported/decorative_obj.png-64ab41b40118b45d98cff28a5898ef20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Forest_Tileset/decorative_obj.png"
-dest_files=["res://.godot/imported/decorative_obj.png-f30dfef74ed5bca96d71a552450c92ba.ctex"]
+source_file="res://ASSETS/Forest_Tileset/decorative_obj.png"
+dest_files=["res://.godot/imported/decorative_obj.png-64ab41b40118b45d98cff28a5898ef20.ctex"]
 
 [params]
 

@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/LevelMaps/Level1.tscn" id="1_4m8gy"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_krdor"]
-[ext_resource type="PackedScene" uid="uid://6l8fm316o2mb" path="res://Scenes/EntryPortal.tscn" id="3_85qhp"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="4_a1llc"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="5_krdor"]
 
@@ -21,7 +20,6 @@ position = Vector2(-16, 0)
 shape = SubResource("WorldBoundaryShape2D_egtac")
 
 [node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("2_krdor")]
-portal_scene = ExtResource("3_85qhp")
 
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("4_a1llc")]
 position = Vector2(258, -233)

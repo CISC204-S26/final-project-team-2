@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2hxjmn7yeyv0"
-path="res://.godot/imported/BrownFantasyUISheet.png-55a8a1808d13497bc505418a1f1264e9.ctex"
+path="res://.godot/imported/BrownFantasyUISheet.png-7dbc1560c57f0696feb367d1e644b6d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UIMenus/Ornate Retro UI/BrownFantasyUISheet.png"
-dest_files=["res://.godot/imported/BrownFantasyUISheet.png-55a8a1808d13497bc505418a1f1264e9.ctex"]
+source_file="res://ASSETS/UIMenus/Ornate Retro UI/BrownFantasyUISheet.png"
+dest_files=["res://.godot/imported/BrownFantasyUISheet.png-7dbc1560c57f0696feb367d1e644b6d2.ctex"]
 
 [params]
 

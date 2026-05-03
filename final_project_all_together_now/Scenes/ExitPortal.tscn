@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://4rpo87rlgb3e"]
 
+[ext_resource type="Script" uid="uid://ck0tikfumny7r" path="res://Scripts/Portal.gd" id="1_a1vx5"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_o2rdn"]
 radius = 21.095022
 
 [node name="ExitPortal" type="Area2D" unique_id=1179111636]
+script = ExtResource("1_a1vx5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=318552595]
 shape = SubResource("CircleShape2D_o2rdn")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w8k3hdfi8vev"
-path="res://.godot/imported/MysticPortal_ACTIVE.png-7fc5947e87d9e9034641c687fcced224.ctex"
+path="res://.godot/imported/MysticPortal_ACTIVE.png-6f3b6b1a9a324a88eafd91f7b76469ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Portals/Purple/MysticPortal_ACTIVE.png"
-dest_files=["res://.godot/imported/MysticPortal_ACTIVE.png-7fc5947e87d9e9034641c687fcced224.ctex"]
+source_file="res://ASSETS/Portals/Purple/MysticPortal_ACTIVE.png"
+dest_files=["res://.godot/imported/MysticPortal_ACTIVE.png-6f3b6b1a9a324a88eafd91f7b76469ec.ctex"]
 
 [params]
 
