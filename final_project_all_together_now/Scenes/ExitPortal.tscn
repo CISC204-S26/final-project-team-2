@@ -7,6 +7,7 @@ radius = 21.095022
 
 [node name="ExitPortal" type="Area2D" unique_id=1179111636]
 script = ExtResource("1_a1vx5")
+portal_type = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=318552595]
 shape = SubResource("CircleShape2D_o2rdn")

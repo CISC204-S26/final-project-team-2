@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/LevelMaps/Level1.tscn" id="1_4m8gy"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_krdor"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="4_a1llc"]
+[ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="5_85qhp"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="5_krdor"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_egtac"]
@@ -26,3 +27,7 @@ position = Vector2(258, -233)
 player_speed = 500
 
 [node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1652956208]
+
+[node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("5_85qhp")]
+position = Vector2(754, -197)
+scale = Vector2(2.11, 2.11)
