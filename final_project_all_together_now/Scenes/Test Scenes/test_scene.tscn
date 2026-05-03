@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://byyj0rd8n1v4l"]
 
-[ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="1_djfdu"]
-[ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/LevelMaps/Level1.tscn" id="1_uqr4v"]
-[ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="2_08elu"]
-[ext_resource type="PackedScene" uid="uid://6l8fm316o2mb" path="res://Scenes/EntryPortal.tscn" id="2_egtac"]
+[ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/LevelMaps/Level1.tscn" id="1_4m8gy"]
+[ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_krdor"]
+[ext_resource type="PackedScene" uid="uid://6l8fm316o2mb" path="res://Scenes/EntryPortal.tscn" id="3_85qhp"]
+[ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="4_a1llc"]
+[ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="5_krdor"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_egtac"]
 
 [node name="TestScene" type="Node2D" unique_id=1225925431]
 
-[node name="Level1" parent="." unique_id=108323680 instance=ExtResource("1_uqr4v")]
+[node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("5_krdor")]
+
+[node name="Level1" parent="." unique_id=108323680 instance=ExtResource("1_4m8gy")]
 position = Vector2(-16, 0)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317442735]
@@ -17,11 +20,11 @@ position = Vector2(-16, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1203000478]
 shape = SubResource("WorldBoundaryShape2D_egtac")
 
-[node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("1_djfdu")]
-portal_scene = ExtResource("2_egtac")
+[node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("2_krdor")]
+portal_scene = ExtResource("3_85qhp")
 
-[node name="Player" parent="." unique_id=1088848127 instance=ExtResource("2_08elu")]
-position = Vector2(227, -235)
+[node name="Player" parent="." unique_id=1088848127 instance=ExtResource("4_a1llc")]
+position = Vector2(258, -233)
 player_speed = 500
 
 [node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1652956208]
