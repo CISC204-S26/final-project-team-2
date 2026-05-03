@@ -29,5 +29,5 @@ player_speed = 500
 [node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1652956208]
 
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("5_85qhp")]
-position = Vector2(754, -197)
-scale = Vector2(2.11, 2.11)
+position = Vector2(676, -237)
+scale = Vector2(3.88, 3.88)

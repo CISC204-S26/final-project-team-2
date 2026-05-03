@@ -5,9 +5,23 @@ enum PortalType { ENTRY, EXIT }
 @export var portal_type: PortalType = PortalType.ENTRY
 
 var linked_portal: Portal = null
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready():
 	body_entered.connect(_on_body_entered)
+	anim.animation_finished.connect(_on_animation_finished)
+	open()
+
+func open():
+	anim.play("OpenPortal")
+
+func _on_animation_finished():
+	# When OpenPortal finishes, go to ActivePortal and loop
+	if anim.animation == "OpenPortal":
+		anim.play("ActivePortal")
+
+func close():
+	anim.play("ClosePortal")
 
 func _on_body_entered(body: Node) -> void:
 	if portal_type != PortalType.ENTRY:
