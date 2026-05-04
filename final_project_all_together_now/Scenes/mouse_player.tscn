@@ -1,6 +1,76 @@
 [gd_scene format=3 uid="uid://476i256017mc"]
 
 [ext_resource type="Script" uid="uid://by0okuajqbg8r" path="res://Scripts/mouse_player.gd" id="1_0ltcj"]
+[ext_resource type="Texture2D" uid="uid://drl22ltkq1wsx" path="res://ASSETS/Player2/Fairy 2.png" id="2_g3h2x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awmmc"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c76ys"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lomml"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7wlkt"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4ikx"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jctpy"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j13do"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fdek"]
+atlas = ExtResource("2_g3h2x")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b2ewk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awmmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c76ys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lomml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7wlkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4ikx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jctpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j13do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fdek")
+}],
+"loop": true,
+"name": &"FairyMouse",
+"speed": 10.0
+}]
 
 [node name="Mouse Player" type="Node2D" unique_id=252770528]
 script = ExtResource("1_0ltcj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1540399419]
+sprite_frames = SubResource("SpriteFrames_b2ewk")
+animation = &"FairyMouse"
+frame_progress = 0.50913954

@@ -2,7 +2,8 @@ extends Node2D
 
 var entry_portal_scene: PackedScene = preload("res://Scenes/EntryPortal.tscn")
 var exit_portal_scene: PackedScene = preload("res://Scenes/ExitPortal.tscn")
-
+@onready var cursor_sprite: AnimatedSprite2D = $AnimatedSprite2D
+#@onready var cursor_sprite = $AnimatedSprite2D
 @export var portal_duration: float = 5.0
 
 var entry_portal: Portal = null
@@ -10,11 +11,18 @@ var exit_portal: Portal = null
 var portal_timer: Timer = null
 
 func _ready():
+	#removes the mouse icon and plays fairy animation
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN) 
+	cursor_sprite.play("FairyMouse")
+	
 	# Set up the timer once
 	portal_timer = Timer.new()
 	portal_timer.one_shot = true
 	portal_timer.timeout.connect(_on_portal_timer_timeout)
 	add_child(portal_timer)
+
+func _process(delta):
+	cursor_sprite.global_position = get_global_mouse_position()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
