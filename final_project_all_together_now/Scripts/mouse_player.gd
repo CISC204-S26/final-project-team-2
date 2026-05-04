@@ -1,14 +1,28 @@
-# All this script currently does is:
-# L Click = blue "portal"
-# R CLick = orange "portal"
-#currently doesnt do anything but make two squares. 
-
 extends Node2D
 
-@export var portal_scene: PackedScene
+var entry_portal_scene: PackedScene = preload("res://Scenes/EntryPortal.tscn")
+var exit_portal_scene: PackedScene = preload("res://Scenes/ExitPortal.tscn")
+@onready var cursor_sprite: AnimatedSprite2D = $AnimatedSprite2D
+#@onready var cursor_sprite = $AnimatedSprite2D
+@export var portal_duration: float = 5.0
 
-var entry_portal = null
-var exit_portal = null
+var entry_portal: Portal = null
+var exit_portal: Portal = null
+var portal_timer: Timer = null
+
+func _ready():
+	#removes the mouse icon and plays fairy animation
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN) 
+	cursor_sprite.play("FairyMouse")
+	
+	# Set up the timer once
+	portal_timer = Timer.new()
+	portal_timer.one_shot = true
+	portal_timer.timeout.connect(_on_portal_timer_timeout)
+	add_child(portal_timer)
+
+func _process(delta):
+	cursor_sprite.global_position = get_global_mouse_position()
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -18,25 +32,59 @@ func _input(event):
 			place_exit_portal(get_global_mouse_position())
 
 func place_entry_portal(pos: Vector2):
+	if _is_in_no_portal_zone(pos):
+		print("Cannot place entry portal here — blocked zone!")
+		return
 	if entry_portal:
+		entry_portal.close()
+		await entry_portal.anim.animation_finished
 		entry_portal.queue_free()
-	
-	# Spawn a blue square as placeholder
-	entry_portal = ColorRect.new()
-	entry_portal.size = Vector2(32, 32)
-	entry_portal.color = Color(0, 0.5, 1, 0.8)  # blue
+	entry_portal = entry_portal_scene.instantiate()
 	get_tree().get_root().add_child(entry_portal)
-	entry_portal.global_position = pos - Vector2(16, 16)
+	entry_portal.global_position = pos
 	print("ENTRY PORTAL PLACED AT: ", pos)
+	_try_link_portals()
 
 func place_exit_portal(pos: Vector2):
+	if _is_in_no_portal_zone(pos):
+		print("Cannot place exit portal here — blocked zone!")
+		return
 	if exit_portal:
+		exit_portal.close()
+		await exit_portal.anim.animation_finished
 		exit_portal.queue_free()
-	
-	# Spawn an orange square as placeholder
-	exit_portal = ColorRect.new()
-	exit_portal.size = Vector2(32, 32)
-	exit_portal.color = Color(1, 0.5, 0, 0.8)  # orange
+	exit_portal = exit_portal_scene.instantiate()
 	get_tree().get_root().add_child(exit_portal)
-	exit_portal.global_position = pos - Vector2(16, 16)
+	exit_portal.global_position = pos
 	print("EXIT PORTAL PLACED AT: ", pos)
+	_try_link_portals()
+
+func _try_link_portals():
+	if entry_portal and exit_portal:
+		entry_portal.linked_portal = exit_portal
+		print("Portals linked!")
+		# Reset and start the timer every time both portals are active
+		portal_timer.stop()
+		portal_timer.start(portal_duration)
+		print("Portal timer started: ", portal_duration, " seconds")
+
+func _on_portal_timer_timeout():
+	print("Portal timer expired — closing both portals!")
+	await _close_and_free_portal(entry_portal)
+	await _close_and_free_portal(exit_portal)
+	entry_portal = null
+	exit_portal = null
+
+func _close_and_free_portal(portal: Portal):
+	if portal:
+		portal.close()
+		await portal.anim.animation_finished
+		portal.queue_free()
+
+func _is_in_no_portal_zone(pos: Vector2) -> bool:
+	var zones = get_tree().get_nodes_in_group("no_portal_zone")
+	for zone in zones:
+		if zone.has_method("contains_point"):
+			if zone.contains_point(pos):
+				return true
+	return false
