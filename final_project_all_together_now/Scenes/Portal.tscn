@@ -1262,6 +1262,12 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_75t4s")
 }, {
 "duration": 1.0,
@@ -1349,6 +1355,5 @@ shape = SubResource("CircleShape2D_mjlh8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1197324884]
 sprite_frames = SubResource("SpriteFrames_ex8j0")
-animation = &"yellow_open"
-frame = 24
-frame_progress = 1.0
+animation = &"yellow_active"
+frame_progress = 0.71853936
