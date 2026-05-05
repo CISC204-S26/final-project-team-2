@@ -10,6 +10,8 @@ var entry_portal: Portal = null
 var exit_portal: Portal = null
 var portal_timer: Timer = null
 
+var last_mouse_x: float = 0.0
+
 func _ready():
 	#removes the mouse icon and plays fairy animation
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN) 
@@ -23,6 +25,16 @@ func _ready():
 
 func _process(delta):
 	cursor_sprite.global_position = get_global_mouse_position()
+	var mouse_pos = get_global_mouse_position()
+	
+	# Flip based on which direction the mouse is moving
+	if mouse_pos.x < last_mouse_x:
+		cursor_sprite.flip_h = true   # moving left
+	elif mouse_pos.x > last_mouse_x:
+		cursor_sprite.flip_h = false  # moving right
+	
+	last_mouse_x = mouse_pos.x
+	cursor_sprite.global_position = mouse_pos	
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
