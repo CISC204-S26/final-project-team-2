@@ -12,6 +12,7 @@
 [node name="TestScene" type="Node2D" unique_id=1225925431]
 
 [node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("5_krdor")]
+visible = false
 
 [node name="Level1" parent="." unique_id=108323680 instance=ExtResource("1_4m8gy")]
 position = Vector2(-16, 0)
@@ -26,8 +27,6 @@ shape = SubResource("WorldBoundaryShape2D_egtac")
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("4_a1llc")]
 position = Vector2(258, -233)
 player_speed = 500
-
-[node name="Camera2D2" type="Camera2D" parent="Player" unique_id=1652956208]
 
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("5_85qhp")]
 position = Vector2(676, -237)

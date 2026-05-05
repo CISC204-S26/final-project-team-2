@@ -14,7 +14,7 @@ func _physics_process(delta: float) -> void:
 	
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
-		#animated_sprite.play("PlayerJump")
+		animated_sprite.play("PlayerJump")
 	
 	if Input.is_action_just_pressed("p1_jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -38,11 +38,11 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
-func _on_interactable_detector_area_entered(area: Area2D) -> void:
+func _on_interactable_detector_area_entered(area: Area2D):
 	interactables.append(area)
 
 
-func _on_interactable_detector_area_exited(area: Area2D) -> void:
+func _on_interactable_detector_area_exited(area: Area2D):
 	interactables.erase(area)
 
 func teleport_to(pos: Vector2):

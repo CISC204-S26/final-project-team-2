@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cebdd2bjchkkl"]
 
 [ext_resource type="Script" uid="uid://brmya2cqvo67l" path="res://Scripts/Player1.gd" id="1_3qydi"]
-[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png" id="2_dewec"]
+[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png" id="2_dewec"]
 [ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="2_q3lat"]
-[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Character/Run/Run-Sheet.png" id="3_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Character/Jumlp-All/Jump-All-Sheet.png" id="4_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Run/Run-Sheet.png" id="3_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Jumlp-All/Jump-All-Sheet.png" id="4_5ixxa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
 atlas = ExtResource("2_dewec")
@@ -181,7 +181,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"PlayerJump",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -208,9 +208,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lslt6")
 }],
-"loop": false,
+"loop": true,
 "name": &"PlayerRun",
-"speed": 5.0
+"speed": 14.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q3lat"]
@@ -226,12 +226,14 @@ script = ExtResource("1_3qydi")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=14631450]
 sprite_frames = SubResource("SpriteFrames_ulo2v")
 animation = &"PlayerJump"
-frame_progress = 0.15275726
+frame_progress = 0.89155483
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=120210159]
 shape = SubResource("CapsuleShape2D_q3lat")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
+offset = Vector2(0, -65)
+zoom = Vector2(1.4, 1.4)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1206228407]
 visible = false

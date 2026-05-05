@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://6l8fm316o2mb"]
 
 [ext_resource type="Script" uid="uid://ck0tikfumny7r" path="res://Scripts/Portal.gd" id="1_cp6p4"]
-[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://ASSETS/Portals/Purple/MysticPortal_OPEN.png" id="2_bkqx1"]
-[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://ASSETS/Portals/Purple/MysticPortal_ACTIVE.png" id="2_uhv8o"]
-[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://ASSETS/Portals/Purple/MysticPortal_CLOSE.png" id="3_hfxqc"]
+[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://Assets/Portals/Purple/MysticPortal_OPEN.png" id="2_bkqx1"]
+[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://Assets/Portals/Purple/MysticPortal_ACTIVE.png" id="2_uhv8o"]
+[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://Assets/Portals/Purple/MysticPortal_CLOSE.png" id="3_hfxqc"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mjlh8"]
-radius = 63.63961
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhv8o"]
+radius = 28.0
+height = 112.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdvlg"]
 atlas = ExtResource("2_uhv8o")
@@ -1038,9 +1039,10 @@ animations = [{
 script = ExtResource("1_cp6p4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=157099586]
-shape = SubResource("CircleShape2D_mjlh8")
+shape = SubResource("CapsuleShape2D_uhv8o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1197324884]
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_kdvlg")
 animation = &"ActivePortal"
 frame_progress = 0.19356395
