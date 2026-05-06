@@ -246,7 +246,7 @@ shape = SubResource("CapsuleShape2D_q3lat")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
 offset = Vector2(0, -65)
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]
 [connection signal="area_exited" from="InteractableDetector" to="." method="_on_interactable_detector_area_exited"]

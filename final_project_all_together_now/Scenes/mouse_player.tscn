@@ -71,6 +71,7 @@ animations = [{
 script = ExtResource("1_0ltcj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1540399419]
+scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_b2ewk")
 animation = &"FairyMouse"
 frame_progress = 0.9506752
