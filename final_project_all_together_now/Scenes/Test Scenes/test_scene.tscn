@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://byyj0rd8n1v4l"]
 
-[ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/LevelMaps/Level1.tscn" id="1_4m8gy"]
+[ext_resource type="PackedScene" uid="uid://bkinbf0n0omvv" path="res://Scenes/Test Scenes/TestMaps/TestLevel1.tscn" id="1_4m8gy"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_krdor"]
-[ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player.tscn" id="4_a1llc"]
+[ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player1.tscn" id="4_a1llc"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="5_85qhp"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="5_krdor"]
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="6_85qhp"]

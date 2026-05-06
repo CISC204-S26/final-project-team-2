@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://476i256017mc"]
 
 [ext_resource type="Script" uid="uid://by0okuajqbg8r" path="res://Scripts/mouse_player.gd" id="1_0ltcj"]
-[ext_resource type="Texture2D" uid="uid://drl22ltkq1wsx" path="res://ASSETS/Player2/Fairy 2.png" id="2_g3h2x"]
+[ext_resource type="Texture2D" uid="uid://drl22ltkq1wsx" path="res://Assets/Player2/Fairy 2.png" id="2_g3h2x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_awmmc"]
 atlas = ExtResource("2_g3h2x")
@@ -73,4 +73,4 @@ script = ExtResource("1_0ltcj")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1540399419]
 sprite_frames = SubResource("SpriteFrames_b2ewk")
 animation = &"FairyMouse"
-frame_progress = 0.50913954
+frame_progress = 0.9506752

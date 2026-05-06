@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://brmya2cqvo67l" path="res://Scripts/Player1.gd" id="1_3qydi"]
 [ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png" id="2_dewec"]
-[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="2_q3lat"]
 [ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Run/Run-Sheet.png" id="3_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-End/Jump-End-Sheet.png" id="3_52ee3"]
 [ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Jumlp-All/Jump-All-Sheet.png" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Character/Jump-Start/Jump-Start-Sheet.png" id="4_bhhdu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
+radius = 64.070274
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nn08x"]
 atlas = ExtResource("2_dewec")
@@ -23,10 +25,6 @@ region = Rect2(128, 0, 64, 80)
 [sub_resource type="AtlasTexture" id="AtlasTexture_megsn"]
 atlas = ExtResource("2_dewec")
 region = Rect2(192, 0, 64, 80)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5v66d"]
-atlas = ExtResource("4_bhhdu")
-region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lyrkg"]
 atlas = ExtResource("4_bhhdu")
@@ -137,9 +135,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5v66d")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_lyrkg")
 }, {
 "duration": 1.0,
@@ -222,36 +217,16 @@ animations = [{
 }],
 "loop": true,
 "name": &"PlayerRun",
-"speed": 14.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q3lat"]
-radius = 20.0
-height = 56.0
+radius = 9.0
+height = 36.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
-radius = 64.070274
-
-[node name="Player" type="CharacterBody2D" unique_id=1088848127]
+[node name="Player1" type="CharacterBody2D" unique_id=1088848127]
 script = ExtResource("1_3qydi")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=14631450]
-sprite_frames = SubResource("SpriteFrames_ulo2v")
-animation = &"PlayerLanded"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=120210159]
-shape = SubResource("CapsuleShape2D_q3lat")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
-offset = Vector2(0, -65)
-zoom = Vector2(2, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1206228407]
-visible = false
-texture_filter = 1
-position = Vector2(-2.2737368e-13, 2.3841858e-07)
-scale = Vector2(0.3203125, 0.3046875)
-texture = ExtResource("2_q3lat")
+player_speed = 250
 
 [node name="InteractableDetector" type="Area2D" parent="." unique_id=535421807]
 collision_layer = 2
@@ -261,6 +236,18 @@ collision_mask = 2
 shape = SubResource("CircleShape2D_kyqiw")
 debug_color = Color(0.633658, 0.34381667, 1, 0.41960785)
 
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=14631450]
+scale = Vector2(0.871, 0.75)
+sprite_frames = SubResource("SpriteFrames_ulo2v")
+animation = &"PlayerIdle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=120210159]
+shape = SubResource("CapsuleShape2D_q3lat")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
+offset = Vector2(0, -65)
+zoom = Vector2(2, 2)
+
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]
 [connection signal="area_exited" from="InteractableDetector" to="." method="_on_interactable_detector_area_exited"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
