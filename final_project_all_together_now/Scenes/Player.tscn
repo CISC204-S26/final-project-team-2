@@ -244,7 +244,7 @@ shape = SubResource("CapsuleShape2D_q3lat")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
 offset = Vector2(0, -65)
-zoom = Vector2(1.4, 1.4)
+zoom = Vector2(2, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1206228407]
 visible = false
