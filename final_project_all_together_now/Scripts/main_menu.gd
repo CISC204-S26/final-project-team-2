@@ -16,10 +16,11 @@ func _ready():
 
 
 # ------------------ BUTTONS BUTTONS BUTTONS --------------------------------------------
+# these might be buttons idk.
 func _on_start_button_pressed():
 	#menu_music.stop()
 	await get_tree().create_timer(0.1).timeout
-	get_tree().change_scene_to_file("res://Scenes/Test Scenes/test_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/UIMenus/Level Select Menu.tscn")
 
 func _on_options_button_pressed():
 	main_buttons.hide()
