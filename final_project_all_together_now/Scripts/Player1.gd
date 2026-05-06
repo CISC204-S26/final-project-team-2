@@ -3,10 +3,9 @@ extends CharacterBody2D
 
 @export var player_speed: int
 @onready var animated_sprite = $AnimatedSprite2D  # Adjust path if named differently
-
+@export var JUMP_VELOCITY = -400.0
 
 # Gravity/jump height
-const JUMP_VELOCITY = -400.0
 const GRAVITY = 980.0 #Random ahh numbers
 
 # Sets up interactables detector

@@ -1784,8 +1784,9 @@ tile_set = SubResource("TileSet_nj4by")
 
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("3_kpdyc")]
 z_index = 5
-position = Vector2(158, -27)
+position = Vector2(158, -3)
 player_speed = 200
+JUMP_VELOCITY = -300.0
 
 [node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("2_w0w1t")]
 z_index = 5

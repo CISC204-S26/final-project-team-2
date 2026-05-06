@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://fde3g01un0b8" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_OPEN.png" id="4_6l1tx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bvs8o"]
-radius = 28.0
-height = 114.0
+radius = 15.0
+height = 56.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_auirl"]
 atlas = ExtResource("2_bvs8o")
@@ -1043,7 +1043,7 @@ portal_type = 1
 shape = SubResource("CapsuleShape2D_bvs8o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1249180510]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_ve5uw")
 animation = &"ActivePortal"
 frame_progress = 0.3583422
