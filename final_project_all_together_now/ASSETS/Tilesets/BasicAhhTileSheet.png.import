@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c57f8iy2xmx4u"
-path="res://.godot/imported/BasicAhhTileSheet.png-84f4f27687a0d998b53ed41279580b5f.ctex"
+path="res://.godot/imported/BasicAhhTileSheet.png-eedeba47a1d8937d256d7f674a204c2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Tilesets/BasicAhhTileSheet.png"
-dest_files=["res://.godot/imported/BasicAhhTileSheet.png-84f4f27687a0d998b53ed41279580b5f.ctex"]
+source_file="res://Assets/Tilesets/BasicAhhTileSheet.png"
+dest_files=["res://.godot/imported/BasicAhhTileSheet.png-eedeba47a1d8937d256d7f674a204c2a.ctex"]
 
 [params]
 
