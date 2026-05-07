@@ -2,39 +2,35 @@ extends Node2D
 
 var entry_portal_scene: PackedScene = preload("res://Scenes/EntryPortal.tscn")
 var exit_portal_scene: PackedScene = preload("res://Scenes/ExitPortal.tscn")
+
 @onready var cursor_sprite: AnimatedSprite2D = $AnimatedSprite2D
-#@onready var cursor_sprite = $AnimatedSprite2D
+
 @export var portal_duration: float = 5.0
 
 var entry_portal: Portal = null
 var exit_portal: Portal = null
 var portal_timer: Timer = null
-
 var last_mouse_x: float = 0.0
 
 func _ready():
-	#removes the mouse icon and plays fairy animation
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN) 
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	cursor_sprite.play("FairyMouse")
-	
-	# Set up the timer once
+
 	portal_timer = Timer.new()
 	portal_timer.one_shot = true
 	portal_timer.timeout.connect(_on_portal_timer_timeout)
 	add_child(portal_timer)
 
 func _process(delta):
-	cursor_sprite.global_position = get_global_mouse_position()
 	var mouse_pos = get_global_mouse_position()
-	
-	# Flip based on which direction the mouse is moving
+
 	if mouse_pos.x < last_mouse_x:
-		cursor_sprite.flip_h = true   # moving left
+		cursor_sprite.flip_h = true
 	elif mouse_pos.x > last_mouse_x:
-		cursor_sprite.flip_h = false  # moving right
-	
+		cursor_sprite.flip_h = false
+
 	last_mouse_x = mouse_pos.x
-	cursor_sprite.global_position = mouse_pos	
+	cursor_sprite.global_position = mouse_pos
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -74,8 +70,8 @@ func place_exit_portal(pos: Vector2):
 func _try_link_portals():
 	if entry_portal and exit_portal:
 		entry_portal.linked_portal = exit_portal
+		exit_portal.linked_portal = entry_portal  # ADDED - links both ways
 		print("Portals linked!")
-		# Reset and start the timer every time both portals are active
 		portal_timer.stop()
 		portal_timer.start(portal_duration)
 		print("Portal timer started: ", portal_duration, " seconds")
