@@ -12,6 +12,10 @@ var exit_portal: Portal = null
 var portal_timer: Timer = null
 var last_mouse_x: float = 0.0
 
+var is_dragging_exit: bool = false
+var exit_portal_pos: Vector2 = Vector2.ZERO
+var drag_line: Line2D = null
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	cursor_sprite.play("FairyMouse")
@@ -20,6 +24,13 @@ func _ready():
 	portal_timer.one_shot = true
 	portal_timer.timeout.connect(_on_portal_timer_timeout)
 	add_child(portal_timer)
+
+	# Set up drag direction line
+	drag_line = Line2D.new()
+	drag_line.width = 3.0
+	drag_line.default_color = Color(1, 0.5, 0, 0.8)
+	drag_line.visible = false
+	add_child(drag_line)
 
 func _process(delta):
 	var mouse_pos = get_global_mouse_position()
@@ -32,12 +43,31 @@ func _process(delta):
 	last_mouse_x = mouse_pos.x
 	cursor_sprite.global_position = mouse_pos
 
+	# Update drag arrow while dragging
+	if is_dragging_exit:
+		drag_line.visible = true
+		drag_line.points = [exit_portal_pos, mouse_pos]
+
 func _input(event):
-	if event is InputEventMouseButton and event.pressed:
-		if event.button_index == MOUSE_BUTTON_LEFT:
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			place_entry_portal(get_global_mouse_position())
+
 		elif event.button_index == MOUSE_BUTTON_RIGHT:
-			place_exit_portal(get_global_mouse_position())
+			if event.pressed:
+				# Start drag — place exit portal here
+				exit_portal_pos = get_global_mouse_position()
+				is_dragging_exit = true
+				_begin_place_exit_portal(exit_portal_pos)
+			else:
+				# Release — set launch direction
+				if is_dragging_exit and exit_portal:
+					var drag_end = get_global_mouse_position()
+					var direction = (drag_end - exit_portal_pos).normalized()
+					exit_portal.launch_direction = direction
+					print("Launch direction set: ", direction)
+				is_dragging_exit = false
+				drag_line.visible = false
 
 func place_entry_portal(pos: Vector2):
 	if _is_in_no_portal_zone(pos):
@@ -53,7 +83,7 @@ func place_entry_portal(pos: Vector2):
 	print("ENTRY PORTAL PLACED AT: ", pos)
 	_try_link_portals()
 
-func place_exit_portal(pos: Vector2):
+func _begin_place_exit_portal(pos: Vector2):
 	if _is_in_no_portal_zone(pos):
 		print("Cannot place exit portal here — blocked zone!")
 		return
@@ -64,13 +94,14 @@ func place_exit_portal(pos: Vector2):
 	exit_portal = exit_portal_scene.instantiate()
 	get_tree().get_root().add_child(exit_portal)
 	exit_portal.global_position = pos
+	exit_portal.launch_direction = Vector2.UP  # default until drag released
 	print("EXIT PORTAL PLACED AT: ", pos)
 	_try_link_portals()
 
 func _try_link_portals():
 	if entry_portal and exit_portal:
 		entry_portal.linked_portal = exit_portal
-		exit_portal.linked_portal = entry_portal  # ADDED - links both ways
+		exit_portal.linked_portal = entry_portal
 		print("Portals linked!")
 		portal_timer.stop()
 		portal_timer.start(portal_duration)

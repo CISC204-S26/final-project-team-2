@@ -4,6 +4,7 @@ enum PortalType { ENTRY, EXIT }
 
 @export var portal_type: PortalType = PortalType.ENTRY
 var linked_portal: Portal = null
+var launch_direction: Vector2 = Vector2.UP
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -25,21 +26,19 @@ func close():
 	anim.play("ClosePortal")
 
 func _on_body_entered(body: Node) -> void:
-	print("Body entered portal: ", name, " | cooldown list: ", _cooling_down_bodies)
 	if body in _cooling_down_bodies:
-		print("BLOCKED by cooldown")
 		return
 	if linked_portal == null:
-		print("No exit portal linked yet!")
+		print("No portal linked yet!")
 		return
 	if _exit_is_in_blocked_zone():
 		print("Exit portal is in a blocked zone — teleport cancelled!")
 		return
 	if body.has_method("teleport_to"):
-		print("Teleporting to: ", linked_portal.global_position)
+		var entry_speed = body.velocity.length()
 		_add_cooldown_for(body)
 		linked_portal._add_cooldown_for(body)
-		body.teleport_to(linked_portal.global_position)
+		body.teleport_to(linked_portal.global_position, linked_portal.launch_direction, entry_speed)
 
 func _add_cooldown_for(body: Node):
 	_cooling_down_bodies.append(body)
