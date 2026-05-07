@@ -5,8 +5,8 @@ extends CanvasLayer
 @onready var options_popup = $OptionsPopUp
 @onready var vol_slider = $OptionsPopUp/VBoxContainer/VolumeSlider
 @onready var title_card = $TitleLabel
-@onready var click_sound = null
-@onready var hover_sound = null
+@onready var click_sound = $ClickSound
+@onready var hover_sound = $HoverSound
 @onready var menu_music = null
 
 
@@ -19,8 +19,13 @@ func _ready():
 # these might be buttons idk.
 func _on_start_button_pressed():
 	#menu_music.stop()
+	await get_tree().create_timer(0.5).timeout
+	get_tree().change_scene_to_file("res://Scenes/LevelMaps/main_level_1.tscn")
+
+func _on_levels_button_pressed():
 	await get_tree().create_timer(0.1).timeout
-	get_tree().change_scene_to_file("res://Scenes/UIMenus/Level Select Menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/UIMenus/LevelSelectMenu.tscn")
+
 
 func _on_options_button_pressed():
 	main_buttons.hide()
@@ -43,9 +48,8 @@ func _on_volume_changed(value):
 
 # ------------------------ SOUNDS SOUNDS SOUNDS ----------------------------------------
 func play_hover_sound():
-	#hover_sound.play()
-	pass
+	hover_sound.play()
+
 
 func play_click_sound():
-	#click_sound.play()
-	pass
+	click_sound.play()

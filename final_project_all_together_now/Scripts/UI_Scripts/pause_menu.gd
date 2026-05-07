@@ -5,9 +5,8 @@ extends CanvasLayer
 @onready var options_popup = $OptionsPopUp
 @onready var vol_slider = $OptionsPopUp/VBoxContainer/VolumeSlider
 @onready var paused_card = $PausedLabel
-@onready var click_sound = null
-@onready var hover_sound = null
-@onready var menu_music = null
+@onready var click_sound = $ClickSound
+@onready var hover_sound = $HoverSound
 
 
 func _ready():
@@ -25,6 +24,11 @@ func toggle_pause():
 	var new_state = !get_tree().paused
 	get_tree().paused = new_state
 	visible = new_state
+	
+	if new_state:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	else:
+		Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 
 # ------------------ BUTTONS BUTTONS BUTTONS --------------------------------------------
@@ -41,9 +45,12 @@ func _on_back_button_pressed():
 	paused_card.show()
 	options_popup.hide()
 
-func _on_quit_button_pressed():
+func _on_main_menu_button_pressed():
 	await get_tree().create_timer(.5).timeout
-	get_tree().quit() 
+	toggle_pause()
+	get_tree().change_scene_to_file("res://Scenes/UIMenus/MainMenu.tscn")
+	
+	
 
 func _on_volume_changed(value):
 	var db = linear_to_db(value / 100)
@@ -51,9 +58,7 @@ func _on_volume_changed(value):
 
 # ------------------------ SOUNDS SOUNDS SOUNDS ----------------------------------------
 func play_hover_sound():
-	#hover_sound.play()
-	pass
+	hover_sound.play()
 
 func play_click_sound():
-	#click_sound.play()
-	pass
+	click_sound.play()

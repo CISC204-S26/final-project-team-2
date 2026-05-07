@@ -1,10 +1,11 @@
 [gd_scene format=4 uid="uid://83yw3veviskh"]
 
-[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_jf6nx"]
-[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="2_kpdyc"]
+[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_jf6nx"]
+[ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_upno5"]
+[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="2_kpdyc"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_w0w1t"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player1.tscn" id="3_kpdyc"]
-[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_upno5"]
+[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_upno5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upno5"]
 texture = ExtResource("1_jf6nx")
@@ -2335,6 +2336,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
 [node name="MainLevel1" type="Node2D" unique_id=800583808]
+
+[node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("1_upno5")]
+visible = false
 
 [node name="BGTileMap" type="Node" parent="." unique_id=1281760100]
 
