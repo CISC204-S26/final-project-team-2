@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://Assets/Player1/Jump-End-Sheet.png" id="3_52ee3"]
 [ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://Assets/Player1/Jump-All-Sheet.png" id="4_5ixxa"]
 [ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://Assets/Player1/Jump-Start-Sheet.png" id="4_bhhdu"]
+[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="7_hjvw7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
 radius = 64.070274
@@ -247,6 +248,11 @@ shape = SubResource("CapsuleShape2D_q3lat")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
 offset = Vector2(0, -65)
 zoom = Vector2(2.5, 2.5)
+
+[node name="Background" type="Sprite2D" parent="Camera2D" unique_id=1853161687]
+z_index = -99
+position = Vector2(7, -63)
+texture = ExtResource("7_hjvw7")
 
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]
 [connection signal="area_exited" from="InteractableDetector" to="." method="_on_interactable_detector_area_exited"]
