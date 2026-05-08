@@ -1,22 +1,32 @@
 [gd_scene format=3 uid="uid://bhop63udw3xnb"]
 
 [ext_resource type="Script" uid="uid://cdldlr37ijbd7" path="res://Scripts/platform.gd" id="1_anqd2"]
-[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="1_vvyo4"]
+[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="2_anqd2"]
+
+[sub_resource type="Curve2D" id="Curve2D_tdwu5"]
+resource_local_to_scene = true
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anqd2"]
-size = Vector2(136, 136)
+size = Vector2(48, 13)
 
-[node name="MovingPlatform" type="Node2D" unique_id=302922826]
+[node name="MovingPlatform" type="Path2D" unique_id=1567129101]
+curve = SubResource("Curve2D_tdwu5")
 script = ExtResource("1_anqd2")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=67612941]
-scale = Vector2(0.5, 0.5)
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=1603193981]
+rotates = false
+loop = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=82414290]
-scale = Vector2(1, 0.5)
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D" unique_id=1237447588]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1168052511]
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1970693236]
+texture = ExtResource("2_anqd2")
+region_enabled = true
+region_rect = Rect2(80.08027, 93.91365, 46.924873, 12.85257)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=68773514]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_anqd2")
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=571980451]
-position = Vector2(0, -2.9802322e-08)
-scale = Vector2(1, 0.5)
-texture = ExtResource("1_vvyo4")

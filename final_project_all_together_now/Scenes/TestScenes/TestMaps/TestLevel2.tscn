@@ -1,16 +1,16 @@
 [gd_scene format=4 uid="uid://bil71e5u702xn"]
 
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_7kfhb"]
-[ext_resource type="Texture2D" uid="uid://8sanenp2j27c" path="res://Assets/Forest_Tileset/env_ground.png" id="1_l1f1g"]
-[ext_resource type="Texture2D" uid="uid://dg0ngkubc3hc7" path="res://Assets/Forest_Tileset/env_rock.png" id="2_ujqsb"]
+[ext_resource type="Texture2D" uid="uid://8sanenp2j27c" path="res://ASSETS/Forest_Tileset/env_ground.png" id="1_l1f1g"]
+[ext_resource type="Texture2D" uid="uid://dg0ngkubc3hc7" path="res://ASSETS/Forest_Tileset/env_rock.png" id="2_ujqsb"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="3_ujqsb"]
-[ext_resource type="Texture2D" uid="uid://d1np0o6q1gp03" path="res://Assets/Forest_Tileset/decorative_obj.png" id="4_fdusy"]
+[ext_resource type="Texture2D" uid="uid://d1np0o6q1gp03" path="res://ASSETS/Forest_Tileset/decorative_obj.png" id="4_fdusy"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player1.tscn" id="4_qdhse"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="5_3kvu2"]
-[ext_resource type="Texture2D" uid="uid://hy4nj41d0wbu" path="res://Assets/Forest_Tileset/env_trees.png" id="5_22bep"]
-[ext_resource type="Texture2D" uid="uid://dfot50d1xptsu" path="res://Assets/Forest_Tileset/wood_env.png" id="6_3bjlj"]
-[ext_resource type="Texture2D" uid="uid://b3t0x3t7h7ngo" path="res://Assets/Forest_Tileset/castle_env.png" id="7_2byfe"]
-[ext_resource type="Texture2D" uid="uid://c43mpxpy1c7ck" path="res://Assets/Forest_Tileset/env_mon.png" id="8_m55t6"]
+[ext_resource type="Texture2D" uid="uid://hy4nj41d0wbu" path="res://ASSETS/Forest_Tileset/env_trees.png" id="5_22bep"]
+[ext_resource type="Texture2D" uid="uid://dfot50d1xptsu" path="res://ASSETS/Forest_Tileset/wood_env.png" id="6_3bjlj"]
+[ext_resource type="Texture2D" uid="uid://b3t0x3t7h7ngo" path="res://ASSETS/Forest_Tileset/castle_env.png" id="7_2byfe"]
+[ext_resource type="Texture2D" uid="uid://c43mpxpy1c7ck" path="res://ASSETS/Forest_Tileset/env_mon.png" id="8_m55t6"]
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="12_n5i07"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnawy"]
@@ -7465,6 +7465,13 @@ sources/0 = SubResource("TileSetAtlasSource_2byfe")
 sources/1 = SubResource("TileSetAtlasSource_m55t6")
 sources/2 = SubResource("TileSetAtlasSource_skf3c")
 
+[sub_resource type="Curve2D" id="Curve2D_n5i07"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 67, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 122, -5)
+}
+point_count = 4
+
 [node name="TestLevel1" type="Node2D" unique_id=1902701511]
 
 [node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("1_7kfhb")]
@@ -7501,12 +7508,4 @@ JUMP_VELOCITY = -355.0
 
 [node name="MovingPlatform" parent="." unique_id=302922826 instance=ExtResource("12_n5i07")]
 position = Vector2(466, -111)
-speed = 75.0
-
-[node name="Marker2D" type="Marker2D" parent="MovingPlatform" unique_id=777276676]
-
-[node name="Marker2D2" type="Marker2D" parent="MovingPlatform" unique_id=1647553578]
-position = Vector2(75, -100)
-
-[node name="Marker2D3" type="Marker2D" parent="MovingPlatform" unique_id=1528630698]
-position = Vector2(123, 0)
+curve = SubResource("Curve2D_n5i07")
