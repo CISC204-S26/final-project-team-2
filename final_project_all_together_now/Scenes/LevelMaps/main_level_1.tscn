@@ -2805,7 +2805,7 @@ texture = ExtResource("1_jf6nx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_d8u5m"]
+[sub_resource type="Curve2D" id="Curve2D_upno5"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 167, -1)
@@ -2856,4 +2856,4 @@ position = Vector2(79, -29)
 
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("6_upno5")]
 position = Vector2(905, -57)
-curve = SubResource("Curve2D_d8u5m")
+curve = SubResource("Curve2D_upno5")

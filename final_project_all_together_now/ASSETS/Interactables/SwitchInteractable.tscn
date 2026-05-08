@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bk7p4dqofkumf"]
+
+[ext_resource type="Script" uid="uid://cscpl5hm6cqk5" path="res://ASSETS/Interactables/switch_interactable.gd" id="1_ph4l1"]
+
+[node name="SwitchInteractable" type="Area2D" unique_id=1714059362]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_ph4l1")
+metadata/_custom_type_script = "uid://csehsx2hp10wq"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2019572730]
