@@ -29,10 +29,10 @@ func _on_body_entered(body: Node) -> void:
 	if body in _cooling_down_bodies:
 		return
 	if linked_portal == null:
-		print("No portal linked yet!")
+		#print("No portal linked yet!")
 		return
 	if _exit_is_in_blocked_zone():
-		print("Exit portal is in a blocked zone — teleport cancelled!")
+		#print("Exit portal is in a blocked zone — teleport cancelled!")
 		return
 	if body.has_method("teleport_to"):
 		var entry_speed = body.velocity.length()

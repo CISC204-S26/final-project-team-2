@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://6l8fm316o2mb"]
 
 [ext_resource type="Script" uid="uid://ck0tikfumny7r" path="res://Scripts/Portal.gd" id="1_cp6p4"]
-[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://Assets/Portals/Purple/MysticPortal_OPEN.png" id="2_bkqx1"]
-[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://Assets/Portals/Purple/MysticPortal_ACTIVE.png" id="2_uhv8o"]
-[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://Assets/Portals/Purple/MysticPortal_CLOSE.png" id="3_hfxqc"]
+[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://ASSETS/Portals/Purple/MysticPortal_OPEN.png" id="2_bkqx1"]
+[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://ASSETS/Portals/Purple/MysticPortal_ACTIVE.png" id="2_uhv8o"]
+[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://ASSETS/Portals/Purple/MysticPortal_CLOSE.png" id="3_hfxqc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uhv8o"]
 radius = 16.0

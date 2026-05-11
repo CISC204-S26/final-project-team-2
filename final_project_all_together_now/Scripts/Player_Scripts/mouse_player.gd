@@ -65,14 +65,15 @@ func _input(event):
 					var drag_end = get_global_mouse_position()
 					var direction = (drag_end - exit_portal_pos).normalized()
 					exit_portal.launch_direction = direction
-					print("Launch direction set: ", direction)
+					#print("Launch direction set: ", direction)
 				is_dragging_exit = false
 				drag_line.visible = false
 
 func place_entry_portal(pos: Vector2):
-	if _is_in_no_portal_zone(pos):
-		print("Cannot place entry portal here — blocked zone!")
+	if _is_in_no_portal_zone(pos, true):  
+		#print("Cannot place entry portal here — blocked zone!")
 		return
+	
 	if entry_portal:
 		entry_portal.close()
 		await entry_portal.anim.animation_finished
@@ -80,13 +81,14 @@ func place_entry_portal(pos: Vector2):
 	entry_portal = entry_portal_scene.instantiate()
 	get_tree().get_root().add_child(entry_portal)
 	entry_portal.global_position = pos
-	print("ENTRY PORTAL PLACED AT: ", pos)
+	#print("ENTRY PORTAL PLACED AT: ", pos)
 	_try_link_portals()
 
 func _begin_place_exit_portal(pos: Vector2):
-	if _is_in_no_portal_zone(pos):
-		print("Cannot place exit portal here — blocked zone!")
+	if _is_in_no_portal_zone(pos, true):  
+		#print("Cannot place exit portal here — blocked zone!")
 		return
+	
 	if exit_portal:
 		exit_portal.close()
 		await exit_portal.anim.animation_finished
@@ -95,20 +97,20 @@ func _begin_place_exit_portal(pos: Vector2):
 	get_tree().get_root().add_child(exit_portal)
 	exit_portal.global_position = pos
 	exit_portal.launch_direction = Vector2.UP  # default until drag released
-	print("EXIT PORTAL PLACED AT: ", pos)
+	#print("EXIT PORTAL PLACED AT: ", pos)
 	_try_link_portals()
 
 func _try_link_portals():
 	if entry_portal and exit_portal:
 		entry_portal.linked_portal = exit_portal
 		exit_portal.linked_portal = entry_portal
-		print("Portals linked!")
+		#print("Portals linked!")
 		portal_timer.stop()
 		portal_timer.start(portal_duration)
-		print("Portal timer started: ", portal_duration, " seconds")
+		#print("Portal timer started: ", portal_duration, " seconds")
 
 func _on_portal_timer_timeout():
-	print("Portal timer expired — closing both portals!")
+	#print("Portal timer expired — closing both portals!")
 	await _close_and_free_portal(entry_portal)
 	await _close_and_free_portal(exit_portal)
 	entry_portal = null
@@ -120,10 +122,12 @@ func _close_and_free_portal(portal: Portal):
 		await portal.anim.animation_finished
 		portal.queue_free()
 
-func _is_in_no_portal_zone(pos: Vector2) -> bool:
+func _is_in_no_portal_zone(pos: Vector2, trigger_flash: bool = false) -> bool:
 	var zones = get_tree().get_nodes_in_group("no_portal_zone")
 	for zone in zones:
 		if zone.has_method("contains_point"):
 			if zone.contains_point(pos):
+				if trigger_flash and zone.has_method("flash_blocked"):
+					zone.flash_blocked()
 				return true
 	return false

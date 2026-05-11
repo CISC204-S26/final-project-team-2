@@ -69,7 +69,7 @@ func teleport_to(pos: Vector2, launch_dir: Vector2 = Vector2.UP, entry_speed: fl
 	# Preserve momentum along the launch direction
 	var speed = max(entry_speed, 300.0)  # minimum boost so it always feels powerful
 	velocity = launch_dir * speed
-	print("Player teleported to: ", pos, " launched at: ", launch_dir, " speed: ", speed)
+	#print("Player teleported to: ", pos, " launched at: ", launch_dir, " speed: ", speed)
 
 func _on_animated_sprite_2d_animation_finished():
 	if animated_sprite.animation == "PlayerLanded":
