@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://83yw3veviskh"]
 
 [ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_jf6nx"]
+[ext_resource type="Script" uid="uid://du4rfpuvevm4d" path="res://Scenes/LevelMaps/main_level_1.gd" id="1_krgij"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_upno5"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_w0w1t"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player1.tscn" id="3_kpdyc"]
@@ -2814,6 +2815,7 @@ _data = {
 point_count = 2
 
 [node name="MainLevel1" type="Node2D" unique_id=800583808]
+script = ExtResource("1_krgij")
 
 [node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("1_upno5")]
 visible = false
