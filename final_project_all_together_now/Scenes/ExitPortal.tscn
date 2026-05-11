@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://4rpo87rlgb3e"]
 
 [ext_resource type="Script" uid="uid://ck0tikfumny7r" path="res://Scripts/Portal.gd" id="1_a1vx5"]
-[ext_resource type="Texture2D" uid="uid://jwwdux1h3j7n" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_ACTIVE.png" id="2_bvs8o"]
-[ext_resource type="Texture2D" uid="uid://civ6e48sxbgu3" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_CLOSE.png" id="3_wemv7"]
-[ext_resource type="Texture2D" uid="uid://fde3g01un0b8" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_OPEN.png" id="4_6l1tx"]
+[ext_resource type="Texture2D" uid="uid://jwwdux1h3j7n" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_ACTIVE.png" id="2_bvs8o"]
+[ext_resource type="Texture2D" uid="uid://civ6e48sxbgu3" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_CLOSE.png" id="3_wemv7"]
+[ext_resource type="Texture2D" uid="uid://fde3g01un0b8" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_OPEN.png" id="4_6l1tx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bvs8o"]
 radius = 15.0
@@ -1036,6 +1036,7 @@ animations = [{
 }]
 
 [node name="ExitPortal" type="Area2D" unique_id=1179111636]
+top_level = true
 script = ExtResource("1_a1vx5")
 portal_type = 1
 

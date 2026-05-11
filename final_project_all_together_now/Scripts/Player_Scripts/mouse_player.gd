@@ -77,7 +77,11 @@ func place_entry_portal(pos: Vector2):
 	if _is_in_no_portal_zone(pos, true):
 		print("Cannot place entry portal here — blocked zone!")
 		return
-
+	if _is_in_collision(pos):
+		print("Cannot place entry portal here — inside collision!")
+		return
+	
+	
 	if entry_portal:
 		_entry_closing = true
 		var old_portal = entry_portal
@@ -100,6 +104,9 @@ func _begin_place_exit_portal(pos: Vector2):
 		return
 	if _is_in_no_portal_zone(pos, true):
 		print("Cannot place exit portal here — blocked zone!")
+		return
+	if _is_in_collision(pos):
+		print("Cannot place exit portal here — inside collision!")
 		return
 
 	if exit_portal:
@@ -158,7 +165,7 @@ func _is_in_no_portal_zone(pos: Vector2, trigger_flash: bool = false) -> bool:
 				return true
 	return false
 
-
+#THIS TO CLEAN UP ANY REMANING PORTALS, in general
 func _notification(what: int):
 	if what == NOTIFICATION_PREDELETE:
 		_cleanup_portals()
@@ -173,3 +180,15 @@ func _cleanup_portals():
 	if exit_portal and is_instance_valid(exit_portal):
 		exit_portal.queue_free()
 		exit_portal = null
+
+
+#checks if player places portal in colision zone
+func _is_in_collision(pos: Vector2) -> bool:
+	var space = get_world_2d().direct_space_state
+	var query = PhysicsPointQueryParameters2D.new()
+	query.position = pos
+	query.collide_with_bodies = true
+	query.collide_with_areas = false
+	query.collision_mask = 1  # set this to whatever layer the walls are on idk nor do i feel like checking
+	var results = space.intersect_point(query)
+	return results.size() > 0
