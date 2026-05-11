@@ -13,6 +13,7 @@ extends CanvasLayer
 func _ready():
 	options_popup.hide()
 	vol_slider.value_changed.connect(_on_volume_changed)
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 
 # ------------------ BUTTONS BUTTONS BUTTONS --------------------------------------------
