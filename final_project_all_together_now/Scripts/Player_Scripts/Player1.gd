@@ -78,3 +78,13 @@ func _on_animated_sprite_2d_animation_finished():
 			animated_sprite.play("PlayerRun")
 		else:
 			animated_sprite.play("PlayerIdle")
+
+func die():
+	# Option A: Remove the player instantly
+	#queue_free()
+	
+	#Option B: Reload the current scene (restart on death)
+	get_tree().reload_current_scene()
+	
+	#Go to a game over screen
+	# get_tree().change_scene_to_file("res://GameOver.tscn")

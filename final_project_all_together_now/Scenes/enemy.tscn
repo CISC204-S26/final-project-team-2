@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ds52is41p8n0g"]
+
+[ext_resource type="Script" uid="uid://d2pqyro4v5xcj" path="res://enemy.gd" id="1_1f0kj"]
+[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="1_hghv2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1f0kj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afpow"]
+size = Vector2(41, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_287tu"]
+size = Vector2(54, 48)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=2076354005]
+script = ExtResource("1_1f0kj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=346515955]
+visible = false
+sprite_frames = SubResource("SpriteFrames_1f0kj")
+
+[node name="colisison" type="CollisionShape2D" parent="." unique_id=1325221116]
+position = Vector2(-39.5, -42.5)
+shape = SubResource("RectangleShape2D_afpow")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=186596670]
+position = Vector2(-1, -1)
+
+[node name="hit detection" type="CollisionShape2D" parent="Area2D" unique_id=1776005161]
+position = Vector2(-38, -42)
+shape = SubResource("RectangleShape2D_287tu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=113505580]
+position = Vector2(-39.5, -42.5)
+scale = Vector2(0.3828125, 0.3359375)
+texture = ExtResource("1_hghv2")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

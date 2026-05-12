@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_upno5"]
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="6_upno5"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="7_d8u5m"]
+[ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Scenes/enemy.tscn" id="9_nj4by"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upno5"]
 texture = ExtResource("1_jf6nx")
@@ -2807,7 +2808,7 @@ texture = ExtResource("1_jf6nx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_d8u5m"]
+[sub_resource type="Curve2D" id="Curve2D_nj4by"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 167, -1)
@@ -2859,7 +2860,10 @@ position = Vector2(79, -29)
 
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("6_upno5")]
 position = Vector2(905, -57)
-curve = SubResource("Curve2D_d8u5m")
+curve = SubResource("Curve2D_nj4by")
 
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("7_d8u5m")]
 position = Vector2(647, -80)
+
+[node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("9_nj4by")]
+position = Vector2(337, -57)

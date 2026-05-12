@@ -4,9 +4,11 @@ extends Node2D
 
 
 func _ready():
-	Global.start_level_timer()
+	#Global.start_level_timer()
+	pass
 
 
 func _on_level_complete():
-	Global.complete_level(level_index)
+	pass
+	#Global.complete_level(level_index)
 	# then do whatever load next scene, show results, etc.
