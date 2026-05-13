@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bk7p4dqofkumf"]
+
+[ext_resource type="Script" uid="uid://cscpl5hm6cqk5" path="res://ASSETS/Interactables/Lever/switch_interactable.gd" id="1_ph4l1"]
+[ext_resource type="Texture2D" uid="uid://b5jfcpkjca3ja" path="res://ASSETS/Interactables/Lever/LeverV1.png" id="2_xe4u0"]
+[ext_resource type="Texture2D" uid="uid://dlx8dvo1462ds" path="res://ASSETS/Interactables/Lever/LeverV2.png" id="3_63gp4"]
+[ext_resource type="Texture2D" uid="uid://dvuygvscsjf11" path="res://ASSETS/Interactables/Lever/LeverH1.png" id="4_ij5ta"]
+[ext_resource type="Texture2D" uid="uid://bomad0i3x2wab" path="res://ASSETS/Interactables/Lever/LeverH2.png" id="5_1p2o2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ph4l1"]
+radius = 32.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ij5ta"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xe4u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_63gp4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1p2o2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_1p2o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ij5ta")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SwitchInteractable" type="Area2D" unique_id=1714059362]
+z_index = -1
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_ph4l1")
+metadata/_custom_type_script = "uid://csehsx2hp10wq"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2019572730]
+shape = SubResource("CircleShape2D_ph4l1")
+
+[node name="VerticalSprite" type="AnimatedSprite2D" parent="." unique_id=1153954959]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_ij5ta")
+
+[node name="HorizontalSprite" type="AnimatedSprite2D" parent="." unique_id=1160746461]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_1p2o2")

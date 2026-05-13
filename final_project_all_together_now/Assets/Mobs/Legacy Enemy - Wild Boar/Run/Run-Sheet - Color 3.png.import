@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmhh8bf7nkpr4"
-path="res://.godot/imported/Run-Sheet - Color 3.png-fc07ea36ceb9600d11e4fea8f2272d3f.ctex"
+path="res://.godot/imported/Run-Sheet - Color 3.png-95b631c164aa13261ab048b813bd5ade.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Legacy Enemy - Wild Boar/Run/Run-Sheet - Color 3.png"
-dest_files=["res://.godot/imported/Run-Sheet - Color 3.png-fc07ea36ceb9600d11e4fea8f2272d3f.ctex"]
+source_file="res://ASSETS/Mobs/Legacy Enemy - Wild Boar/Run/Run-Sheet - Color 3.png"
+dest_files=["res://.godot/imported/Run-Sheet - Color 3.png-95b631c164aa13261ab048b813bd5ade.ctex"]
 
 [params]
 

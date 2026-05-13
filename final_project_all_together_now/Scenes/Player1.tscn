@@ -246,12 +246,14 @@ animation = &"PlayerIdle"
 shape = SubResource("CapsuleShape2D_q3lat")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1514041019]
+position = Vector2(0, 24)
 offset = Vector2(0, -65)
-zoom = Vector2(2.5, 2.5)
+zoom = Vector2(2, 2)
 
 [node name="Background" type="Sprite2D" parent="Camera2D" unique_id=1853161687]
 z_index = -99
 position = Vector2(7, -63)
+scale = Vector2(1.2279412, 1.2279412)
 texture = ExtResource("7_hjvw7")
 
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]

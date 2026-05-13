@@ -2,6 +2,7 @@ extends Interactable
 
 @export var toggled = false
 @export var vertical = false
+@export var door_to_open: Interactable
 signal onSwitchInteracted(toggled: bool)
 
 func _ready():
