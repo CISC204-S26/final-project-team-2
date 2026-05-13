@@ -1,5 +1,6 @@
 extends Node
 
+
 var completed_levels = [false, false, false]
 var total_score: int = 0
 var total_deaths: int = 0
