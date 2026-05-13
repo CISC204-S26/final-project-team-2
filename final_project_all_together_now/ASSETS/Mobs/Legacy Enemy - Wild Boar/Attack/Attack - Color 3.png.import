@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cirgopgpkyq3l"
-path="res://.godot/imported/Attack - Color 3.png-f3402dce75b3535de189b1a8268b257e.ctex"
+path="res://.godot/imported/Attack - Color 3.png-4be6de35621a2ba72d596fda5ba77e32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Mobs/Legacy Enemy - Wild Boar/Attack/Attack - Color 3.png"
-dest_files=["res://.godot/imported/Attack - Color 3.png-f3402dce75b3535de189b1a8268b257e.ctex"]
+source_file="res://Assets/Mobs/Legacy Enemy - Wild Boar/Attack/Attack - Color 3.png"
+dest_files=["res://.godot/imported/Attack - Color 3.png-4be6de35621a2ba72d596fda5ba77e32.ctex"]
 
 [params]
 
