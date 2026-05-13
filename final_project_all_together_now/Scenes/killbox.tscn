@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bdluivatsbrra"]
+
+[ext_resource type="Script" uid="uid://cpdmxapu7adlf" path="res://Scripts/killbox.gd" id="1_sl8pp"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_l0vr1"]
+
+[node name="Killbox" type="Node2D" unique_id=1830812297]
+script = ExtResource("1_sl8pp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1617398874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1711417621]
+shape = SubResource("WorldBoundaryShape2D_l0vr1")
+debug_color = Color(0.84662753, 0.34925193, 0.38390377, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

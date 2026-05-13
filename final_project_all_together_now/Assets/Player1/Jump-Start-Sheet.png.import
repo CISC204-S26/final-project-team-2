@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f64ulyi32pgi"
-path="res://.godot/imported/Jump-Start-Sheet.png-ebddff6d0977e5d0bcd05845dd1b207f.ctex"
+path="res://.godot/imported/Jump-Start-Sheet.png-3cf80713b514d9284d3f41421a54bf47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Player1/Jump-Start-Sheet.png"
-dest_files=["res://.godot/imported/Jump-Start-Sheet.png-ebddff6d0977e5d0bcd05845dd1b207f.ctex"]
+source_file="res://Assets/Player1/Jump-Start-Sheet.png"
+dest_files=["res://.godot/imported/Jump-Start-Sheet.png-3cf80713b514d9284d3f41421a54bf47.ctex"]
 
 [params]
 
