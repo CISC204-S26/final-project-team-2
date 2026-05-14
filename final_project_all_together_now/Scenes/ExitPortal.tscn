@@ -1037,6 +1037,7 @@ animations = [{
 
 [node name="ExitPortal" type="Area2D" unique_id=1179111636]
 top_level = true
+collision_mask = 2
 script = ExtResource("1_a1vx5")
 portal_type = 1
 

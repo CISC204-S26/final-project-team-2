@@ -13,7 +13,13 @@ var was_on_floor := true
 var facing_left := false
 var is_landing := false
 
+var health = 3
+var is_dead := false
+
 func _physics_process(delta: float) -> void:
+	if is_dead:
+		return
+	
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
 
@@ -49,13 +55,13 @@ func _physics_process(delta: float) -> void:
 			else:
 				if animated_sprite.animation != "PlayerIdle":
 					animated_sprite.play("PlayerIdle")
-
+	
 	was_on_floor = is_on_floor()
-
+	
 	if Input.is_action_just_pressed("interact"):
 		if interactables:
 			interactables.back().interact()
-
+	
 	move_and_slide()
 
 func _on_interactable_detector_area_entered(area: Area2D):
@@ -80,11 +86,24 @@ func _on_animated_sprite_2d_animation_finished():
 			animated_sprite.play("PlayerIdle")
 
 func die():
-	# Option A: Remove the player instantly
-	#queue_free()
 	
-	#Option B: Reload the current scene (restart on death)
+	if is_dead:
+		return
+	is_dead = true
+	velocity = Vector2.ZERO
+	animated_sprite.play("PlayerDeath")
+	
+	await get_tree().create_timer(1.5).timeout
+	#restart scene on death
 	get_tree().reload_current_scene()
 	
-	#Go to a game over screen
-	# get_tree().change_scene_to_file("res://GameOver.tscn")
+	#ADD DEATH SCREEN 
+	
+
+func take_damage(amount: int):
+	#lowkey ADD SOME SOUNDs PLS
+	
+	print("TOOK DAMAGE")
+	health -= amount
+	if health <= 0:
+		die()

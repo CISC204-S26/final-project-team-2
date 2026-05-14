@@ -1,24 +1,25 @@
 extends CharacterBody2D
 
 const SPEED = 80.0
-
-var player = null
-
-func _ready():
-	# Find the player in the scene
-	player = get_tree().get_first_node_in_group("player")
-	
+const GRAVITY = 980.0
+var direction = 1
+var turn_cooldown = 0.0
 
 func _physics_process(delta):
-	if player == null:
-		return
+	velocity.y += GRAVITY * delta
+	velocity.x = SPEED * direction
 	
-	# Chase the player
-	var direction = (player.global_position - global_position).normalized()
-	velocity = direction * SPEED
-	move_and_collide(delta * velocity)
+	turn_cooldown -= delta
+	
+	if turn_cooldown <= 0.0 and (is_on_wall() or not $FloorDetector.is_colliding()):
+		direction *= -1
+		$FloorDetector.target_position.x = 25 * direction
+		$AnimatedSprite2D.flip_h = direction == +1
+		turn_cooldown = 0.3  # short delay before it can flip again
+	
+	move_and_slide()
 
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_hurt_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		body.die()
+		body.take_damage(1)  # or body.die() if one hit kill
