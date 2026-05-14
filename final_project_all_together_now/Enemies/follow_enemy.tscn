@@ -117,9 +117,8 @@ script = ExtResource("1_ooyg1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1632893126]
 sprite_frames = SubResource("SpriteFrames_jexfv")
-animation = &"BoarWalk"
+animation = &"BoarIdle"
 autoplay = "BoarIdle"
-frame_progress = 0.006658448
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=632490272]
 position = Vector2(7.5, 3.5)
@@ -129,12 +128,14 @@ shape = SubResource("RectangleShape2D_u07br")
 target_position = Vector2(25, 30)
 
 [node name="HurtBox" type="Area2D" parent="." unique_id=264564873]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1322476795]
 position = Vector2(6.5, 2.5)
 shape = SubResource("RectangleShape2D_icror")
 
 [node name="Detection" type="Area2D" parent="." unique_id=773145410]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=1065929193]
 position = Vector2(4, -4)
@@ -142,3 +143,4 @@ shape = SubResource("RectangleShape2D_rg00b")
 
 [connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
 [connection signal="body_entered" from="Detection" to="." method="_on_detection_body_entered"]
+[connection signal="body_exited" from="Detection" to="." method="_on_detection_body_exited"]

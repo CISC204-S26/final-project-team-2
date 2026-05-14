@@ -2889,4 +2889,4 @@ position = Vector2(948.00006, 53.000004)
 scale = Vector2(5, 5)
 
 [node name="FollowEnemy" parent="." unique_id=1348586453 instance=ExtResource("11_kq0qf")]
-position = Vector2(263, -22)
+position = Vector2(358, -18)

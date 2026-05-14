@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 @export var player_speed: int
-@onready var animated_sprite = $AnimatedSprite2D  # Adjust path if named differently
+@onready var animated_sprite = $AnimatedSprite2D 
 @export var JUMP_VELOCITY = -400.0
 
 const GRAVITY = 980.0 #Random ahh numbers
@@ -13,12 +13,20 @@ var was_on_floor := true
 var facing_left := false
 var is_landing := false
 
+#for health/hurt funcs
 var health = 3
 var is_dead := false
+var is_invincible := false
+var is_knockback := false
 
 func _physics_process(delta: float) -> void:
+	
 	if is_dead:
 		return
+	if is_knockback:
+		velocity.y += GRAVITY * delta  # still apply gravity
+		move_and_slide()
+		return  # skip all input/animation logic
 	
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
@@ -100,10 +108,27 @@ func die():
 	#ADD DEATH SCREEN 
 	
 
-func take_damage(amount: int):
-	#lowkey ADD SOME SOUNDs PLS
-	
+func take_damage(amount: int, source_position: Vector2 = Vector2.ZERO):
+	if is_dead or is_invincible:
+		return
 	print("TOOK DAMAGE")
 	health -= amount
+	
+	# Check death
 	if health <= 0:
 		die()
+		return
+	
+	# Knockback
+	var knockback_direction = -sign(global_position.x - source_position.x)
+	velocity.x = knockback_direction * 200 #this can be any number tbh
+	velocity.y = -150 #random ahh number
+	
+	is_knockback = true
+	is_invincible = true
+	animated_sprite.modulate = Color(1, 0, 0)
+	await get_tree().create_timer(0.3).timeout
+	is_knockback = false
+	animated_sprite.modulate = Color(1, 1, 1)
+	await get_tree().create_timer(1.2).timeout
+	is_invincible = false
