@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Enemies/enemy.tscn" id="9_nj4by"]
 [ext_resource type="PackedScene" uid="uid://bdluivatsbrra" path="res://Scenes/killbox.tscn" id="10_qcuvo"]
 [ext_resource type="PackedScene" uid="uid://dnsygegpyd7rx" path="res://Enemies/follow_enemy.tscn" id="11_kq0qf"]
+[ext_resource type="PackedScene" uid="uid://uvukckfl1jd" path="res://Enemies/BeeEnemy.tscn" id="12_3wfmg"]
 
 [sub_resource type="GDScript" id="GDScript_krgij"]
 
@@ -2818,7 +2819,7 @@ texture = ExtResource("1_jf6nx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_kq0qf"]
+[sub_resource type="Curve2D" id="Curve2D_3wfmg"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 167, -1)
@@ -2875,7 +2876,7 @@ position = Vector2(79, -29)
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("6_upno5")]
 z_index = 5
 position = Vector2(917, -24)
-curve = SubResource("Curve2D_kq0qf")
+curve = SubResource("Curve2D_3wfmg")
 
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("7_d8u5m")]
 position = Vector2(647, -80)
@@ -2890,3 +2891,19 @@ scale = Vector2(5, 5)
 
 [node name="FollowEnemy" parent="." unique_id=1348586453 instance=ExtResource("11_kq0qf")]
 position = Vector2(358, -18)
+
+[node name="BEE2" parent="." unique_id=1411537808 node_paths=PackedStringArray("waypoints") instance=ExtResource("12_3wfmg")]
+position = Vector2(22, -62)
+waypoints = [NodePath("../Marker2D"), NodePath("../Marker2D2"), NodePath("../Marker2D3"), NodePath("../Marker2D4")]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1673185868]
+position = Vector2(20, -62)
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=1044024284]
+position = Vector2(105, -67)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=1300785708]
+position = Vector2(114, -17)
+
+[node name="Marker2D4" type="Marker2D" parent="." unique_id=2097342454]
+position = Vector2(22, -12)

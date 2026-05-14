@@ -23,4 +23,4 @@ func _physics_process(delta):
 
 func _on_hurt_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		body.take_damage(1)  # or body.die() if one hit kill
+		body.take_damage(1)  

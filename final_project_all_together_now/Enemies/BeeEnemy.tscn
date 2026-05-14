@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://uvukckfl1jd"]
+
+[ext_resource type="Script" uid="uid://buhm73lj05a01" path="res://BeeEnemy.gd" id="1_45hto"]
+[ext_resource type="Texture2D" uid="uid://cidiesdvx1qqo" path="res://ASSETS/Mobs/Small Bee/Fly/Fly-Sheet.png" id="2_wpy1j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvqly"]
+atlas = ExtResource("2_wpy1j")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eht43"]
+atlas = ExtResource("2_wpy1j")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xei6d"]
+atlas = ExtResource("2_wpy1j")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kofgm"]
+atlas = ExtResource("2_wpy1j")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_45hto"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvqly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eht43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xei6d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kofgm")
+}],
+"loop": true,
+"name": &"BeeFly",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpy1j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjmyd"]
+
+[node name="BEE" type="CharacterBody2D" unique_id=224733733]
+top_level = true
+light_mask = 6
+script = ExtResource("1_45hto")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=253305943]
+position = Vector2(-0.0625, 0)
+sprite_frames = SubResource("SpriteFrames_45hto")
+animation = &"BeeFly"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=791572031]
+position = Vector2(-0.0625, 0)
+shape = SubResource("RectangleShape2D_wpy1j")
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=386307406]
+position = Vector2(-0.0625, 0)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=562822903]
+shape = SubResource("RectangleShape2D_bjmyd")
+
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]

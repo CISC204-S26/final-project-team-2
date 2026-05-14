@@ -19,7 +19,7 @@ func _physics_process(delta):
 		direction = sign(player.global_position.x - global_position.x)
 		velocity.x = SPEED * direction
 		
-		# Flip sprite
+		# Flip da sprite
 		$AnimatedSprite2D.flip_h = direction == +1
 	else:
 		# Idle when player not detected
