@@ -1,0 +1,144 @@
+[gd_scene format=3 uid="uid://dnsygegpyd7rx"]
+
+[ext_resource type="Script" uid="uid://bl1ncb6to0rhy" path="res://Enemies/FollowEnemy.gd" id="1_ooyg1"]
+[ext_resource type="Texture2D" uid="uid://64648yxnemk7" path="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet-Back.png" id="1_rg00b"]
+[ext_resource type="Texture2D" uid="uid://ccp7o5o33cg7u" path="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Walk/Walk-Sheet-Black.png" id="2_ooyg1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1tcm"]
+atlas = ExtResource("1_rg00b")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uatng"]
+atlas = ExtResource("1_rg00b")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5kg2a"]
+atlas = ExtResource("1_rg00b")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hti8u"]
+atlas = ExtResource("1_rg00b")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofjgr"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5u1x"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6mhr"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18sly"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kewfv"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8inkf"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l3wu"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4b1kk"]
+atlas = ExtResource("2_ooyg1")
+region = Rect2(560, 0, 80, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jexfv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1tcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uatng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5kg2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hti8u")
+}],
+"loop": true,
+"name": &"BoarIdle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofjgr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5u1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6mhr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18sly")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kewfv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8inkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2l3wu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4b1kk")
+}],
+"loop": true,
+"name": &"BoarWalk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u07br"]
+size = Vector2(75, 55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icror"]
+size = Vector2(79, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rg00b"]
+size = Vector2(250, 74)
+
+[node name="FollowEnemy" type="CharacterBody2D" unique_id=1348586453]
+top_level = true
+collision_layer = 6
+script = ExtResource("1_ooyg1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1632893126]
+sprite_frames = SubResource("SpriteFrames_jexfv")
+animation = &"BoarWalk"
+autoplay = "BoarIdle"
+frame_progress = 0.006658448
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=632490272]
+position = Vector2(7.5, 3.5)
+shape = SubResource("RectangleShape2D_u07br")
+
+[node name="FloorDetector" type="RayCast2D" parent="." unique_id=1790709031]
+target_position = Vector2(25, 30)
+
+[node name="HurtBox" type="Area2D" parent="." unique_id=264564873]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=1322476795]
+position = Vector2(6.5, 2.5)
+shape = SubResource("RectangleShape2D_icror")
+
+[node name="Detection" type="Area2D" parent="." unique_id=773145410]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection" unique_id=1065929193]
+position = Vector2(4, -4)
+shape = SubResource("RectangleShape2D_rg00b")
+
+[connection signal="body_entered" from="HurtBox" to="." method="_on_hurt_box_body_entered"]
+[connection signal="body_entered" from="Detection" to="." method="_on_detection_body_entered"]

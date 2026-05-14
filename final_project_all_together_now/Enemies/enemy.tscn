@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds52is41p8n0g"]
 
-[ext_resource type="Script" uid="uid://d2pqyro4v5xcj" path="res://Scripts/Enemies/enemy.gd" id="1_1f0kj"]
+[ext_resource type="Script" uid="uid://d2pqyro4v5xcj" path="res://Enemies/enemy.gd" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://bquohyf5msv2v" path="res://ASSETS/Mobs/Snail/Dead-Sheet.png" id="2_287tu"]
 [ext_resource type="Texture2D" uid="uid://hldmjnny7hup" path="res://ASSETS/Mobs/Snail/walk-Sheet.png" id="3_0830c"]
 
