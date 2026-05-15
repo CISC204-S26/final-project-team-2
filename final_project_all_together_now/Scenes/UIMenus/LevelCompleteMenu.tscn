@@ -86,5 +86,5 @@ stream = ExtResource("4_3xb57")
 [connection signal="pressed" from="MainButtons/LevelSelectButton" to="." method="_on_level_select_button_pressed"]
 [connection signal="pressed" from="MainButtons/LevelSelectButton" to="." method="_on_pressed"]
 [connection signal="mouse_entered" from="MainButtons/MainMenuButton" to="." method="_on_mouse_entered"]
-[connection signal="pressed" from="MainButtons/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
 [connection signal="pressed" from="MainButtons/MainMenuButton" to="." method="_on_pressed"]
+[connection signal="pressed" from="MainButtons/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

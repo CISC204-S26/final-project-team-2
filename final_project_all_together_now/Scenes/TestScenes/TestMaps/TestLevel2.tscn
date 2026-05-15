@@ -7508,7 +7508,7 @@ zone_size = Vector2(120, 100)
 
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("4_qdhse")]
 position = Vector2(-30, -29)
-player_speed = 300
+player_speed = 200
 JUMP_VELOCITY = -355.0
 
 [node name="Mouse Player" parent="." unique_id=252770528 instance=ExtResource("5_3kvu2")]
