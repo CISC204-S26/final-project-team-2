@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://83yw3veviskh"]
 
-[ext_resource type="Script" uid="uid://bmsujg32ggugl" path="res://Scripts/LevelScript.gd" id="1_gv507"]
+[ext_resource type="Script" path="res://Scripts/LevelScript.gd" id="1_gv507"]
 [ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_jf6nx"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_upno5"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="2_w0w1t"]
@@ -8,11 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://ba43dtbimg1a0" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Buildings.png" id="3_nj4by"]
 [ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_upno5"]
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="6_upno5"]
-[ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="7_d8u5m"]
 [ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Enemies/enemy.tscn" id="9_nj4by"]
 [ext_resource type="PackedScene" uid="uid://bdluivatsbrra" path="res://Scenes/killbox.tscn" id="10_qcuvo"]
-[ext_resource type="PackedScene" uid="uid://dnsygegpyd7rx" path="res://Enemies/follow_enemy.tscn" id="11_kq0qf"]
-[ext_resource type="PackedScene" uid="uid://uvukckfl1jd" path="res://Enemies/BeeEnemy.tscn" id="12_3wfmg"]
 [ext_resource type="PackedScene" uid="uid://da8fbx0h1f2iq" path="res://ASSETS/Interactables/Door/door_interactable.tscn" id="14_q7rwn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upno5"]
@@ -2819,7 +2816,7 @@ texture = ExtResource("1_jf6nx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_q7rwn"]
+[sub_resource type="Curve2D" id="Curve2D_gv507"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 167, -1)
@@ -2877,10 +2874,7 @@ position = Vector2(79, -29)
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("6_upno5")]
 z_index = 5
 position = Vector2(917, -24)
-curve = SubResource("Curve2D_q7rwn")
-
-[node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("7_d8u5m")]
-position = Vector2(647, -80)
+curve = SubResource("Curve2D_gv507")
 
 [node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("9_nj4by")]
 position = Vector2(589, -66)
@@ -2889,25 +2883,6 @@ position = Vector2(589, -66)
 z_index = 10
 position = Vector2(948.00006, 53.000004)
 scale = Vector2(5, 5)
-
-[node name="FollowEnemy" parent="." unique_id=1348586453 instance=ExtResource("11_kq0qf")]
-position = Vector2(358, -18)
-
-[node name="BEE2" parent="." unique_id=1411537808 node_paths=PackedStringArray("waypoints") instance=ExtResource("12_3wfmg")]
-position = Vector2(22, -62)
-waypoints = [NodePath("../Marker2D"), NodePath("../Marker2D2"), NodePath("../Marker2D3"), NodePath("../Marker2D4")]
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=1673185868]
-position = Vector2(20, -62)
-
-[node name="Marker2D2" type="Marker2D" parent="." unique_id=1044024284]
-position = Vector2(105, -67)
-
-[node name="Marker2D3" type="Marker2D" parent="." unique_id=1300785708]
-position = Vector2(114, -17)
-
-[node name="Marker2D4" type="Marker2D" parent="." unique_id=2097342454]
-position = Vector2(22, -12)
 
 [node name="DoorInteractable" parent="." unique_id=800260976 instance=ExtResource("14_q7rwn")]
 position = Vector2(704, -80)
