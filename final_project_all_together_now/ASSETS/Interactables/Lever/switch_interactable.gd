@@ -30,6 +30,8 @@ func interact():
 		else:
 			$HorizontalSprite.frame = 1
 		#print("Switched ON")
+		if door_to_open:
+			door_to_open.open_door()
 	else:
 		toggled = false
 		if vertical:

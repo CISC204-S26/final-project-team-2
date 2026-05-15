@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_7kfhb"]
 [ext_resource type="Texture2D" uid="uid://8sanenp2j27c" path="res://ASSETS/Forest_Tileset/env_ground.png" id="1_l1f1g"]
+[ext_resource type="Script" uid="uid://bmsujg32ggugl" path="res://Scripts/LevelScript.gd" id="1_mh7ck"]
 [ext_resource type="Texture2D" uid="uid://dg0ngkubc3hc7" path="res://ASSETS/Forest_Tileset/env_rock.png" id="2_ujqsb"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="3_ujqsb"]
 [ext_resource type="Texture2D" uid="uid://d1np0o6q1gp03" path="res://ASSETS/Forest_Tileset/decorative_obj.png" id="4_fdusy"]
@@ -7467,14 +7468,16 @@ sources/0 = SubResource("TileSetAtlasSource_2byfe")
 sources/1 = SubResource("TileSetAtlasSource_m55t6")
 sources/2 = SubResource("TileSetAtlasSource_skf3c")
 
-[sub_resource type="Curve2D" id="Curve2D_diatr"]
+[sub_resource type="Curve2D" id="Curve2D_mh7ck"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 67, 0, 0, 0, 0, 122, 66, 0, 0, 0, 0, 122, -5)
 }
 point_count = 4
 
-[node name="TestLevel1" type="Node2D" unique_id=1902701511]
+[node name="TestLevel2" type="Node2D" unique_id=1902701511]
+script = ExtResource("1_mh7ck")
+level = 2
 
 [node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("1_7kfhb")]
 visible = false
@@ -7503,7 +7506,7 @@ z_index = -2
 position = Vector2(351, -157)
 zone_size = Vector2(120, 100)
 
-[node name="Player1" parent="." unique_id=1088848127 instance=ExtResource("4_qdhse")]
+[node name="Player" parent="." unique_id=1088848127 instance=ExtResource("4_qdhse")]
 position = Vector2(-30, -29)
 player_speed = 300
 JUMP_VELOCITY = -355.0
@@ -7512,11 +7515,14 @@ JUMP_VELOCITY = -355.0
 
 [node name="MovingPlatform" parent="." unique_id=302922826 instance=ExtResource("12_n5i07")]
 position = Vector2(466, -111)
-curve = SubResource("Curve2D_diatr")
+curve = SubResource("Curve2D_mh7ck")
 
-[node name="SwitchInteractable" parent="." unique_id=1714059362 instance=ExtResource("13_hjb0v")]
+[node name="SwitchInteractable" parent="." unique_id=1714059362 node_paths=PackedStringArray("door_to_open") instance=ExtResource("13_hjb0v")]
 position = Vector2(208, -112)
 vertical = true
+door_to_open = NodePath("../DoorInteractable")
 
 [node name="DoorInteractable" parent="." unique_id=800260976 instance=ExtResource("14_diatr")]
 position = Vector2(685, -173)
+
+[connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_level_complete"]

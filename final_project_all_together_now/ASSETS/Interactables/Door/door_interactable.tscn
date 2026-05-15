@@ -13,7 +13,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("2_elqfv")
 }],
-"loop": true,
+"loop": false,
 "name": &"closed",
 "speed": 5.0
 }, {
@@ -27,6 +27,8 @@ animations = [{
 }]
 
 [node name="DoorInteractable" type="Area2D" unique_id=800260976]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_gckko")
 metadata/_custom_type_script = "uid://csehsx2hp10wq"
 
@@ -40,4 +42,4 @@ z_index = -1
 position = Vector2(-4.7683716e-07, -4.7683716e-07)
 scale = Vector2(0.8636364, 0.8636363)
 sprite_frames = SubResource("SpriteFrames_elqfv")
-animation = &"opened"
+animation = &"closed"
