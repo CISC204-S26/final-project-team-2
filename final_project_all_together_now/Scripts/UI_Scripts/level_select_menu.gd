@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 
-@export var levels: Array[PackedScene]
+#@export var levels: Array[PackedScene]
 
 
 @onready var main_menu_button = $MainMenuButton
