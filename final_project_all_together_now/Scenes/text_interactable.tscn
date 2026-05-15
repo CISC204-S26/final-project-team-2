@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dmnjgg0hbe15e"]
+
+[ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/text_interactable.gd" id="1_gtqxf"]
+[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="2_be1ka"]
+[ext_resource type="Script" uid="uid://dnpj3b1tvbxkt" path="res://Scenes/dialogue_textbox.gd" id="3_be1ka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j13e0"]
+size = Vector2(238, 165)
+
+[node name="TextInteractable" type="Area2D" unique_id=48577180]
+z_index = 4
+script = ExtResource("1_gtqxf")
+metadata/_custom_type_script = "uid://csehsx2hp10wq"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=351616370]
+position = Vector2(1, -16.5)
+shape = SubResource("RectangleShape2D_j13e0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244566616]
+texture = ExtResource("2_be1ka")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1771074027]
+
+[node name="DialogueTextbox" type="ColorRect" parent="CanvasLayer" unique_id=977324100]
+offset_left = -132.0
+offset_top = -140.0
+offset_right = 144.0
+offset_bottom = -63.0
+color = Color(1, 1, 1, 0.16078432)
+script = ExtResource("3_be1ka")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueText" type="RichTextLabel" parent="CanvasLayer/DialogueTextbox" unique_id=654676313]
+layout_mode = 0
+offset_right = 275.0
+offset_bottom = 78.0
+text = "Default text"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="enteredTalking" from="." to="CanvasLayer/DialogueTextbox" method="_on_entered_talking"]
+[connection signal="exitedTalking" from="." to="CanvasLayer/DialogueTextbox" method="_on_exited_talking"]
+[connection signal="showText" from="." to="CanvasLayer/DialogueTextbox" method="_on_show_text"]
