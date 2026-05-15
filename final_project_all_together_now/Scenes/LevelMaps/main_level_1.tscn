@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="6_upno5"]
 [ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Enemies/enemy.tscn" id="9_nj4by"]
 [ext_resource type="PackedScene" uid="uid://bdluivatsbrra" path="res://Scenes/killbox.tscn" id="10_qcuvo"]
+[ext_resource type="FontFile" uid="uid://dru53btdth5bf" path="res://ASSETS/Fonts/Cobblestone.ttf" id="12_3wfmg"]
 [ext_resource type="PackedScene" uid="uid://da8fbx0h1f2iq" path="res://ASSETS/Interactables/Door/door_interactable.tscn" id="14_q7rwn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upno5"]
@@ -2816,7 +2817,7 @@ texture = ExtResource("1_jf6nx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_kq0qf"]
+[sub_resource type="Curve2D" id="Curve2D_gv507"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 167, -1)
@@ -2874,7 +2875,7 @@ position = Vector2(79, -29)
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("6_upno5")]
 z_index = 5
 position = Vector2(864, 256)
-curve = SubResource("Curve2D_kq0qf")
+curve = SubResource("Curve2D_gv507")
 
 [node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("9_nj4by")]
 position = Vector2(1096, -184)
@@ -2888,5 +2889,18 @@ scale = Vector2(5, 5)
 [node name="DoorInteractable" parent="." unique_id=800260976 instance=ExtResource("14_q7rwn")]
 position = Vector2(1944, -272)
 open = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=957077779]
+offset_left = 2416.0
+offset_top = -1464.0
+offset_right = 2672.0
+offset_bottom = -1408.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("12_3wfmg")
+theme_override_font_sizes/normal_font_size = 20
+text = "You have reached heights 
+no one has ever seen."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_level_complete"]
