@@ -2906,6 +2906,6 @@ vertical_alignment = 1
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("13_gv507")]
 position = Vector2(361, -23)
-dialogue = ["Hello 1", "Hello 2"]
+dialogue = ["Welcome loser", "The games easy", "You lady with the--useless--sword use WASD to move around", "That it, just WASD, and you can die too so watch out", "Now the fairy is the real cool kid", "You can move with the mouse and place portals using the left and right mouse button", "Oh, and your suppose to be delivering that sword or something... good luck nerds", "I'll just be standing here aura farming now"]
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_level_complete"]
