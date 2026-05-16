@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dru53btdth5bf"
-path="res://.godot/imported/Cobblestone.ttf-afaf93395ed605565814de85f4456cb0.fontdata"
+path="res://.godot/imported/Cobblestone.ttf-bd50bf2bb3b0b2115c3620cc6dc3d71f.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fonts/Cobblestone.ttf"
-dest_files=["res://.godot/imported/Cobblestone.ttf-afaf93395ed605565814de85f4456cb0.fontdata"]
+source_file="res://ASSETS/Fonts/Cobblestone.ttf"
+dest_files=["res://.godot/imported/Cobblestone.ttf-bd50bf2bb3b0b2115c3620cc6dc3d71f.fontdata"]
 
 [params]
 

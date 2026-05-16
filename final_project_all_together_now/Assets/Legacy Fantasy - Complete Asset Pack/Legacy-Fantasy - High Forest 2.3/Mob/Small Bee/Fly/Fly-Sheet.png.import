@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7x1e2tgljend"
-path="res://.godot/imported/Fly-Sheet.png-88bf8b9df11a423d05150c0e66e045e8.ctex"
+path="res://.godot/imported/Fly-Sheet.png-6a33dbac7ef056b5207f48997d019adf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly/Fly-Sheet.png"
-dest_files=["res://.godot/imported/Fly-Sheet.png-88bf8b9df11a423d05150c0e66e045e8.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly/Fly-Sheet.png"
+dest_files=["res://.godot/imported/Fly-Sheet.png-6a33dbac7ef056b5207f48997d019adf.ctex"]
 
 [params]
 

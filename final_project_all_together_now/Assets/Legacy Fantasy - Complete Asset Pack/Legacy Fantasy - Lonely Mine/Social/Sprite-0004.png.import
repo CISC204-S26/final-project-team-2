@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dldjwo0vtg7rj"
-path="res://.godot/imported/Sprite-0004.png-5e3575897c38b19c63b7ddd81cd9f832.ctex"
+path="res://.godot/imported/Sprite-0004.png-c5d76c2259f0b5b9dc777978a19f4891.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Social/Sprite-0004.png"
-dest_files=["res://.godot/imported/Sprite-0004.png-5e3575897c38b19c63b7ddd81cd9f832.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Social/Sprite-0004.png"
+dest_files=["res://.godot/imported/Sprite-0004.png-c5d76c2259f0b5b9dc777978a19f4891.ctex"]
 
 [params]
 

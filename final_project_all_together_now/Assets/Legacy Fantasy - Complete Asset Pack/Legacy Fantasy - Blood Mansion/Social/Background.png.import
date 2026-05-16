@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0j030ldur2hv"
-path="res://.godot/imported/Background.png-a600adc4926805317326332e2220b525.ctex"
+path="res://.godot/imported/Background.png-cf6c5af679c4543fe685bbf6392e2bfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Blood Mansion/Social/Background.png"
-dest_files=["res://.godot/imported/Background.png-a600adc4926805317326332e2220b525.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Blood Mansion/Social/Background.png"
+dest_files=["res://.godot/imported/Background.png-cf6c5af679c4543fe685bbf6392e2bfa.ctex"]
 
 [params]
 

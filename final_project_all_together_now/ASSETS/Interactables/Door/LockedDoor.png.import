@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db3wl5mu80w1c"
-path="res://.godot/imported/LockedDoor.png-6e6c93550a2bc2360120af9156401990.ctex"
+path="res://.godot/imported/LockedDoor.png-dc8d2679e69c5b79275fc8ce2a5ee387.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Interactables/Door/LockedDoor.png"
-dest_files=["res://.godot/imported/LockedDoor.png-6e6c93550a2bc2360120af9156401990.ctex"]
+source_file="res://ASSETS/Interactables/Door/LockedDoor.png"
+dest_files=["res://.godot/imported/LockedDoor.png-dc8d2679e69c5b79275fc8ce2a5ee387.ctex"]
 
 [params]
 
