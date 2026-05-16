@@ -1,13 +1,12 @@
 [gd_scene format=3 uid="uid://cebdd2bjchkkl"]
 
 [ext_resource type="Script" uid="uid://brmya2cqvo67l" path="res://Scripts/Player_Scripts/Player1.gd" id="1_3qydi"]
-[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://ASSETS/Player1/Idle-Sheet.png" id="2_dewec"]
-[ext_resource type="Texture2D" uid="uid://ddwf4lrr63yry" path="res://ASSETS/Player1/Dead-Sheet.png" id="2_tchc4"]
-[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://ASSETS/Player1/Run-Sheet.png" id="3_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://ASSETS/Player1/Jump-End-Sheet.png" id="3_52ee3"]
-[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://ASSETS/Player1/Jump-All-Sheet.png" id="4_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://ASSETS/Player1/Jump-Start-Sheet.png" id="4_bhhdu"]
-[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="7_hjvw7"]
+[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://Assets/Player1/Idle-Sheet.png" id="2_dewec"]
+[ext_resource type="Texture2D" uid="uid://ddwf4lrr63yry" path="res://Assets/Player1/Dead-Sheet.png" id="2_tchc4"]
+[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://Assets/Player1/Run-Sheet.png" id="3_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://Assets/Player1/Jump-End-Sheet.png" id="3_52ee3"]
+[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://Assets/Player1/Jump-All-Sheet.png" id="4_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://Assets/Player1/Jump-Start-Sheet.png" id="4_bhhdu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
 radius = 64.070274
@@ -312,12 +311,6 @@ shape = SubResource("CapsuleShape2D_q3lat")
 position = Vector2(0, 24)
 offset = Vector2(0, -65)
 zoom = Vector2(2, 2)
-
-[node name="Background" type="Sprite2D" parent="Camera2D" unique_id=1853161687]
-z_index = -99
-position = Vector2(7, -63)
-scale = Vector2(1.2279412, 1.2279412)
-texture = ExtResource("7_hjvw7")
 
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]
 [connection signal="area_exited" from="InteractableDetector" to="." method="_on_interactable_detector_area_exited"]
