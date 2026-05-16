@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cghktxidj2w4i"
-path="res://.godot/imported/Attack-Sheet.png-a5d21da322f9f58cf0639b05493c4672.ctex"
+path="res://.godot/imported/Attack-Sheet.png-cdaf6d24d2855e641458253db495bb83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Skeleton/Attack/Attack-Sheet.png"
-dest_files=["res://.godot/imported/Attack-Sheet.png-a5d21da322f9f58cf0639b05493c4672.ctex"]
+source_file="res://ASSETS/Mobs/Skeleton/Attack/Attack-Sheet.png"
+dest_files=["res://.godot/imported/Attack-Sheet.png-cdaf6d24d2855e641458253db495bb83.ctex"]
 
 [params]
 

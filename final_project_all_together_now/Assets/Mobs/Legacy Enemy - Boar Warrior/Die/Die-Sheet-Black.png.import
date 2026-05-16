@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4j4nirbdu5wo"
-path="res://.godot/imported/Die-Sheet-Black.png-461f8f39dd784724e17120130652f15c.ctex"
+path="res://.godot/imported/Die-Sheet-Black.png-ce74e24ff7d052e3564377359275dba1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Die/Die-Sheet-Black.png"
-dest_files=["res://.godot/imported/Die-Sheet-Black.png-461f8f39dd784724e17120130652f15c.ctex"]
+source_file="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Die/Die-Sheet-Black.png"
+dest_files=["res://.godot/imported/Die-Sheet-Black.png-ce74e24ff7d052e3564377359275dba1.ctex"]
 
 [params]
 

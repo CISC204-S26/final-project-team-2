@@ -4,7 +4,7 @@ extends Node
 var completed_levels = [false, false, false]
 var levels = [
 	"res://Scenes/LevelMaps/main_level_1.tscn",
-	"res://Scenes/TestScenes/TestMaps/TestLevel2.tscn",
+	"res://Scenes/LevelMaps/main_level_2.tscn",
 	"res://Scenes/TestScenes/TestMaps/TestLevel1.tscn"
 ]
 var current_level: int

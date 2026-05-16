@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fde3g01un0b8"
-path="res://.godot/imported/MysticPortal_HOLY_OPEN.png-d997acd396a507adc9729e0f928f6a4f.ctex"
+path="res://.godot/imported/MysticPortal_HOLY_OPEN.png-49b31f86cb225f833168735c61ddacab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Portals/Yellow/MysticPortal_HOLY_OPEN.png"
-dest_files=["res://.godot/imported/MysticPortal_HOLY_OPEN.png-d997acd396a507adc9729e0f928f6a4f.ctex"]
+source_file="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_OPEN.png"
+dest_files=["res://.godot/imported/MysticPortal_HOLY_OPEN.png-49b31f86cb225f833168735c61ddacab.ctex"]
 
 [params]
 

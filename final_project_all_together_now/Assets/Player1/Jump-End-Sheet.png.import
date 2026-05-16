@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnsn215ur7f6b"
-path="res://.godot/imported/Jump-End-Sheet.png-a5d00467639e999328411dcaeed3bc48.ctex"
+path="res://.godot/imported/Jump-End-Sheet.png-ee974e80a9d70f26315ea5f3d5cb8518.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player1/Jump-End-Sheet.png"
-dest_files=["res://.godot/imported/Jump-End-Sheet.png-a5d00467639e999328411dcaeed3bc48.ctex"]
+source_file="res://ASSETS/Player1/Jump-End-Sheet.png"
+dest_files=["res://.godot/imported/Jump-End-Sheet.png-ee974e80a9d70f26315ea5f3d5cb8518.ctex"]
 
 [params]
 
