@@ -1,36 +1,71 @@
 [gd_scene format=3 uid="uid://dmnjgg0hbe15e"]
 
 [ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/text_interactable.gd" id="1_gtqxf"]
-[ext_resource type="Texture2D" uid="uid://bm6ljet3qrdys" path="res://icon.svg" id="2_be1ka"]
-[ext_resource type="Script" uid="uid://dnpj3b1tvbxkt" path="res://Scenes/dialogue_textbox.gd" id="3_be1ka"]
+[ext_resource type="Texture2D" uid="uid://d0vnkqn51ff1x" path="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet.png" id="2_gtqxf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j13e0"]
-size = Vector2(238, 165)
+size = Vector2(113, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be1ka"]
+atlas = ExtResource("2_gtqxf")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j13e0"]
+atlas = ExtResource("2_gtqxf")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kt4qo"]
+atlas = ExtResource("2_gtqxf")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msa3v"]
+atlas = ExtResource("2_gtqxf")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mxm7x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be1ka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j13e0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kt4qo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msa3v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="TextInteractable" type="Area2D" unique_id=48577180]
 z_index = 4
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_gtqxf")
 metadata/_custom_type_script = "uid://csehsx2hp10wq"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=351616370]
-position = Vector2(1, -16.5)
+position = Vector2(8.5, -32.5)
 shape = SubResource("RectangleShape2D_j13e0")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244566616]
-texture = ExtResource("2_be1ka")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1368851731]
+sprite_frames = SubResource("SpriteFrames_mxm7x")
+autoplay = "default"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1771074027]
-
-[node name="DialogueTextbox" type="ColorRect" parent="CanvasLayer" unique_id=977324100]
+[node name="DialogueTextbox" type="ColorRect" parent="." unique_id=977324100]
 offset_left = -132.0
-offset_top = -140.0
+offset_top = -115.0
 offset_right = 144.0
-offset_bottom = -63.0
-color = Color(1, 1, 1, 0.16078432)
-script = ExtResource("3_be1ka")
+offset_bottom = -38.0
+color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogueText" type="RichTextLabel" parent="CanvasLayer/DialogueTextbox" unique_id=654676313]
+[node name="DialogueText" type="RichTextLabel" parent="DialogueTextbox" unique_id=654676313]
 layout_mode = 0
 offset_right = 275.0
 offset_bottom = 78.0
@@ -38,7 +73,3 @@ text = "Default text"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
-
-[connection signal="enteredTalking" from="." to="CanvasLayer/DialogueTextbox" method="_on_entered_talking"]
-[connection signal="exitedTalking" from="." to="CanvasLayer/DialogueTextbox" method="_on_exited_talking"]
-[connection signal="showText" from="." to="CanvasLayer/DialogueTextbox" method="_on_show_text"]

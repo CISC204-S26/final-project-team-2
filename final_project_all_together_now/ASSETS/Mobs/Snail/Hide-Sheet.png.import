@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b23nduigviyna"
-path="res://.godot/imported/Hide-Sheet.png-1433fc631c9a5dc10a27e0a24a9f0c29.ctex"
+path="res://.godot/imported/Hide-Sheet.png-191585e186cd3e8e25795ccad8889996.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Mobs/Snail/Hide-Sheet.png"
-dest_files=["res://.godot/imported/Hide-Sheet.png-1433fc631c9a5dc10a27e0a24a9f0c29.ctex"]
+source_file="res://Assets/Mobs/Snail/Hide-Sheet.png"
+dest_files=["res://.godot/imported/Hide-Sheet.png-191585e186cd3e8e25795ccad8889996.ctex"]
 
 [params]
 

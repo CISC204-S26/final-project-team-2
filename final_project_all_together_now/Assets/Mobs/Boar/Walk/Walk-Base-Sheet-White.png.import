@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://we1otc3y62ic"
-path="res://.godot/imported/Walk-Base-Sheet-White.png-1934f4ea2ace9dc6b29d56efb5ddf6d6.ctex"
+path="res://.godot/imported/Walk-Base-Sheet-White.png-2e2e538d19c2910d32f8630432648691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Mobs/Boar/Walk/Walk-Base-Sheet-White.png"
-dest_files=["res://.godot/imported/Walk-Base-Sheet-White.png-1934f4ea2ace9dc6b29d56efb5ddf6d6.ctex"]
+source_file="res://Assets/Mobs/Boar/Walk/Walk-Base-Sheet-White.png"
+dest_files=["res://.godot/imported/Walk-Base-Sheet-White.png-2e2e538d19c2910d32f8630432648691.ctex"]
 
 [params]
 

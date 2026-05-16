@@ -2905,7 +2905,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("13_gv507")]
-position = Vector2(356, -51)
-text = ["Text 1 ", "Text 2"]
+position = Vector2(361, -23)
+dialogue = ["Hello 1", "Hello 2"]
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_level_complete"]
