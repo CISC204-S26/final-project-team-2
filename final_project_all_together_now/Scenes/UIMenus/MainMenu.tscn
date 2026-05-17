@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bhaoql7icitqr" path="res://Scripts/UI_Scripts/main_menu.gd" id="1_gndpw"]
 [ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://Assets/Fonts/antiquity-print.ttf" id="1_rohnd"]
+[ext_resource type="Texture2D" uid="uid://rcwrxws53pa0" path="res://Assets/Audio/Music/cf6216fac15f7562cc2693d6549e2597.jpg" id="2_12i0m"]
 [ext_resource type="Texture2D" uid="uid://dpygdrl5tomxw" path="res://Assets/UIMenus/Ornate Retro UI/BlackGreyUISheet.png" id="3_gndpw"]
 [ext_resource type="FontFile" uid="uid://ddwg03k6rn76a" path="res://Assets/Fonts/monogram.ttf" id="3_iimdu"]
 [ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://Assets/Audio/menu_select.wav" id="5_0ft5o"]
@@ -22,6 +23,11 @@ region = Rect2(116, 154, 15, 8)
 
 [node name="MainMenu" type="CanvasLayer" unique_id=1608777172]
 script = ExtResource("1_gndpw")
+
+[node name="Cf6216Fac15f7562Cc2693d6549e2597" type="Sprite2D" parent="." unique_id=1005786945]
+position = Vector2(578, 360)
+scale = Vector2(2, 2)
+texture = ExtResource("2_12i0m")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=1163125203]
 texture_filter = 1
@@ -253,11 +259,11 @@ autoplay = true
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="_on_levels_button_pressed"]
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="play_click_sound"]
 [connection signal="mouse_entered" from="MainButtons/OptionsButton" to="." method="play_hover_sound"]
-[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MainButtons/OptionsButton" to="." method="play_click_sound"]
+[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="mouse_entered" from="MainButtons/QuitButton" to="." method="play_hover_sound"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="play_click_sound"]
 [connection signal="mouse_entered" from="OptionsPopUp/VBoxContainer/BackButton" to="." method="play_hover_sound"]
-[connection signal="pressed" from="OptionsPopUp/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="OptionsPopUp/VBoxContainer/BackButton" to="." method="play_click_sound"]
+[connection signal="pressed" from="OptionsPopUp/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

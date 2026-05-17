@@ -653,28 +653,28 @@ texture = ExtResource("4_snf3l")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5rped")
 
-[sub_resource type="Curve2D" id="Curve2D_5bu8y"]
+[sub_resource type="Curve2D" id="Curve2D_jax82"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -2, -1, 0, 0, 0, 0, 94, -49)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_snf3l"]
+[sub_resource type="Curve2D" id="Curve2D_5bu8y"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -3, -147, 0, 0, 0, 0, -2, 111)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_wso8b"]
+[sub_resource type="Curve2D" id="Curve2D_snf3l"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -17, -68, 0, 0, 0, 0, 12, 117)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_tuxn2"]
+[sub_resource type="Curve2D" id="Curve2D_wso8b"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -32, -36, 0, 0, 0, 0, -62, -118)
@@ -719,7 +719,7 @@ zone_size = Vector2(200, 100)
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("10_btpg0")]
 position = Vector2(-186, 159)
-dialogue = ["y0"]
+dialogue = ["Oh...", "You made it to this ominous cave", "Spooky ik", "I think that dude in the wizard hats here somewhere", "Keeps going on about the color red", "What is red? Is blue red? Is red RED? Where is red? Is he red? ", "Watch yourself nerd"]
 
 [node name="SwitchInteractable" parent="." unique_id=1714059362 node_paths=PackedStringArray("door_to_open") instance=ExtResource("11_gyc7u")]
 position = Vector2(157, -51)
@@ -730,21 +730,21 @@ position = Vector2(1238, 115)
 
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("13_fih5l")]
 position = Vector2(-74, 212)
-curve = SubResource("Curve2D_5bu8y")
+curve = SubResource("Curve2D_jax82")
 speed = 0.4
 
 [node name="MovingPlatform2" parent="." unique_id=1885140253 instance=ExtResource("13_fih5l")]
 position = Vector2(225, 136)
-curve = SubResource("Curve2D_snf3l")
+curve = SubResource("Curve2D_5bu8y")
 speed = 0.3
 
 [node name="MovingPlatform3" parent="." unique_id=407355679 instance=ExtResource("13_fih5l")]
 position = Vector2(624, 136)
-curve = SubResource("Curve2D_wso8b")
+curve = SubResource("Curve2D_snf3l")
 
 [node name="MovingPlatform4" parent="." unique_id=1638818073 instance=ExtResource("13_fih5l")]
 position = Vector2(933, 307)
-curve = SubResource("Curve2D_tuxn2")
+curve = SubResource("Curve2D_wso8b")
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("14_dq432")]
 visible = false

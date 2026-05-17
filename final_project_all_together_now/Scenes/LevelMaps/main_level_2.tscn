@@ -1656,28 +1656,28 @@ texture = ExtResource("3_k6k0p")
 sources/0 = SubResource("TileSetAtlasSource_d8u5m")
 sources/1 = SubResource("TileSetAtlasSource_nj4by")
 
-[sub_resource type="Curve2D" id="Curve2D_4cxy5"]
+[sub_resource type="Curve2D" id="Curve2D_nmdb1"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 22, 1, 0, 0, 0, 0, 265.00464, 1)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_gke7e"]
+[sub_resource type="Curve2D" id="Curve2D_4cxy5"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -38.226563, -66, 0, 0, 0, 0, -240.36536, -128, 0, 0, 0, 0, -172.98578, -8, 0, 0, 0, 0, -331.88098, -7)
 }
 point_count = 4
 
-[sub_resource type="Curve2D" id="Curve2D_b0gad"]
+[sub_resource type="Curve2D" id="Curve2D_gke7e"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, -184, 0, 0, 0, 0, 2, 3)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_f57d5"]
+[sub_resource type="Curve2D" id="Curve2D_b0gad"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -163.00073, -105.99972, 0, 0, 0, 0, -59.996826, -128.99963, 0, 0, 0, 0, 20.006287, -108.99971)
@@ -1737,7 +1737,7 @@ dialogue = ["It's me again!!"]
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("8_n7j0j")]
 position = Vector2(232, -20)
-dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "So don't fall or else you have to restart...", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red.."]
+dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "So don't fall or else you have to restart...", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red..", "Also, this time you have to flip the lever to open the door"]
 
 [node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("15_k6k0p")]
 position = Vector2(1460, -151)
@@ -1765,22 +1765,22 @@ death_screen = NodePath("../DeathScreen")
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("7_n7j0j")]
 position = Vector2(331.00043, 67.99999)
 scale = Vector2(0.99998087, 1.0000019)
-curve = SubResource("Curve2D_4cxy5")
+curve = SubResource("Curve2D_nmdb1")
 
 [node name="MovingPlatform2" parent="." unique_id=118170743 instance=ExtResource("7_n7j0j")]
 position = Vector2(1062.0112, 70)
 scale = Vector2(0.99436617, 1)
-curve = SubResource("Curve2D_gke7e")
+curve = SubResource("Curve2D_4cxy5")
 
 [node name="MovingPlatform3" parent="." unique_id=132344614 instance=ExtResource("7_n7j0j")]
 position = Vector2(-28, -7)
-curve = SubResource("Curve2D_b0gad")
+curve = SubResource("Curve2D_gke7e")
 speed = 0.3
 
 [node name="MovingPlatform4" parent="." unique_id=237648083 instance=ExtResource("7_n7j0j")]
 position = Vector2(661.9945, 136.00012)
 scale = Vector2(0.99996173, 1.0000038)
-curve = SubResource("Curve2D_f57d5")
+curve = SubResource("Curve2D_b0gad")
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("2_0q1iv")]
 visible = false
