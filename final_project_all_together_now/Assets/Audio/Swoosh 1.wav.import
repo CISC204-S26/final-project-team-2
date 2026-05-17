@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dlbg37polrhal"
-path="res://.godot/imported/Swoosh 1.wav-0be5bb5aefb53ec029b14905709ef306.sample"
+path="res://.godot/imported/Swoosh 1.wav-a03a6a707739225a36578553af44d479.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/Swoosh 1.wav"
-dest_files=["res://.godot/imported/Swoosh 1.wav-0be5bb5aefb53ec029b14905709ef306.sample"]
+source_file="res://ASSETS/Audio/Swoosh 1.wav"
+dest_files=["res://.godot/imported/Swoosh 1.wav-a03a6a707739225a36578553af44d479.sample"]
 
 [params]
 

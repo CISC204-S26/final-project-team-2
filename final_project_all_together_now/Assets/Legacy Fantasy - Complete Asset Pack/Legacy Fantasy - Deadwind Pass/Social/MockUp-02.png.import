@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyi6awm1ut3ax"
-path="res://.godot/imported/MockUp-02.png-514bbf644e1b3dd3277678c86a42dfe6.ctex"
+path="res://.godot/imported/MockUp-02.png-bb00c97b55406a976d51c2c8f26768e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deadwind Pass/Social/MockUp-02.png"
-dest_files=["res://.godot/imported/MockUp-02.png-514bbf644e1b3dd3277678c86a42dfe6.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deadwind Pass/Social/MockUp-02.png"
+dest_files=["res://.godot/imported/MockUp-02.png-bb00c97b55406a976d51c2c8f26768e4.ctex"]
 
 [params]
 

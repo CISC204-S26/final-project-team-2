@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://cvdief7qcjwoc"]
 
 [ext_resource type="PackedScene" uid="uid://b5d1vb2qir23o" path="res://Scenes/UIMenus/DeathScreen.tscn" id="2_0q1iv"]
-[ext_resource type="Texture2D" uid="uid://0uo5ttkvjv87" path="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_1u1qt"]
-[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="3_k6k0p"]
-[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="5_nmdb1"]
+[ext_resource type="Texture2D" uid="uid://0uo5ttkvjv87" path="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="3_1u1qt"]
+[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="3_k6k0p"]
+[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="5_nmdb1"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Players/Player1.tscn" id="6_4cxy5"]
 [ext_resource type="PackedScene" uid="uid://bdluivatsbrra" path="res://Scenes/killbox.tscn" id="6_ipkff"]
-[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="6_xtpeh"]
+[ext_resource type="Texture2D" uid="uid://bq2vb4wolwj7s" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="6_xtpeh"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/Players/mouse_player.tscn" id="7_gke7e"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="7_kiiob"]
 [ext_resource type="PackedScene" uid="uid://bhop63udw3xnb" path="res://Scenes/moving_platform.tscn" id="7_n7j0j"]
@@ -16,7 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://brdwcjklu0wg7" path="res://Scenes/dawson.tscn" id="13_ypu8q"]
 [ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Scenes/Enemies/enemy.tscn" id="15_k6k0p"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="16_5ci8n"]
-[ext_resource type="AudioStream" uid="uid://dcotlv32132rx" path="res://Assets/Audio/Music/14 - Dawn.mp3" id="17_nmdb1"]
+[ext_resource type="AudioStream" uid="uid://dcotlv32132rx" path="res://ASSETS/Audio/Music/14 - Dawn.mp3" id="17_nmdb1"]
+[ext_resource type="PackedScene" uid="uid://uvukckfl1jd" path="res://Scenes/Enemies/BeeEnemy.tscn" id="18_4cxy5"]
+[ext_resource type="PackedScene" uid="uid://dnsygegpyd7rx" path="res://Scenes/Enemies/follow_enemy.tscn" id="19_gke7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_krgij"]
 texture = ExtResource("3_k6k0p")
@@ -1737,10 +1739,16 @@ dialogue = ["It's me again!!"]
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("8_n7j0j")]
 position = Vector2(232, -20)
-dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "So don't fall or else you have to restart...", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red..", "Also, this time you have to flip the lever to open the door"]
+dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "Just cross the river. Its easy asf", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red..", "Also, this time you have to flip the lever to open the door"]
 
 [node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("15_k6k0p")]
-position = Vector2(1460, -151)
+position = Vector2(1186, -279)
+
+[node name="Enemy3" parent="." unique_id=780358684 instance=ExtResource("15_k6k0p")]
+position = Vector2(1387, -409)
+
+[node name="Enemy2" parent="." unique_id=883562584 instance=ExtResource("15_k6k0p")]
+position = Vector2(1459, -660)
 
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("6_4cxy5")]
 z_index = 5
@@ -1788,5 +1796,34 @@ visible = false
 [node name="LevelMusic" type="AudioStreamPlayer2D" parent="." unique_id=1158831053]
 stream = ExtResource("17_nmdb1")
 autoplay = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1647458762]
+position = Vector2(719, 37)
+
+[node name="Marker2D2" type="Marker2D" parent="." unique_id=1253340093]
+position = Vector2(731, -102)
+
+[node name="Marker2D3" type="Marker2D" parent="." unique_id=2066795936]
+position = Vector2(730, -167)
+
+[node name="Marker2D4" type="Marker2D" parent="." unique_id=908183242]
+position = Vector2(1048, -196)
+
+[node name="BEE" parent="." unique_id=224733733 node_paths=PackedStringArray("waypoints") instance=ExtResource("18_4cxy5")]
+position = Vector2(748, 2)
+waypoints = [NodePath("../Marker2D"), NodePath("../Marker2D2"), NodePath("../Marker2D3"), NodePath("../Marker2D4")]
+
+[node name="BEE2" parent="." unique_id=1869923367 node_paths=PackedStringArray("waypoints") instance=ExtResource("18_4cxy5")]
+position = Vector2(1503, -591)
+waypoints = [NodePath("../Marker2D5"), NodePath("../Marker2D6")]
+
+[node name="Marker2D5" type="Marker2D" parent="." unique_id=646963094]
+position = Vector2(1506, -591)
+
+[node name="Marker2D6" type="Marker2D" parent="." unique_id=1768727089]
+position = Vector2(1510, -151)
+
+[node name="FollowEnemy" parent="." unique_id=1348586453 instance=ExtResource("19_gke7e")]
+position = Vector2(1301, -163)
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_door_interactable_level_complete"]

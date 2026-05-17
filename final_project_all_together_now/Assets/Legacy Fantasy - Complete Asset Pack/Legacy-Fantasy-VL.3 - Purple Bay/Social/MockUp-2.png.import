@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj6i2h15iaiyk"
-path="res://.godot/imported/MockUp-2.png-f387966e5a81c2af759fe75d76ab3f64.ctex"
+path="res://.godot/imported/MockUp-2.png-7df368ec8e1c8e05b8c86cd0defdff3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Purple Bay/Social/MockUp-2.png"
-dest_files=["res://.godot/imported/MockUp-2.png-f387966e5a81c2af759fe75d76ab3f64.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Purple Bay/Social/MockUp-2.png"
+dest_files=["res://.godot/imported/MockUp-2.png-7df368ec8e1c8e05b8c86cd0defdff3f.ctex"]
 
 [params]
 

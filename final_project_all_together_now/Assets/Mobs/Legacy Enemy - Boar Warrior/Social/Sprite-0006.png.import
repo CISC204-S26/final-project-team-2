@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mwt57fspi0tw"
-path="res://.godot/imported/Sprite-0006.png-43d1af7303ea99d981dfb477dd064c80.ctex"
+path="res://.godot/imported/Sprite-0006.png-d0de301eb674b05fe01b3704adba84e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Social/Sprite-0006.png"
-dest_files=["res://.godot/imported/Sprite-0006.png-43d1af7303ea99d981dfb477dd064c80.ctex"]
+source_file="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Social/Sprite-0006.png"
+dest_files=["res://.godot/imported/Sprite-0006.png-d0de301eb674b05fe01b3704adba84e2.ctex"]
 
 [params]
 

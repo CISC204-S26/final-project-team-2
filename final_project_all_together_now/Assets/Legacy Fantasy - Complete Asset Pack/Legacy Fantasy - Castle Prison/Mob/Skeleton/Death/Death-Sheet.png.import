@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://domvh0b8oofjp"
-path="res://.godot/imported/Death-Sheet.png-4295ea35d893ac6c53898af640a1d982.ctex"
+path="res://.godot/imported/Death-Sheet.png-8f7542e961f9da9888c9066bf96cda51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Castle Prison/Mob/Skeleton/Death/Death-Sheet.png"
-dest_files=["res://.godot/imported/Death-Sheet.png-4295ea35d893ac6c53898af640a1d982.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Castle Prison/Mob/Skeleton/Death/Death-Sheet.png"
+dest_files=["res://.godot/imported/Death-Sheet.png-8f7542e961f9da9888c9066bf96cda51.ctex"]
 
 [params]
 

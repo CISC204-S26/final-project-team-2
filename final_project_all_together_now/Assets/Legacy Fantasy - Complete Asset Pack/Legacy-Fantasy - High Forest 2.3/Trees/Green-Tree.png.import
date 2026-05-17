@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wphch52gykm"
-path="res://.godot/imported/Green-Tree.png-417a0a3cc412083a091bca36384ff852.ctex"
+path="res://.godot/imported/Green-Tree.png-33e27a4d2c5d97ed184c3ab357ebbabc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Trees/Green-Tree.png"
-dest_files=["res://.godot/imported/Green-Tree.png-417a0a3cc412083a091bca36384ff852.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Trees/Green-Tree.png"
+dest_files=["res://.godot/imported/Green-Tree.png-33e27a4d2c5d97ed184c3ab357ebbabc.ctex"]
 
 [params]
 

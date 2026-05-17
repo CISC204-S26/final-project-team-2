@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1johqcahk0at"
-path="res://.godot/imported/Dead-Sheet.png-b7d8d4f8f9fba0554c4a2c2073f82af3.ctex"
+path="res://.godot/imported/Dead-Sheet.png-d830c360749fccd119823b9dea2c773b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Character/Dead/Dead-Sheet.png"
-dest_files=["res://.godot/imported/Dead-Sheet.png-b7d8d4f8f9fba0554c4a2c2073f82af3.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Character/Dead/Dead-Sheet.png"
+dest_files=["res://.godot/imported/Dead-Sheet.png-d830c360749fccd119823b9dea2c773b.ctex"]
 
 [params]
 

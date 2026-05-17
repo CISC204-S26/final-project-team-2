@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8a2wg5ull43v"
-path="res://.godot/imported/Background_2.png-42001bf10258d4b19d2f06e1b0e1fdb6.ctex"
+path="res://.godot/imported/Background_2.png-6b42f786239f618b8baa7136c49c8db0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Dusk Woods/BackGround/Background_2.png"
-dest_files=["res://.godot/imported/Background_2.png-42001bf10258d4b19d2f06e1b0e1fdb6.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Dusk Woods/BackGround/Background_2.png"
+dest_files=["res://.godot/imported/Background_2.png-6b42f786239f618b8baa7136c49c8db0.ctex"]
 
 [params]
 

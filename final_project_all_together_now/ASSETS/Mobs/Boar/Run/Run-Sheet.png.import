@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbbnwppllkk6f"
-path="res://.godot/imported/Run-Sheet.png-f63ca960e874fa95c257e036920efcf1.ctex"
+path="res://.godot/imported/Run-Sheet.png-8b089e35c2fdc1d829773b4483a8fab5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Boar/Run/Run-Sheet.png"
-dest_files=["res://.godot/imported/Run-Sheet.png-f63ca960e874fa95c257e036920efcf1.ctex"]
+source_file="res://ASSETS/Mobs/Boar/Run/Run-Sheet.png"
+dest_files=["res://.godot/imported/Run-Sheet.png-8b089e35c2fdc1d829773b4483a8fab5.ctex"]
 
 [params]
 
