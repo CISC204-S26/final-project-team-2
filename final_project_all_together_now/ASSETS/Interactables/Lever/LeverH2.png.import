@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bomad0i3x2wab"
-path="res://.godot/imported/LeverH2.png-a5f59e7567786cd5d69cb21a6dd7880c.ctex"
+path="res://.godot/imported/LeverH2.png-ac4860919709545896d1a296a7bdd559.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Interactables/Lever/LeverH2.png"
-dest_files=["res://.godot/imported/LeverH2.png-a5f59e7567786cd5d69cb21a6dd7880c.ctex"]
+source_file="res://ASSETS/Interactables/Lever/LeverH2.png"
+dest_files=["res://.godot/imported/LeverH2.png-ac4860919709545896d1a296a7bdd559.ctex"]
 
 [params]
 

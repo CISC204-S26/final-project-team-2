@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uxh1380af86j"
-path="res://.godot/imported/ForeGround.png-9eff0885030a972ccc1c5c7a76ca6819.ctex"
+path="res://.godot/imported/ForeGround.png-b584309a4a23d92cc153598b77af3d9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Social/ForeGround.png"
-dest_files=["res://.godot/imported/ForeGround.png-9eff0885030a972ccc1c5c7a76ca6819.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Social/ForeGround.png"
+dest_files=["res://.godot/imported/ForeGround.png-b584309a4a23d92cc153598b77af3d9d.ctex"]
 
 [params]
 

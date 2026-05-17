@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co2bcowmkldi2"
-path="res://.godot/imported/Idle-Sheet-White.png-fd1d9c53c240bc808ff39e97fa68a423.ctex"
+path="res://.godot/imported/Idle-Sheet-White.png-3272dd91badce967714dea1dd9bf1e81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Boar/Idle/Idle-Sheet-White.png"
-dest_files=["res://.godot/imported/Idle-Sheet-White.png-fd1d9c53c240bc808ff39e97fa68a423.ctex"]
+source_file="res://ASSETS/Mobs/Boar/Idle/Idle-Sheet-White.png"
+dest_files=["res://.godot/imported/Idle-Sheet-White.png-3272dd91badce967714dea1dd9bf1e81.ctex"]
 
 [params]
 

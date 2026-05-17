@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://cvdief7qcjwoc"]
 
 [ext_resource type="PackedScene" uid="uid://b5d1vb2qir23o" path="res://Scenes/UIMenus/DeathScreen.tscn" id="2_0q1iv"]
-[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="3_k6k0p"]
-[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="5_nmdb1"]
+[ext_resource type="Texture2D" uid="uid://dwxo1a8jy5u10" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="3_k6k0p"]
+[ext_resource type="Texture2D" uid="uid://bg3sypp2cperd" path="res://ASSETS/Legacy-Fantasy - High Forest 2.3/Assets/Tree-Assets.png" id="5_nmdb1"]
 [ext_resource type="PackedScene" uid="uid://cebdd2bjchkkl" path="res://Scenes/Player1.tscn" id="6_4cxy5"]
 [ext_resource type="PackedScene" uid="uid://bdluivatsbrra" path="res://Scenes/killbox.tscn" id="6_ipkff"]
 [ext_resource type="PackedScene" uid="uid://476i256017mc" path="res://Scenes/mouse_player.tscn" id="7_gke7e"]
@@ -1396,7 +1396,7 @@ texture = ExtResource("3_k6k0p")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_krgij")
 
-[sub_resource type="Curve2D" id="Curve2D_xtpeh"]
+[sub_resource type="Curve2D" id="Curve2D_0q1iv"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 199, 2)
@@ -1436,9 +1436,9 @@ position = Vector2(-4, 186)
 
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("7_n7j0j")]
 position = Vector2(738, 76)
-curve = SubResource("Curve2D_xtpeh")
+curve = SubResource("Curve2D_0q1iv")
 speed = 0.25
 
 [node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("8_n7j0j")]
 position = Vector2(232, -20)
-dialogue = ["Welcome back dumbass", "This next level is easy asf.", "Its all water themed.", "If you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red.."]
+dialogue = ["Welcome back dumbass", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "If you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red.."]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy81fogd7pfpm"
-path="res://.godot/imported/MockUp-01-N.png-b21f6b3817be55b0061da0ab7869b344.ctex"
+path="res://.godot/imported/MockUp-01-N.png-41c3b73ea3b83310d8ea879790b4ef70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Scarlet Monastery/Social/MockUp-01-N.png"
-dest_files=["res://.godot/imported/MockUp-01-N.png-b21f6b3817be55b0061da0ab7869b344.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Scarlet Monastery/Social/MockUp-01-N.png"
+dest_files=["res://.godot/imported/MockUp-01-N.png-41c3b73ea3b83310d8ea879790b4ef70.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jwx01ixln3wc"
-path="res://.godot/imported/Props.png-649b0e723f214efd3b3ad31e3237d562.ctex"
+path="res://.godot/imported/Props.png-63637047a640a95ab1e3a5884f50e88e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Forgotten Cemetery/Social/Props.png"
-dest_files=["res://.godot/imported/Props.png-649b0e723f214efd3b3ad31e3237d562.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Forgotten Cemetery/Social/Props.png"
+dest_files=["res://.godot/imported/Props.png-63637047a640a95ab1e3a5884f50e88e.ctex"]
 
 [params]
 
