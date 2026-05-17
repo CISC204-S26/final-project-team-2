@@ -1,5 +1,7 @@
 extends Node2D
 
+
+@export var death_screen: CanvasLayer
 var player = null
 
 func _ready():
@@ -13,3 +15,4 @@ func _physics_process(delta):
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		body.die()
+		death_screen.show()

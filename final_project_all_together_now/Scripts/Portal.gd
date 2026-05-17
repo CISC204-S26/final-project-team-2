@@ -7,6 +7,7 @@ var linked_portal: Portal = null
 var launch_direction: Vector2 = Vector2.UP
 
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+var teleport_sound: AudioStreamPlayer2D
 
 var _cooling_down_bodies: Array = []
 
@@ -14,6 +15,8 @@ func _ready():
 	body_entered.connect(_on_body_entered)
 	anim.animation_finished.connect(_on_animation_finished)
 	open()
+	
+	setup_tp_sound()
 
 func open():
 	anim.play("OpenPortal")
@@ -38,6 +41,12 @@ func _on_body_entered(body: Node) -> void:
 		var entry_speed = body.velocity.length()
 		_add_cooldown_for(body)
 		linked_portal._add_cooldown_for(body)
+		
+		if teleport_sound:
+			teleport_sound.play()
+		if linked_portal and linked_portal.teleport_sound:
+			linked_portal.teleport_sound.play()
+		
 		body.teleport_to(linked_portal.global_position, linked_portal.launch_direction, entry_speed)
 
 func _add_cooldown_for(body: Node):
@@ -52,6 +61,12 @@ func _exit_is_in_blocked_zone() -> bool:
 			if zone.contains_point(linked_portal.global_position):
 				return true
 	return false
+
+func setup_tp_sound():
+	teleport_sound = AudioStreamPlayer2D.new()
+	teleport_sound.stream = load("res://Assets/Audio/Swoosh 1.wav")
+	add_child(teleport_sound)
+
 
 func interact():
 	pass

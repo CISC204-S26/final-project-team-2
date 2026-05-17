@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccxh4un6ndhgb"
-path="res://.godot/imported/Hive.png-a21f7c00e709d118879472cccd56eb8d.ctex"
+path="res://.godot/imported/Hive.png-1672183df08068a9ff7377493902ef29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Hive.png"
-dest_files=["res://.godot/imported/Hive.png-a21f7c00e709d118879472cccd56eb8d.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Hive.png"
+dest_files=["res://.godot/imported/Hive.png-1672183df08068a9ff7377493902ef29.ctex"]
 
 [params]
 

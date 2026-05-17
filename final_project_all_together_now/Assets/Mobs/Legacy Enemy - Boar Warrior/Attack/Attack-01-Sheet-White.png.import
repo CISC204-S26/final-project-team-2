@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpg0y53l8yxt8"
-path="res://.godot/imported/Attack-01-Sheet-White.png-c99abb8d0279cdf12d2b0866d1fa6118.ctex"
+path="res://.godot/imported/Attack-01-Sheet-White.png-27f501bbb501d0308d9edb2b0dfa0db7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Attack/Attack-01-Sheet-White.png"
-dest_files=["res://.godot/imported/Attack-01-Sheet-White.png-c99abb8d0279cdf12d2b0866d1fa6118.ctex"]
+source_file="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Attack/Attack-01-Sheet-White.png"
+dest_files=["res://.godot/imported/Attack-01-Sheet-White.png-27f501bbb501d0308d9edb2b0dfa0db7.ctex"]
 
 [params]
 

@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://6l8fm316o2mb"]
 
 [ext_resource type="Script" uid="uid://ck0tikfumny7r" path="res://Scripts/Portal.gd" id="1_cp6p4"]
-[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://ASSETS/Portals/Purple/MysticPortal_ACTIVE.png" id="2_koq56"]
-[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://ASSETS/Portals/Purple/MysticPortal_CLOSE.png" id="3_hsgt0"]
-[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://ASSETS/Portals/Purple/MysticPortal_OPEN.png" id="4_7shum"]
-[ext_resource type="Texture2D" uid="uid://jwwdux1h3j7n" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_ACTIVE.png" id="5_uwbmw"]
-[ext_resource type="Texture2D" uid="uid://civ6e48sxbgu3" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_CLOSE.png" id="6_govl6"]
-[ext_resource type="Texture2D" uid="uid://fde3g01un0b8" path="res://ASSETS/Portals/Yellow/MysticPortal_HOLY_OPEN.png" id="7_q42mo"]
+[ext_resource type="Texture2D" uid="uid://w8k3hdfi8vev" path="res://Assets/Portals/Purple/MysticPortal_ACTIVE.png" id="2_koq56"]
+[ext_resource type="Texture2D" uid="uid://cdkav3xb5qyol" path="res://Assets/Portals/Purple/MysticPortal_CLOSE.png" id="3_hsgt0"]
+[ext_resource type="Texture2D" uid="uid://cj3cdkdp8rsa8" path="res://Assets/Portals/Purple/MysticPortal_OPEN.png" id="4_7shum"]
+[ext_resource type="Texture2D" uid="uid://jwwdux1h3j7n" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_ACTIVE.png" id="5_uwbmw"]
+[ext_resource type="Texture2D" uid="uid://civ6e48sxbgu3" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_CLOSE.png" id="6_govl6"]
+[ext_resource type="Texture2D" uid="uid://fde3g01un0b8" path="res://Assets/Portals/Yellow/MysticPortal_HOLY_OPEN.png" id="7_q42mo"]
+[ext_resource type="AudioStream" uid="uid://dlbg37polrhal" path="res://Assets/Audio/Swoosh 1.wav" id="8_hsgt0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mjlh8"]
 
@@ -1359,5 +1360,8 @@ shape = SubResource("CircleShape2D_mjlh8")
 sprite_frames = SubResource("SpriteFrames_ex8j0")
 animation = &"yellow_active"
 frame_progress = 0.71853936
+
+[node name="TeleportSound" type="AudioStreamPlayer2D" parent="." unique_id=1266661068]
+stream = ExtResource("8_hsgt0")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

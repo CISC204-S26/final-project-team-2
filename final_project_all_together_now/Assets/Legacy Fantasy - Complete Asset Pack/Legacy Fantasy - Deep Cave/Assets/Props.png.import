@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd21ae2wa4krw"
-path="res://.godot/imported/Props.png-bd6201c042fbf3b1aa8b1d821c36f152.ctex"
+path="res://.godot/imported/Props.png-f6a592058923d4a8e99990fdaf7fd0e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Assets/Props.png"
-dest_files=["res://.godot/imported/Props.png-bd6201c042fbf3b1aa8b1d821c36f152.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Assets/Props.png"
+dest_files=["res://.godot/imported/Props.png-f6a592058923d4a8e99990fdaf7fd0e4.ctex"]
 
 [params]
 

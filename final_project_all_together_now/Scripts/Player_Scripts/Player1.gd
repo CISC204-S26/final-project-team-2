@@ -19,6 +19,16 @@ var is_dead := false
 var is_invincible := false
 var is_knockback := false
 
+# Footsteps
+var footstep_sound: AudioStreamPlayer
+var footstep_timer: float = 0.0
+var footstep_delay: float = 0.35
+
+
+func _ready():
+	setup_footstep_sound()
+
+
 func _physics_process(delta: float) -> void:
 	
 	if is_dead:
@@ -70,7 +80,28 @@ func _physics_process(delta: float) -> void:
 		if interactables:
 			interactables.back().interact()
 	
+	# Footstep Logic
+	if is_on_floor() and direction != 0 and not is_landing:
+		footstep_timer -= delta
+		if footstep_timer <= 0:
+			play_footstep_sound()
+			footstep_timer = footstep_delay
+	else:
+		footstep_timer = 0.0
+	
+	
 	move_and_slide()
+
+func setup_footstep_sound():
+	footstep_sound = AudioStreamPlayer.new()
+	footstep_sound.stream = load("res://Assets/Audio/footstep2.wav")
+	footstep_sound.volume_db = -4
+	add_child(footstep_sound)
+
+func play_footstep_sound():
+	if footstep_sound and footstep_sound.stream:
+		footstep_sound.pitch_scale = randf_range(0.9, 1.1)
+		footstep_sound.play()
 
 func _on_interactable_detector_area_entered(area: Area2D):
 	interactables.append(area)

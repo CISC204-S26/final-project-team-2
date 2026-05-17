@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://46wc3rng4o3e"
-path="res://.godot/imported/Props.png-8bad202b466192281d16e2aa1498cd06.ctex"
+path="res://.godot/imported/Props.png-aaf4f43ef8bf37d793dd9d5650f5becb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Castle Prison/Social/Props.png"
-dest_files=["res://.godot/imported/Props.png-8bad202b466192281d16e2aa1498cd06.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Castle Prison/Social/Props.png"
+dest_files=["res://.godot/imported/Props.png-aaf4f43ef8bf37d793dd9d5650f5becb.ctex"]
 
 [params]
 

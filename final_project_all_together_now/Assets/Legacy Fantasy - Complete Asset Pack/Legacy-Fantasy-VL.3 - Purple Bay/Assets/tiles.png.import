@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce2dtd6l6o4ms"
-path="res://.godot/imported/tiles.png-c4b4b7481fe38801170a079a55c04874.ctex"
+path="res://.godot/imported/tiles.png-ccdcbcc971defde6b1455fee53d186d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Purple Bay/Assets/tiles.png"
-dest_files=["res://.godot/imported/tiles.png-c4b4b7481fe38801170a079a55c04874.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.3 - Purple Bay/Assets/tiles.png"
+dest_files=["res://.godot/imported/tiles.png-ccdcbcc971defde6b1455fee53d186d1.ctex"]
 
 [params]
 

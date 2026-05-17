@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3de0vyxhs3i0"
-path="res://.godot/imported/Vegetation-export.png-fffea8d56c17defe60de28d5cc6ea3c0.ctex"
+path="res://.godot/imported/Vegetation-export.png-14787eda5d16d85a176a57dfc7273763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Kingdom Fortress - Update/Tiles/Vegetation-export.png"
-dest_files=["res://.godot/imported/Vegetation-export.png-fffea8d56c17defe60de28d5cc6ea3c0.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Kingdom Fortress - Update/Tiles/Vegetation-export.png"
+dest_files=["res://.godot/imported/Vegetation-export.png-14787eda5d16d85a176a57dfc7273763.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdcbw5ncmufoj"
-path="res://.godot/imported/Background.png-63a04a35c3f28e783519991da6993444.ctex"
+path="res://.godot/imported/Background.png-cdd628e1df206f8b2ccde60acf784dc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Kingdom Fortress/Social/Background.png"
-dest_files=["res://.godot/imported/Background.png-63a04a35c3f28e783519991da6993444.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Kingdom Fortress/Social/Background.png"
+dest_files=["res://.godot/imported/Background.png-cdd628e1df206f8b2ccde60acf784dc1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnastludulswp"
-path="res://.godot/imported/Background_02.png-076dd77ae1d92d4b7bcbcf034a07acc0.ctex"
+path="res://.godot/imported/Background_02.png-2b005b4e21af2d55885d058caa33fb03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantay - Lost Glades/Background/Background_02.png"
-dest_files=["res://.godot/imported/Background_02.png-076dd77ae1d92d4b7bcbcf034a07acc0.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantay - Lost Glades/Background/Background_02.png"
+dest_files=["res://.godot/imported/Background_02.png-2b005b4e21af2d55885d058caa33fb03.ctex"]
 
 [params]
 
