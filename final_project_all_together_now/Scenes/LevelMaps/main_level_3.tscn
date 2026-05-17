@@ -696,7 +696,7 @@ tile_map_data = PackedByteArray("AADr/wsAAAAAAAAAAADr/wwAAAAAAAEAAADr/w0AAAAAAAI
 tile_set = SubResource("TileSet_eegpo")
 
 [node name="Killbox" parent="." unique_id=1830812297 node_paths=PackedStringArray("death_screen") instance=ExtResource("5_wso8b")]
-position = Vector2(0, 417)
+position = Vector2(0, 461)
 death_screen = NodePath("../DeathScreen")
 
 [node name="Player1" parent="." unique_id=1088848127 instance=ExtResource("6_tuxn2")]
