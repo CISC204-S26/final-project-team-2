@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dajbllpudqpki"]
 
+[ext_resource type="AudioStream" uid="uid://sktblke1rn72" path="res://Assets/Audio/Music/21 - Into Darkness.mp3" id="1_jax82"]
 [ext_resource type="PackedScene" uid="uid://vfaqpe22gyiv" path="res://Scenes/UIMenus/PauseMenu.tscn" id="1_n5bsu"]
 [ext_resource type="PackedScene" uid="uid://b2rvru7enmt1a" path="res://Scenes/MineLvlBG.tscn" id="2_jax82"]
 [ext_resource type="Texture2D" uid="uid://cd21ae2wa4krw" path="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Assets/Props.png" id="3_5bu8y"]
@@ -652,28 +653,28 @@ texture = ExtResource("4_snf3l")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5rped")
 
-[sub_resource type="Curve2D" id="Curve2D_n5bsu"]
+[sub_resource type="Curve2D" id="Curve2D_5bu8y"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -2, -1, 0, 0, 0, 0, 94, -49)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_jax82"]
+[sub_resource type="Curve2D" id="Curve2D_snf3l"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -3, -147, 0, 0, 0, 0, -2, 111)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_5bu8y"]
+[sub_resource type="Curve2D" id="Curve2D_wso8b"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -17, -68, 0, 0, 0, 0, 12, 117)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_snf3l"]
+[sub_resource type="Curve2D" id="Curve2D_tuxn2"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -32, -36, 0, 0, 0, 0, -62, -118)
@@ -681,6 +682,10 @@ _data = {
 point_count = 2
 
 [node name="MineLevel" type="Node2D" unique_id=1577638918]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1528621732]
+stream = ExtResource("1_jax82")
+autoplay = true
 
 [node name="PauseMenu" parent="." unique_id=557496072 instance=ExtResource("1_n5bsu")]
 visible = false
@@ -725,21 +730,21 @@ position = Vector2(1238, 115)
 
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("13_fih5l")]
 position = Vector2(-74, 212)
-curve = SubResource("Curve2D_n5bsu")
+curve = SubResource("Curve2D_5bu8y")
 speed = 0.4
 
 [node name="MovingPlatform2" parent="." unique_id=1885140253 instance=ExtResource("13_fih5l")]
 position = Vector2(225, 136)
-curve = SubResource("Curve2D_jax82")
+curve = SubResource("Curve2D_snf3l")
 speed = 0.3
 
 [node name="MovingPlatform3" parent="." unique_id=407355679 instance=ExtResource("13_fih5l")]
 position = Vector2(624, 136)
-curve = SubResource("Curve2D_5bu8y")
+curve = SubResource("Curve2D_wso8b")
 
 [node name="MovingPlatform4" parent="." unique_id=1638818073 instance=ExtResource("13_fih5l")]
 position = Vector2(933, 307)
-curve = SubResource("Curve2D_snf3l")
+curve = SubResource("Curve2D_tuxn2")
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("14_dq432")]
 visible = false

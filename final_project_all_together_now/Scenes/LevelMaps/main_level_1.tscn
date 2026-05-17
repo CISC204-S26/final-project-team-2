@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://da8fbx0h1f2iq" path="res://Scenes/door_interactable.tscn" id="14_q7rwn"]
 [ext_resource type="PackedScene" uid="uid://brdwcjklu0wg7" path="res://Scenes/dawson.tscn" id="15_psaf8"]
 [ext_resource type="PackedScene" uid="uid://b5d1vb2qir23o" path="res://Scenes/UIMenus/DeathScreen.tscn" id="16_26ack"]
+[ext_resource type="AudioStream" uid="uid://dcotlv32132rx" path="res://Assets/Audio/Music/14 - Dawn.mp3" id="16_q4fo0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_upno5"]
 texture = ExtResource("1_jf6nx")
@@ -2916,5 +2917,10 @@ dialogue = ["Huzzah!", "It is I! It is me!", "It's just the wizard you wanted to
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("16_26ack")]
 visible = false
+
+[node name="LevelMusic" type="AudioStreamPlayer2D" parent="." unique_id=370968461]
+position = Vector2(1767, -102)
+stream = ExtResource("16_q4fo0")
+autoplay = true
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_level_complete"]

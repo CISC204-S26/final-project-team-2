@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://brdwcjklu0wg7" path="res://Scenes/dawson.tscn" id="13_ypu8q"]
 [ext_resource type="PackedScene" uid="uid://ds52is41p8n0g" path="res://Scenes/Enemies/enemy.tscn" id="15_k6k0p"]
 [ext_resource type="PackedScene" uid="uid://bmub3xcjxilwq" path="res://Scenes/no_portal_zone.tscn" id="16_5ci8n"]
+[ext_resource type="AudioStream" uid="uid://dcotlv32132rx" path="res://Assets/Audio/Music/14 - Dawn.mp3" id="17_nmdb1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_krgij"]
 texture = ExtResource("3_k6k0p")
@@ -1655,28 +1656,28 @@ texture = ExtResource("3_k6k0p")
 sources/0 = SubResource("TileSetAtlasSource_d8u5m")
 sources/1 = SubResource("TileSetAtlasSource_nj4by")
 
-[sub_resource type="Curve2D" id="Curve2D_5ci8n"]
+[sub_resource type="Curve2D" id="Curve2D_4cxy5"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 22, 1, 0, 0, 0, 0, 265.00464, 1)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_nmdb1"]
+[sub_resource type="Curve2D" id="Curve2D_gke7e"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -38.226563, -66, 0, 0, 0, 0, -240.36536, -128, 0, 0, 0, 0, -172.98578, -8, 0, 0, 0, 0, -331.88098, -7)
 }
 point_count = 4
 
-[sub_resource type="Curve2D" id="Curve2D_4cxy5"]
+[sub_resource type="Curve2D" id="Curve2D_b0gad"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, -184, 0, 0, 0, 0, 2, 3)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_gke7e"]
+[sub_resource type="Curve2D" id="Curve2D_f57d5"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -163.00073, -105.99972, 0, 0, 0, 0, -59.996826, -128.99963, 0, 0, 0, 0, 20.006287, -108.99971)
@@ -1748,7 +1749,6 @@ player_speed = 200
 JUMP_VELOCITY = -325.0
 
 [node name="Background" type="Sprite2D" parent="Player" unique_id=1388707899]
-visible = false
 z_index = -99
 position = Vector2(-7, -6)
 scale = Vector2(2, 2)
@@ -1765,24 +1765,28 @@ death_screen = NodePath("../DeathScreen")
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("7_n7j0j")]
 position = Vector2(331.00043, 67.99999)
 scale = Vector2(0.99998087, 1.0000019)
-curve = SubResource("Curve2D_5ci8n")
+curve = SubResource("Curve2D_4cxy5")
 
 [node name="MovingPlatform2" parent="." unique_id=118170743 instance=ExtResource("7_n7j0j")]
 position = Vector2(1062.0112, 70)
 scale = Vector2(0.99436617, 1)
-curve = SubResource("Curve2D_nmdb1")
+curve = SubResource("Curve2D_gke7e")
 
 [node name="MovingPlatform3" parent="." unique_id=132344614 instance=ExtResource("7_n7j0j")]
 position = Vector2(-28, -7)
-curve = SubResource("Curve2D_4cxy5")
+curve = SubResource("Curve2D_b0gad")
 speed = 0.3
 
 [node name="MovingPlatform4" parent="." unique_id=237648083 instance=ExtResource("7_n7j0j")]
 position = Vector2(661.9945, 136.00012)
 scale = Vector2(0.99996173, 1.0000038)
-curve = SubResource("Curve2D_gke7e")
+curve = SubResource("Curve2D_f57d5")
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("2_0q1iv")]
 visible = false
+
+[node name="LevelMusic" type="AudioStreamPlayer2D" parent="." unique_id=1158831053]
+stream = ExtResource("17_nmdb1")
+autoplay = true
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_door_interactable_level_complete"]
