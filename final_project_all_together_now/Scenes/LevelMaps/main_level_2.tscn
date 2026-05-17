@@ -1714,8 +1714,8 @@ tile_map_data = PackedByteArray("AABSAOf/AAALAAoAAABSAOj/AAALAAsAAABTAOf/AAAMAAo
 tile_set = SubResource("TileSet_nj4by")
 
 [node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("16_5ci8n")]
-position = Vector2(-567, -394)
-zone_size = Vector2(160, 60)
+position = Vector2(-563, -393)
+zone_size = Vector2(200.355, 100)
 
 [node name="NoPortalZone2" parent="." unique_id=1749156357 instance=ExtResource("16_5ci8n")]
 z_index = 3
@@ -1743,7 +1743,7 @@ position = Vector2(1460, -151)
 
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("6_4cxy5")]
 z_index = 5
-position = Vector2(1508, -681)
+position = Vector2(-338, -208)
 player_speed = 200
 JUMP_VELOCITY = -325.0
 
