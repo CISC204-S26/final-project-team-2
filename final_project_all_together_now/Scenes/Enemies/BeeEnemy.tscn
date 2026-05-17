@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://uvukckfl1jd"]
 
-[ext_resource type="Script" uid="uid://buhm73lj05a01" path="res://BeeEnemy.gd" id="1_45hto"]
-[ext_resource type="Texture2D" uid="uid://cidiesdvx1qqo" path="res://ASSETS/Mobs/Small Bee/Fly/Fly-Sheet.png" id="2_wpy1j"]
+[ext_resource type="Script" uid="uid://buhm73lj05a01" path="res://Scripts/Enemies/BeeEnemy.gd" id="1_45hto"]
+[ext_resource type="Texture2D" uid="uid://cidiesdvx1qqo" path="res://Assets/Mobs/Small Bee/Fly/Fly-Sheet.png" id="2_wpy1j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvqly"]
 atlas = ExtResource("2_wpy1j")

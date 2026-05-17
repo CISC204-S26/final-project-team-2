@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dmnjgg0hbe15e"]
 
-[ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/text_interactable.gd" id="1_gtqxf"]
+[ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/Interactables/text_interactable.gd" id="1_gtqxf"]
 [ext_resource type="Texture2D" uid="uid://d0vnkqn51ff1x" path="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet.png" id="2_gtqxf"]
 [ext_resource type="FontFile" uid="uid://ddwg03k6rn76a" path="res://Assets/Fonts/monogram.ttf" id="3_be1ka"]
 
@@ -72,6 +72,7 @@ layout_mode = 0
 offset_right = 275.0
 offset_bottom = 78.0
 theme_override_fonts/normal_font = ExtResource("3_be1ka")
+theme_override_font_sizes/normal_font_size = 20
 text = "Default text"
 horizontal_alignment = 1
 vertical_alignment = 1

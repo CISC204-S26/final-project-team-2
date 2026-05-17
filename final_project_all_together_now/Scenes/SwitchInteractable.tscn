@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bk7p4dqofkumf"]
 
-[ext_resource type="Script" uid="uid://cscpl5hm6cqk5" path="res://ASSETS/Interactables/Lever/switch_interactable.gd" id="1_ph4l1"]
-[ext_resource type="Texture2D" uid="uid://b5jfcpkjca3ja" path="res://ASSETS/Interactables/Lever/LeverV1.png" id="2_xe4u0"]
-[ext_resource type="Texture2D" uid="uid://dlx8dvo1462ds" path="res://ASSETS/Interactables/Lever/LeverV2.png" id="3_63gp4"]
-[ext_resource type="Texture2D" uid="uid://dvuygvscsjf11" path="res://ASSETS/Interactables/Lever/LeverH1.png" id="4_ij5ta"]
-[ext_resource type="Texture2D" uid="uid://bomad0i3x2wab" path="res://ASSETS/Interactables/Lever/LeverH2.png" id="5_1p2o2"]
+[ext_resource type="Script" uid="uid://cscpl5hm6cqk5" path="res://Scripts/Interactables/switch_interactable.gd" id="1_ph4l1"]
+[ext_resource type="Texture2D" uid="uid://b5jfcpkjca3ja" path="res://Assets/Interactables/Lever/LeverV1.png" id="2_xe4u0"]
+[ext_resource type="Texture2D" uid="uid://dlx8dvo1462ds" path="res://Assets/Interactables/Lever/LeverV2.png" id="3_63gp4"]
+[ext_resource type="Texture2D" uid="uid://dvuygvscsjf11" path="res://Assets/Interactables/Lever/LeverH1.png" id="4_ij5ta"]
+[ext_resource type="Texture2D" uid="uid://bomad0i3x2wab" path="res://Assets/Interactables/Lever/LeverH2.png" id="5_1p2o2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ph4l1"]
 radius = 32.0

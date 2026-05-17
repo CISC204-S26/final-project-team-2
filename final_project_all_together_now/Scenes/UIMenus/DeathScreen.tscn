@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b5d1vb2qir23o"]
 
 [ext_resource type="Script" uid="uid://bqspv5oiu82qk" path="res://Scripts/UI_Scripts/deathscreen.gd" id="1_ee34q"]
-[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://ASSETS/Fonts/antiquity-print.ttf" id="2_w8kpw"]
-[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://ASSETS/Audio/menu_select.wav" id="3_j07v3"]
-[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://ASSETS/Audio/menu_hover.wav" id="4_npvyc"]
+[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://Assets/Fonts/antiquity-print.ttf" id="2_w8kpw"]
+[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://Assets/Audio/menu_select.wav" id="3_j07v3"]
+[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://Assets/Audio/menu_hover.wav" id="4_npvyc"]
 
 [node name="DeathScreen" type="CanvasLayer" unique_id=743295744]
 script = ExtResource("1_ee34q")
@@ -69,5 +69,9 @@ stream = ExtResource("3_j07v3")
 [node name="HoverSound" type="AudioStreamPlayer2D" parent="." unique_id=1899948689]
 stream = ExtResource("4_npvyc")
 
+[connection signal="mouse_entered" from="MainButtons/RestartButton" to="." method="play_hover_sound"]
+[connection signal="pressed" from="MainButtons/RestartButton" to="." method="play_click_sound"]
 [connection signal="pressed" from="MainButtons/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="mouse_entered" from="MainButtons/MainMenuButton" to="." method="play_hover_sound"]
+[connection signal="pressed" from="MainButtons/MainMenuButton" to="." method="play_click_sound"]
 [connection signal="pressed" from="MainButtons/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv4qd80axnnpa"
-path="res://.godot/imported/Background-1.png-cf79efc5b661451c0536fd8110f43b61.ctex"
+path="res://.godot/imported/Background-1.png-202d504392bfe0c6cac28519132e9371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Strange Temple 0.2/Background/Background-1.png"
-dest_files=["res://.godot/imported/Background-1.png-cf79efc5b661451c0536fd8110f43b61.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Strange Temple 0.2/Background/Background-1.png"
+dest_files=["res://.godot/imported/Background-1.png-202d504392bfe0c6cac28519132e9371.ctex"]
 
 [params]
 

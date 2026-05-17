@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i8teuo42j5yf"
-path="res://.godot/imported/Die-Sheet - Color 3.png-a72eefa9e641956d9fd1ac496d9e5036.ctex"
+path="res://.godot/imported/Die-Sheet - Color 3.png-184be221b4d3446da46c7982b3b786b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Mobs/Legacy Enemy - Wild Boar/Die/Die-Sheet - Color 3.png"
-dest_files=["res://.godot/imported/Die-Sheet - Color 3.png-a72eefa9e641956d9fd1ac496d9e5036.ctex"]
+source_file="res://Assets/Mobs/Legacy Enemy - Wild Boar/Die/Die-Sheet - Color 3.png"
+dest_files=["res://.godot/imported/Die-Sheet - Color 3.png-184be221b4d3446da46c7982b3b786b5.ctex"]
 
 [params]
 

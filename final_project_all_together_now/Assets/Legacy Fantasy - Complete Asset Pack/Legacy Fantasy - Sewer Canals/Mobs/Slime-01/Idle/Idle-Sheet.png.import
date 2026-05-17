@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doqlkk0dqojmu"
-path="res://.godot/imported/Idle-Sheet.png-39c7d2b2af818468589ef8663c9a4532.ctex"
+path="res://.godot/imported/Idle-Sheet.png-ec6f47eb5ba90977fadfba6bd6c4ae33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Mobs/Slime-01/Idle/Idle-Sheet.png"
-dest_files=["res://.godot/imported/Idle-Sheet.png-39c7d2b2af818468589ef8663c9a4532.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Mobs/Slime-01/Idle/Idle-Sheet.png"
+dest_files=["res://.godot/imported/Idle-Sheet.png-ec6f47eb5ba90977fadfba6bd6c4ae33.ctex"]
 
 [params]
 

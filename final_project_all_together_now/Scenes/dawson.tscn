@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brdwcjklu0wg7"]
 
-[ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/text_interactable.gd" id="1_44801"]
-[ext_resource type="Texture2D" uid="uid://b2ef3wbcfiwt6" path="res://ASSETS/Dawson The Wise/Dawson The Wise.png" id="2_44801"]
+[ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/Interactables/text_interactable.gd" id="1_44801"]
+[ext_resource type="Texture2D" uid="uid://b2ef3wbcfiwt6" path="res://Assets/Dawson The Wise/Dawson The Wise.png" id="2_44801"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j13e0"]
 size = Vector2(33, 36)

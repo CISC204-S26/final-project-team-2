@@ -87,3 +87,7 @@ func _on_level_complete() -> void:
 func _on_tree_exiting() -> void:
 	get_tree().paused = false
 	can_pause = true
+
+
+func _on_door_interactable_level_complete() -> void:
+	pass # Replace with function body.

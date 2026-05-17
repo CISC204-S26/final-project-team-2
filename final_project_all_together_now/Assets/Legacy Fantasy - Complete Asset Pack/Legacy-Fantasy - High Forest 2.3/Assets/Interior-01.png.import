@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7jkkntcgjghg"
-path="res://.godot/imported/Interior-01.png-3bc04e939cb7a7f7be7c3c2186569321.ctex"
+path="res://.godot/imported/Interior-01.png-2bfe2356fa0d3ec88300395addf73795.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Interior-01.png"
-dest_files=["res://.godot/imported/Interior-01.png-3bc04e939cb7a7f7be7c3c2186569321.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy - High Forest 2.3/Assets/Interior-01.png"
+dest_files=["res://.godot/imported/Interior-01.png-2bfe2356fa0d3ec88300395addf73795.ctex"]
 
 [params]
 

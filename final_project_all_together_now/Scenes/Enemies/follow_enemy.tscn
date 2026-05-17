@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dnsygegpyd7rx"]
 
-[ext_resource type="Script" uid="uid://bl1ncb6to0rhy" path="res://Enemies/FollowEnemy.gd" id="1_ooyg1"]
-[ext_resource type="Texture2D" uid="uid://64648yxnemk7" path="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet-Back.png" id="1_rg00b"]
-[ext_resource type="Texture2D" uid="uid://ccp7o5o33cg7u" path="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Walk/Walk-Sheet-Black.png" id="2_ooyg1"]
+[ext_resource type="Script" uid="uid://bl1ncb6to0rhy" path="res://Scripts/Enemies/FollowEnemy.gd" id="1_ooyg1"]
+[ext_resource type="Texture2D" uid="uid://64648yxnemk7" path="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet-Back.png" id="1_rg00b"]
+[ext_resource type="Texture2D" uid="uid://ccp7o5o33cg7u" path="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Walk/Walk-Sheet-Black.png" id="2_ooyg1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p1tcm"]
 atlas = ExtResource("1_rg00b")

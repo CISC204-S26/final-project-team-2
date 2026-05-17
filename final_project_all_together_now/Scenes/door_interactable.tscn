@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://da8fbx0h1f2iq"]
 
-[ext_resource type="Script" uid="uid://cqg3suh3asigo" path="res://ASSETS/Interactables/Door/door_interactable.gd" id="1_gckko"]
-[ext_resource type="Texture2D" uid="uid://db3wl5mu80w1c" path="res://ASSETS/Interactables/Door/LockedDoor.png" id="2_elqfv"]
-[ext_resource type="Texture2D" uid="uid://f2agw41ca1hr" path="res://ASSETS/Interactables/Door/OpenedDoor.png" id="3_ye767"]
+[ext_resource type="Script" uid="uid://cqg3suh3asigo" path="res://Scripts/Interactables/door_interactable.gd" id="1_gckko"]
+[ext_resource type="Texture2D" uid="uid://db3wl5mu80w1c" path="res://Assets/Interactables/Door/LockedDoor.png" id="2_elqfv"]
+[ext_resource type="Texture2D" uid="uid://f2agw41ca1hr" path="res://Assets/Interactables/Door/OpenedDoor.png" id="3_ye767"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_elqfv"]
 size = Vector2(34, 75)
