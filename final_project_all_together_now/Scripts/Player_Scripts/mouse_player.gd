@@ -33,7 +33,7 @@ func _ready():
 	add_child(drag_line)
 
 
-func _process(delta):
+func _process(_delta):
 	var mouse_pos = get_global_mouse_position()
 	if mouse_pos.x < last_mouse_x:
 		cursor_sprite.flip_h = true

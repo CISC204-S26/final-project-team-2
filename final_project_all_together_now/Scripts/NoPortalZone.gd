@@ -4,7 +4,7 @@ class_name NoPortalZone extends Area2D
 
 @export var zone_size: Vector2 = Vector2(20, 20)
 
-var _is_hovered: bool = false
+#var _is_hovered: bool = false
 var _is_flashing: bool = false
 var _flash_timer: float = 0.0
 var _flash_duration: float = 1.5  # seconds to flash
@@ -18,13 +18,13 @@ func _ready():
 	#print("NoPortalZone ready! global_pos: ", global_position, " size: ", zone_size)
 
 func _process(delta: float):
-	# Hover detection
-	var mouse_pos = get_global_mouse_position()
-	var was_hovered = _is_hovered
-	_is_hovered = contains_point(mouse_pos)
-	if _is_hovered != was_hovered:
-		queue_redraw()
-	
+	## Hover detection
+	#var mouse_pos = get_global_mouse_position()
+	#var was_hovered = _is_hovered
+	#_is_hovered = contains_point(mouse_pos)
+	#if _is_hovered != was_hovered:
+		#queue_redraw()
+
 	# Flash timer countdown
 	if _is_flashing:
 		_flash_timer -= delta
@@ -48,17 +48,30 @@ func contains_point(pos: Vector2) -> bool:
 	)
 
 func _draw():
+	#var half = zone_size / 2
+	#var fill_alpha := 0.3
+	#var outline_alpha := 0.8
+#
+	#if _is_flashing:
+		## im ngl i lowkey looked this part up so dont ask what any of this does
+		#var pulse = (sin(_flash_timer * _flash_frequency * TAU) + 1.0) / 2.0
+		#fill_alpha = lerp(0.15, 0.7, pulse)
+		#outline_alpha = lerp(0.6, 1.0, pulse)
+	#elif _is_hovered:
+		#fill_alpha = 0.5
+		#outline_alpha = 1.0
+	#draw_rect(Rect2(-half, zone_size), Color(1, 0, 0, fill_alpha), true)
+	#draw_rect(Rect2(-half, zone_size), Color(1, 0, 0, outline_alpha), false)
+	
+	# NEW -----------------------------------------------------------------------------------
+	# If its not flashing, draw nothing
+	if not _is_flashing:
+		return
+		
 	var half = zone_size / 2
-	var fill_alpha := 0.3
-	var outline_alpha := 0.8
-
-	if _is_flashing:
-		# im ngl i lowkey looked this part up so dont ask what any of this does
-		var pulse = (sin(_flash_timer * _flash_frequency * TAU) + 1.0) / 2.0
-		fill_alpha = lerp(0.15, 0.7, pulse)
-		outline_alpha = lerp(0.6, 1.0, pulse)
-	elif _is_hovered:
-		fill_alpha = 0.5
-		outline_alpha = 1.0
+	var pulse = (sin(_flash_timer * _flash_frequency * TAU) + 1.0) / 2.0
+	var fill_alpha = lerp(0.15, 0.7, pulse)
+	var outline_alpha = lerp(0.6, 1.0, pulse)
+	
 	draw_rect(Rect2(-half, zone_size), Color(1, 0, 0, fill_alpha), true)
 	draw_rect(Rect2(-half, zone_size), Color(1, 0, 0, outline_alpha), false)

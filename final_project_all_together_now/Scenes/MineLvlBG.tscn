@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://b2rvru7enmt1a"]
+
+[ext_resource type="Texture2D" uid="uid://ddu1cfyiybc4r" path="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Background/Background-3.png" id="1_4hh8s"]
+[ext_resource type="Texture2D" uid="uid://c5y4g2nvbgdye" path="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Background/Background-2.png" id="2_cxeff"]
+[ext_resource type="Texture2D" uid="uid://dcg2rnx16udo3" path="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Deep Cave/Background/Background-1.png" id="3_jhm20"]
+
+[node name="MineLvlBg" type="ParallaxBackground" unique_id=109736757]
+
+[node name="FarBgLayer" type="ParallaxLayer" parent="." unique_id=812251435]
+motion_scale = Vector2(0.7, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="FarBgLayer" unique_id=1618476797]
+texture_filter = 1
+position = Vector2(-288, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D2" type="Sprite2D" parent="FarBgLayer" unique_id=1615155223]
+texture_filter = 1
+position = Vector2(95, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D3" type="Sprite2D" parent="FarBgLayer" unique_id=1234880174]
+texture_filter = 1
+position = Vector2(479, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D4" type="Sprite2D" parent="FarBgLayer" unique_id=67627848]
+texture_filter = 1
+position = Vector2(863.5, -24)
+scale = Vector2(2.0052083, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D5" type="Sprite2D" parent="FarBgLayer" unique_id=278387870]
+texture_filter = 1
+position = Vector2(1248, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="FarRockLayer" type="ParallaxLayer" parent="." unique_id=1752068671]
+motion_scale = Vector2(0.8, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="FarRockLayer" unique_id=1747573912]
+texture_filter = 1
+position = Vector2(-320, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D2" type="Sprite2D" parent="FarRockLayer" unique_id=1206040428]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D3" type="Sprite2D" parent="FarRockLayer" unique_id=756440067]
+texture_filter = 1
+position = Vector2(320, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D4" type="Sprite2D" parent="FarRockLayer" unique_id=487595446]
+texture_filter = 1
+position = Vector2(640, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D5" type="Sprite2D" parent="FarRockLayer" unique_id=504951175]
+texture_filter = 1
+position = Vector2(960, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D6" type="Sprite2D" parent="FarRockLayer" unique_id=908592491]
+texture_filter = 1
+position = Vector2(1280, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="CloseRockLayer" type="ParallaxLayer" parent="." unique_id=2116647079]
+motion_scale = Vector2(0.9, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="CloseRockLayer" unique_id=1742183686]
+texture_filter = 1
+position = Vector2(-480, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CloseRockLayer" unique_id=45666564]
+texture_filter = 1
+position = Vector2(-128, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D3" type="Sprite2D" parent="CloseRockLayer" unique_id=1561633355]
+texture_filter = 1
+position = Vector2(224, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D4" type="Sprite2D" parent="CloseRockLayer" unique_id=653009446]
+texture_filter = 1
+position = Vector2(576, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D5" type="Sprite2D" parent="CloseRockLayer" unique_id=561682724]
+texture_filter = 1
+position = Vector2(928, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D6" type="Sprite2D" parent="CloseRockLayer" unique_id=1066115362]
+texture_filter = 1
+position = Vector2(1280, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")

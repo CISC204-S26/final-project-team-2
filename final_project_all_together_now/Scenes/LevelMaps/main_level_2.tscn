@@ -1655,28 +1655,28 @@ texture = ExtResource("3_k6k0p")
 sources/0 = SubResource("TileSetAtlasSource_d8u5m")
 sources/1 = SubResource("TileSetAtlasSource_nj4by")
 
-[sub_resource type="Curve2D" id="Curve2D_ypu8q"]
+[sub_resource type="Curve2D" id="Curve2D_5ci8n"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 22, 1, 0, 0, 0, 0, 265.00464, 1)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_1u1qt"]
+[sub_resource type="Curve2D" id="Curve2D_nmdb1"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -38.226563, -66, 0, 0, 0, 0, -240.36536, -128, 0, 0, 0, 0, -172.98578, -8, 0, 0, 0, 0, -331.88098, -7)
 }
 point_count = 4
 
-[sub_resource type="Curve2D" id="Curve2D_k6k0p"]
+[sub_resource type="Curve2D" id="Curve2D_4cxy5"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2, -184, 0, 0, 0, 0, 2, 3)
 }
 point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_5ci8n"]
+[sub_resource type="Curve2D" id="Curve2D_gke7e"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -163.00073, -105.99972, 0, 0, 0, 0, -59.996826, -128.99963, 0, 0, 0, 0, 20.006287, -108.99971)
@@ -1713,9 +1713,37 @@ z_index = 1
 tile_map_data = PackedByteArray("AABSAOf/AAALAAoAAABSAOj/AAALAAsAAABTAOf/AAAMAAoAAABTAOj/AAAMAAsAAABUAOf/AAAMAAAAAABUAOj/AAAMAAEAAABVAOf/AAAMAAoAAABVAOj/AAAMAAsAAABWAOf/AAANAAoAAABWAOj/AAANAAsAAABXAOf/AAAMAAAAAABXAOj/AAAMAAEAAABYAOf/AAAMAAAAAABYAOj/AAAMAAEAAABZAOf/AAAMAAAAAABZAOj/AAAMAAEAAABaAOf/AAAMAAAAAABaAOj/AAAMAAEAAABbAOf/AAAOAAoAAABbAOj/AAAOAAsAAABMANX/AQANAA0AAABMANb/AQANAA4AAABMANf/AQANAA8AAABMANj/AQANABAAAABNANX/AQAOAA0AAABNANb/AQAOAA4AAABNANf/AQAOAA8AAABNANj/AQAOABAAAABOANT/AQAPAAwAAABOANX/AQAPAA0AAABOANb/AQAPAA4AAABOANf/AQAPAA8AAABOANj/AQAPABAAAABOANn/AQAPABEAAABPANT/AQAQAAwAAABPANX/AQAQAA0AAABPANb/AQAQAA4AAABPANf/AQAQAA8AAABPANj/AQAQABAAAABPANn/AQAQABEAAABQANT/AQARAAwAAABQANX/AQARAA0AAABQANb/AQARAA4AAABQANf/AQARAA8AAABQANj/AQARABAAAABQANn/AQARABEAAABRANT/AQASAAwAAABRANX/AQASAA0AAABRANb/AQASAA4AAABRANf/AQASAA8AAABRANj/AQASABAAAABRANn/AQASABEAAABSANX/AQATAA0AAABSANb/AQATAA4AAABSANf/AQATAA8AAABSANj/AQATABAAAABTANX/AQAUAA0AAABTANb/AQAUAA4AAABTANf/AQAUAA8AAABTANj/AQAUABAAAABEAOr/AQANAA0AAABEAOv/AQANAA4AAABEAOz/AQANAA8AAABEAO3/AQANABAAAABFAOr/AQAOAA0AAABFAOv/AQAOAA4AAABFAOz/AQAOAA8AAABFAO3/AQAOABAAAABGAOn/AQAPAAwAAABGAOr/AQAPAA0AAABGAOv/AQAPAA4AAABGAOz/AQAPAA8AAABGAO3/AQAPABAAAABGAO7/AQAPABEAAABHAOn/AQAQAAwAAABHAOr/AQAQAA0AAABHAOv/AQAQAA4AAABHAOz/AQAQAA8AAABHAO3/AQAQABAAAABHAO7/AQAQABEAAABIAOn/AQARAAwAAABIAOr/AQARAA0AAABIAOv/AQARAA4AAABIAOz/AQARAA8AAABIAO3/AQARABAAAABIAO7/AQARABEAAABJAOn/AQASAAwAAABJAOr/AQASAA0AAABJAOv/AQASAA4AAABJAOz/AQASAA8AAABJAO3/AQASABAAAABJAO7/AQASABEAAABKAOr/AQATAA0AAABKAOv/AQATAA4AAABKAOz/AQATAA8AAABKAO3/AQATABAAAABLAOr/AQAUAA0AAABLAOv/AQAUAA4AAABLAOz/AQAUAA8AAABLAO3/AQAUABAAAABVAM//AQANAA0AAABVAND/AQANAA4AAABVANH/AQANAA8AAABVANL/AQANABAAAABWAM//AQAOAA0AAABWAND/AQAOAA4AAABWANH/AQAOAA8AAABWANL/AQAOABAAAABXAM7/AQAPAAwAAABXAM//AQAPAA0AAABXAND/AQAPAA4AAABXANH/AQAPAA8AAABXANL/AQAPABAAAABXANP/AQAPABEAAABYAM7/AQAQAAwAAABYAM//AQAQAA0AAABYAND/AQAQAA4AAABYANH/AQAQAA8AAABYANL/AQAQABAAAABYANP/AQAQABEAAABZAM7/AQARAAwAAABZAM//AQARAA0AAABZAND/AQARAA4AAABZANH/AQARAA8AAABZANL/AQARABAAAABZANP/AQARABEAAABaAM7/AQASAAwAAABaAM//AQASAA0AAABaAND/AQASAA4AAABaANH/AQASAA8AAABaANL/AQASABAAAABaANP/AQASABEAAABbAM//AQATAA0AAABbAND/AQATAA4AAABbANH/AQATAA8AAABbANL/AQATABAAAABcAM//AQAUAA0AAABcAND/AQAUAA4AAABcANH/AQAUAA8AAABcANL/AQAUABAAAADj/+b/AQANAA0AAADj/+f/AQANAA4AAADj/+j/AQANAA8AAADj/+n/AQANABAAAADk/+b/AQAOAA0AAADk/+f/AQAOAA4AAADk/+j/AQAOAA8AAADk/+n/AQAOABAAAADl/+X/AQAPAAwAAADl/+b/AQAPAA0AAADl/+f/AQAPAA4AAADl/+j/AQAPAA8AAADl/+n/AQAPABAAAADl/+r/AQAPABEAAADm/+X/AQAQAAwAAADm/+b/AQAQAA0AAADm/+f/AQAQAA4AAADm/+j/AQAQAA8AAADm/+n/AQAQABAAAADm/+r/AQAQABEAAADn/+X/AQARAAwAAADn/+b/AQARAA0AAADn/+f/AQARAA4AAADn/+j/AQARAA8AAADn/+n/AQARABAAAADn/+r/AQARABEAAADo/+X/AQASAAwAAADo/+b/AQASAA0AAADo/+f/AQASAA4AAADo/+j/AQASAA8AAADo/+n/AQASABAAAADo/+r/AQASABEAAADp/+b/AQATAA0AAADp/+f/AQATAA4AAADp/+j/AQATAA8AAADp/+n/AQATABAAAADq/+b/AQAUAA0AAADq/+f/AQAUAA4AAADq/+j/AQAUAA8AAADq/+n/AQAUABAAAADs/+H/AQANAA0AAADs/+L/AQANAA4AAADs/+P/AQANAA8AAADs/+T/AQANABAAAADt/+H/AQAOAA0AAADt/+L/AQAOAA4AAADt/+P/AQAOAA8AAADt/+T/AQAOABAAAADu/+D/AQAPAAwAAADu/+H/AQAPAA0AAADu/+L/AQAPAA4AAADu/+P/AQAPAA8AAADu/+T/AQAPABAAAADu/+X/AQAPABEAAADv/+D/AQAQAAwAAADv/+H/AQAQAA0AAADv/+L/AQAQAA4AAADv/+P/AQAQAA8AAADv/+T/AQAQABAAAADv/+X/AQAQABEAAADw/+D/AQARAAwAAADw/+H/AQARAA0AAADw/+L/AQARAA4AAADw/+P/AQARAA8AAADw/+T/AQARABAAAADw/+X/AQARABEAAADx/+D/AQASAAwAAADx/+H/AQASAA0AAADx/+L/AQASAA4AAADx/+P/AQASAA8AAADx/+T/AQASABAAAADx/+X/AQASABEAAADy/+H/AQATAA0AAADy/+L/AQATAA4AAADy/+P/AQATAA8AAADy/+T/AQATABAAAADz/+H/AQAUAA0AAADz/+L/AQAUAA4AAADz/+P/AQAUAA8AAADz/+T/AQAUABAAAAA=")
 tile_set = SubResource("TileSet_nj4by")
 
+[node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("16_5ci8n")]
+position = Vector2(-567, -394)
+zone_size = Vector2(160, 60)
+
+[node name="NoPortalZone2" parent="." unique_id=1749156357 instance=ExtResource("16_5ci8n")]
+z_index = 3
+position = Vector2(1700, -595)
+zone_size = Vector2(200, 200)
+
+[node name="DoorInteractable" parent="." unique_id=800260976 instance=ExtResource("11_indaj")]
+position = Vector2(1728, -589)
+
+[node name="SwitchInteractable" parent="." unique_id=1714059362 node_paths=PackedStringArray("door_to_open") instance=ExtResource("12_sdm2e")]
+z_index = 0
+position = Vector2(1424, -429)
+door_to_open = NodePath("../DoorInteractable")
+
+[node name="DawsonInteractable" parent="." unique_id=2059397555 instance=ExtResource("13_ypu8q")]
+position = Vector2(1964, -756)
+dialogue = ["It's me again!!"]
+
+[node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("8_n7j0j")]
+position = Vector2(232, -20)
+dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "So don't fall or else you have to restart...", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red.."]
+
+[node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("15_k6k0p")]
+position = Vector2(1460, -151)
+
 [node name="Player" parent="." unique_id=1088848127 instance=ExtResource("6_4cxy5")]
 z_index = 5
-position = Vector2(-337, -207)
+position = Vector2(1508, -681)
 player_speed = 200
 JUMP_VELOCITY = -325.0
 
@@ -1734,50 +1762,27 @@ position = Vector2(-75, -30)
 position = Vector2(-4, 186)
 death_screen = NodePath("../DeathScreen")
 
-[node name="TextInteractable" parent="." unique_id=48577180 instance=ExtResource("8_n7j0j")]
-position = Vector2(232, -20)
-dialogue = ["Welcome back dumbass.", "This next level is easy asf.", "Instead of going left to right... You're going up and down!", "So don't fall or else you have to restart...", "...", "Also if you see my boy Dawson...", "Tell him...", "Tell him that he should've made his hat red.."]
-
 [node name="MovingPlatform" parent="." unique_id=1567129101 instance=ExtResource("7_n7j0j")]
 position = Vector2(331.00043, 67.99999)
 scale = Vector2(0.99998087, 1.0000019)
-curve = SubResource("Curve2D_ypu8q")
+curve = SubResource("Curve2D_5ci8n")
 
 [node name="MovingPlatform2" parent="." unique_id=118170743 instance=ExtResource("7_n7j0j")]
 position = Vector2(1062.0112, 70)
 scale = Vector2(0.99436617, 1)
-curve = SubResource("Curve2D_1u1qt")
+curve = SubResource("Curve2D_nmdb1")
 
 [node name="MovingPlatform3" parent="." unique_id=132344614 instance=ExtResource("7_n7j0j")]
 position = Vector2(-28, -7)
-curve = SubResource("Curve2D_k6k0p")
+curve = SubResource("Curve2D_4cxy5")
 speed = 0.3
 
 [node name="MovingPlatform4" parent="." unique_id=237648083 instance=ExtResource("7_n7j0j")]
 position = Vector2(661.9945, 136.00012)
 scale = Vector2(0.99996173, 1.0000038)
-curve = SubResource("Curve2D_5ci8n")
+curve = SubResource("Curve2D_gke7e")
 
 [node name="DeathScreen" parent="." unique_id=743295744 instance=ExtResource("2_0q1iv")]
 visible = false
-
-[node name="DoorInteractable" parent="." unique_id=800260976 instance=ExtResource("11_indaj")]
-position = Vector2(1728, -589)
-
-[node name="SwitchInteractable" parent="." unique_id=1714059362 node_paths=PackedStringArray("door_to_open") instance=ExtResource("12_sdm2e")]
-z_index = 0
-position = Vector2(1424, -429)
-door_to_open = NodePath("../DoorInteractable")
-
-[node name="DawsonInteractable" parent="." unique_id=2059397555 instance=ExtResource("13_ypu8q")]
-position = Vector2(1964, -756)
-dialogue = ["It's me again!!"]
-
-[node name="Enemy" parent="." unique_id=2076354005 instance=ExtResource("15_k6k0p")]
-position = Vector2(1460, -151)
-
-[node name="NoPortalZone" parent="." unique_id=77191174 instance=ExtResource("16_5ci8n")]
-position = Vector2(-567, -394)
-zone_size = Vector2(160, 60)
 
 [connection signal="level_complete" from="DoorInteractable" to="PauseMenu" method="_on_door_interactable_level_complete"]

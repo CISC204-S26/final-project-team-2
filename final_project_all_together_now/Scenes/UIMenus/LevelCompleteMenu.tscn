@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dsdkpc5knwoj8"]
 
 [ext_resource type="Script" uid="uid://b71hm8sx4d7q8" path="res://Scripts/UI_Scripts/level_complete_menu.gd" id="1_mixsw"]
-[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://ASSETS/Fonts/antiquity-print.ttf" id="1_vagpg"]
-[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://ASSETS/Audio/menu_select.wav" id="3_eaeud"]
-[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://ASSETS/Audio/menu_hover.wav" id="4_3xb57"]
+[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://Assets/Fonts/antiquity-print.ttf" id="1_vagpg"]
+[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://Assets/Audio/menu_select.wav" id="3_eaeud"]
+[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://Assets/Audio/menu_hover.wav" id="4_3xb57"]
 
 [node name="LevelCompleteMenu" type="Control" unique_id=1412665296]
 process_mode = 3

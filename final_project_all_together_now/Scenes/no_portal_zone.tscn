@@ -5,6 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5lqm"]
 
 [node name="NoPortalZone" type="Area2D" unique_id=77191174]
+z_index = -1
 script = ExtResource("1_4qfal")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1950440256]
