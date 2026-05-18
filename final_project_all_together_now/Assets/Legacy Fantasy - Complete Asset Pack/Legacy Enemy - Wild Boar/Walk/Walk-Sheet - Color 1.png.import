@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c87sb0shb4a3p"
-path="res://.godot/imported/Walk-Sheet - Color 1.png-a491aef62a790998bcfd0156a8b851f1.ctex"
+path="res://.godot/imported/Walk-Sheet - Color 1.png-604eedf298d816894836e5a45839fd41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Enemy - Wild Boar/Walk/Walk-Sheet - Color 1.png"
-dest_files=["res://.godot/imported/Walk-Sheet - Color 1.png-a491aef62a790998bcfd0156a8b851f1.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Enemy - Wild Boar/Walk/Walk-Sheet - Color 1.png"
+dest_files=["res://.godot/imported/Walk-Sheet - Color 1.png-604eedf298d816894836e5a45839fd41.ctex"]
 
 [params]
 

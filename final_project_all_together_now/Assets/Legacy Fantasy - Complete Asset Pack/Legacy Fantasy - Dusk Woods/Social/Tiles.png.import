@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ljadqq7ktjoi"
-path="res://.godot/imported/Tiles.png-ddf8d93f129764eef77c046251f2add6.ctex"
+path="res://.godot/imported/Tiles.png-1b4abf4b15db16026509c5c748f3bb62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Dusk Woods/Social/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-ddf8d93f129764eef77c046251f2add6.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Dusk Woods/Social/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-1b4abf4b15db16026509c5c748f3bb62.ctex"]
 
 [params]
 

@@ -6,7 +6,7 @@ extends CanvasLayer
 
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
 func _on_restart_button_pressed():
@@ -26,3 +26,11 @@ func play_hover_sound():
 
 func play_click_sound():
 	click_sound.play()
+
+
+func _on_player_player_dead() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+
+func _on_visibility_changed() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

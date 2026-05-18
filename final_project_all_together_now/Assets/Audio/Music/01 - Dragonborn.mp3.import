@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://rg6ceqpi75r5"
-path="res://.godot/imported/01 - Dragonborn.mp3-932a14619f58a17a0771003f56ce9656.mp3str"
+path="res://.godot/imported/01 - Dragonborn.mp3-0ac728508bc634a364ffd61f1c4c9efb.mp3str"
 
 [deps]
 
-source_file="res://Assets/Audio/Music/01 - Dragonborn.mp3"
-dest_files=["res://.godot/imported/01 - Dragonborn.mp3-932a14619f58a17a0771003f56ce9656.mp3str"]
+source_file="res://ASSETS/Audio/Music/01 - Dragonborn.mp3"
+dest_files=["res://.godot/imported/01 - Dragonborn.mp3-0ac728508bc634a364ffd61f1c4c9efb.mp3str"]
 
 [params]
 

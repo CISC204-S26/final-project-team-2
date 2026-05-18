@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwg33lg1h2ohq"
-path="res://.godot/imported/Idle-Sheet-export-Back.png-c2edfa3aebddd30c39b54396b5afe623.ctex"
+path="res://.godot/imported/Idle-Sheet-export-Back.png-cab1ff3ff048ed7a6c9ef9fd5d4a5aa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Boar/Idle/Idle-Sheet-export-Back.png"
-dest_files=["res://.godot/imported/Idle-Sheet-export-Back.png-c2edfa3aebddd30c39b54396b5afe623.ctex"]
+source_file="res://ASSETS/Mobs/Boar/Idle/Idle-Sheet-export-Back.png"
+dest_files=["res://.godot/imported/Idle-Sheet-export-Back.png-cab1ff3ff048ed7a6c9ef9fd5d4a5aa2.ctex"]
 
 [params]
 

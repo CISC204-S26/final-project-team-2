@@ -7,6 +7,8 @@ extends CharacterBody2D
 
 const GRAVITY = 980.0 #Random ahh numbers
 
+signal player_dead
+
 # Sets up interactables detector
 var interactables = []
 var was_on_floor := true
@@ -133,6 +135,7 @@ func die():
 	animated_sprite.play("PlayerDeath")
 	
 	await get_tree().create_timer(1.5).timeout
+	player_dead.emit()
 	#restart scene on death
 	#dget_tree().reload_current_scene()
 	

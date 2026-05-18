@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://2630siw3rtup"]
 
 [ext_resource type="Script" uid="uid://bhaoql7icitqr" path="res://Scripts/UI_Scripts/main_menu.gd" id="1_gndpw"]
-[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://Assets/Fonts/antiquity-print.ttf" id="1_rohnd"]
-[ext_resource type="Texture2D" uid="uid://rcwrxws53pa0" path="res://Assets/Audio/Music/cf6216fac15f7562cc2693d6549e2597.jpg" id="2_12i0m"]
-[ext_resource type="Texture2D" uid="uid://dpygdrl5tomxw" path="res://Assets/UIMenus/Ornate Retro UI/BlackGreyUISheet.png" id="3_gndpw"]
-[ext_resource type="FontFile" uid="uid://ddwg03k6rn76a" path="res://Assets/Fonts/monogram.ttf" id="3_iimdu"]
-[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://Assets/Audio/menu_select.wav" id="5_0ft5o"]
-[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://Assets/Audio/menu_hover.wav" id="6_6o6w3"]
-[ext_resource type="AudioStream" uid="uid://rg6ceqpi75r5" path="res://Assets/Audio/Music/01 - Dragonborn.mp3" id="7_6o6w3"]
+[ext_resource type="FontFile" uid="uid://dboo1ya2abnwh" path="res://ASSETS/Fonts/antiquity-print.ttf" id="1_rohnd"]
+[ext_resource type="Texture2D" uid="uid://rcwrxws53pa0" path="res://ASSETS/Audio/Music/cf6216fac15f7562cc2693d6549e2597.jpg" id="2_12i0m"]
+[ext_resource type="Texture2D" uid="uid://dpygdrl5tomxw" path="res://ASSETS/UIMenus/Ornate Retro UI/BlackGreyUISheet.png" id="3_gndpw"]
+[ext_resource type="FontFile" uid="uid://ddwg03k6rn76a" path="res://ASSETS/Fonts/monogram.ttf" id="3_iimdu"]
+[ext_resource type="AudioStream" uid="uid://c21vnnga1uarj" path="res://ASSETS/Audio/menu_select.wav" id="5_0ft5o"]
+[ext_resource type="AudioStream" uid="uid://ca6kshe0g78nf" path="res://ASSETS/Audio/menu_hover.wav" id="6_6o6w3"]
+[ext_resource type="AudioStream" uid="uid://rg6ceqpi75r5" path="res://ASSETS/Audio/Music/01 - Dragonborn.mp3" id="7_6o6w3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gndpw"]
 atlas = ExtResource("3_gndpw")
@@ -25,8 +25,8 @@ region = Rect2(116, 154, 15, 8)
 script = ExtResource("1_gndpw")
 
 [node name="Cf6216Fac15f7562Cc2693d6549e2597" type="Sprite2D" parent="." unique_id=1005786945]
-position = Vector2(578, 360)
-scale = Vector2(2, 2)
+position = Vector2(576, 324)
+scale = Vector2(2.4303796, 1.4561799)
 texture = ExtResource("2_12i0m")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=1163125203]
@@ -34,14 +34,15 @@ texture_filter = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -421.0
-offset_top = 122.0
-offset_right = 438.0
-offset_bottom = 233.0
+offset_left = -424.0
+offset_top = 40.0
+offset_right = 435.0
+offset_bottom = 265.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_rohnd")
 theme_override_font_sizes/font_size = 75
-text = "Place Holder Title"
+text = "Sword Boy &
+Fairy Girl"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -259,8 +260,8 @@ autoplay = true
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="_on_levels_button_pressed"]
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="play_click_sound"]
 [connection signal="mouse_entered" from="MainButtons/OptionsButton" to="." method="play_hover_sound"]
-[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="play_click_sound"]
 [connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="play_click_sound"]
 [connection signal="mouse_entered" from="MainButtons/QuitButton" to="." method="play_hover_sound"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="play_click_sound"]

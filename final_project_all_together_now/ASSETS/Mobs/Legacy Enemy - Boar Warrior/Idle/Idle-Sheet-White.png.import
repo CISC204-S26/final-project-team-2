@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dut2415xdj8d5"
-path="res://.godot/imported/Idle-Sheet-White.png-db24b5f76321ce4b5397bec4e8087634.ctex"
+path="res://.godot/imported/Idle-Sheet-White.png-fec3c2d089e047b064d3de38db227c0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet-White.png"
-dest_files=["res://.godot/imported/Idle-Sheet-White.png-db24b5f76321ce4b5397bec4e8087634.ctex"]
+source_file="res://ASSETS/Mobs/Legacy Enemy - Boar Warrior/Idle/Idle-Sheet-White.png"
+dest_files=["res://.godot/imported/Idle-Sheet-White.png-fec3c2d089e047b064d3de38db227c0c.ctex"]
 
 [params]
 

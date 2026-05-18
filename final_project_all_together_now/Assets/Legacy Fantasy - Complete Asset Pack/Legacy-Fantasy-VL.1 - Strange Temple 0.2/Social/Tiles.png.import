@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy1lvm0thv8fy"
-path="res://.godot/imported/Tiles.png-95f5d075d93be572851c63c8842981a8.ctex"
+path="res://.godot/imported/Tiles.png-789e9c8b8d92d1d3b16e0ef3e042f9e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Strange Temple 0.2/Social/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-95f5d075d93be572851c63c8842981a8.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Strange Temple 0.2/Social/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-789e9c8b8d92d1d3b16e0ef3e042f9e7.ctex"]
 
 [params]
 

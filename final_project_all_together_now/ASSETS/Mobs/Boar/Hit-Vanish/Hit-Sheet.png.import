@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv58a31rqyrco"
-path="res://.godot/imported/Hit-Sheet.png-0ea268f7fdd427894c281c37441867b9.ctex"
+path="res://.godot/imported/Hit-Sheet.png-43c1efa1cb1b788f43024d8aa481e9f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Boar/Hit-Vanish/Hit-Sheet.png"
-dest_files=["res://.godot/imported/Hit-Sheet.png-0ea268f7fdd427894c281c37441867b9.ctex"]
+source_file="res://ASSETS/Mobs/Boar/Hit-Vanish/Hit-Sheet.png"
+dest_files=["res://.godot/imported/Hit-Sheet.png-43c1efa1cb1b788f43024d8aa481e9f0.ctex"]
 
 [params]
 

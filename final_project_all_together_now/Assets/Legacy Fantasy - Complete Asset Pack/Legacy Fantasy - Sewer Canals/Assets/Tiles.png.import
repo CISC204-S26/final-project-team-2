@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgjlkigd02egm"
-path="res://.godot/imported/Tiles.png-4261f390a8f1222b6fa5ae060ea877d4.ctex"
+path="res://.godot/imported/Tiles.png-d755971089c48ac1327e21f9c7b30548.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Assets/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-4261f390a8f1222b6fa5ae060ea877d4.ctex"]
+source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Assets/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-d755971089c48ac1327e21f9c7b30548.ctex"]
 
 [params]
 

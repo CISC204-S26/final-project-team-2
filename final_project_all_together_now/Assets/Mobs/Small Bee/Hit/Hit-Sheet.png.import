@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4l2ypivthnsa"
-path="res://.godot/imported/Hit-Sheet.png-9c222c84be359169da49a90d5dba8607.ctex"
+path="res://.godot/imported/Hit-Sheet.png-44a4655b0a32087f9826f06d337b82a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mobs/Small Bee/Hit/Hit-Sheet.png"
-dest_files=["res://.godot/imported/Hit-Sheet.png-9c222c84be359169da49a90d5dba8607.ctex"]
+source_file="res://ASSETS/Mobs/Small Bee/Hit/Hit-Sheet.png"
+dest_files=["res://.godot/imported/Hit-Sheet.png-44a4655b0a32087f9826f06d337b82a3.ctex"]
 
 [params]
 

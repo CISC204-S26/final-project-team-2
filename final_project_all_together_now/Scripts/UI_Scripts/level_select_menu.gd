@@ -18,8 +18,8 @@ func _ready():
 	
 	for i in range(Global.completed_levels.size()):
 		if Global.completed_levels[i] == true:
-			if i < buttons.size():
-				buttons[i+1].disabled = false
+			if i <= buttons.size():
+				buttons[i].disabled = false
 				buttons[i].tooltip_text = ""
 		elif Global.completed_levels[i] == false and Global.completed_levels[i-1] == false and i != 0:
 			buttons[i].disabled = true
