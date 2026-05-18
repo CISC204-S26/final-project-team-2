@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c62qxw8jbif67"
-path="res://.godot/imported/Tiles.png-8b0c8585a293d3701a74c88995359aad.ctex"
+path="res://.godot/imported/Tiles.png-61cd4482d6799c2e5ce113c7b2fa1f22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Blood Mansion/Social/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-8b0c8585a293d3701a74c88995359aad.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Blood Mansion/Social/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-61cd4482d6799c2e5ce113c7b2fa1f22.ctex"]
 
 [params]
 

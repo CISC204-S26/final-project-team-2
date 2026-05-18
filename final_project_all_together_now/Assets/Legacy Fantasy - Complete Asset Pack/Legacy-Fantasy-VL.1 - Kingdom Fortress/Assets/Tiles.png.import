@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dia6tx1okuvyg"
-path="res://.godot/imported/Tiles.png-37c6d6398a5b75013e7d369076f6d2c3.ctex"
+path="res://.godot/imported/Tiles.png-b6726c833bb1ed600781322ef4315e44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Kingdom Fortress/Assets/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-37c6d6398a5b75013e7d369076f6d2c3.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy-Fantasy-VL.1 - Kingdom Fortress/Assets/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-b6726c833bb1ed600781322ef4315e44.ctex"]
 
 [params]
 

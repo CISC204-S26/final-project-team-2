@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dgrjqf2bk5g6f" path="res://Scripts/Interactables/text_interactable.gd" id="1_44801"]
 [ext_resource type="Texture2D" uid="uid://b2ef3wbcfiwt6" path="res://Assets/Dawson The Wise/Dawson The Wise.png" id="2_44801"]
+[ext_resource type="FontFile" uid="uid://ddwg03k6rn76a" path="res://Assets/Fonts/monogram.ttf" id="3_o0uf0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j13e0"]
 size = Vector2(33, 36)
@@ -29,10 +30,13 @@ color = Color(0, 0, 0, 0.47058824)
 metadata/_edit_use_anchors_ = true
 
 [node name="DialogueText" type="RichTextLabel" parent="DialogueTextbox" unique_id=654676313]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 offset_right = 256.0
 offset_bottom = 72.0
+theme_override_fonts/normal_font = ExtResource("3_o0uf0")
+theme_override_font_sizes/normal_font_size = 20
 text = "Default text"
 horizontal_alignment = 1
 vertical_alignment = 1

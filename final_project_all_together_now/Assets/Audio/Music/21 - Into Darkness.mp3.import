@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://sktblke1rn72"
-path="res://.godot/imported/21 - Into Darkness.mp3-a499f9142863132ed4efd5f92a114084.mp3str"
+path="res://.godot/imported/21 - Into Darkness.mp3-58bd0d2e11d45ed28aa90661603f5c3b.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/Audio/Music/21 - Into Darkness.mp3"
-dest_files=["res://.godot/imported/21 - Into Darkness.mp3-a499f9142863132ed4efd5f92a114084.mp3str"]
+source_file="res://Assets/Audio/Music/21 - Into Darkness.mp3"
+dest_files=["res://.godot/imported/21 - Into Darkness.mp3-58bd0d2e11d45ed28aa90661603f5c3b.mp3str"]
 
 [params]
 

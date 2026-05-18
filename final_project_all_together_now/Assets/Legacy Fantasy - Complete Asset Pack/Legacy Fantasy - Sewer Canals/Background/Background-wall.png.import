@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3vxd2adasgvf"
-path="res://.godot/imported/Background-wall.png-37a2a75b3259cb924a517a76f71f8274.ctex"
+path="res://.godot/imported/Background-wall.png-be5f62fabf1927f7a20ff572ef2c217b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Background/Background-wall.png"
-dest_files=["res://.godot/imported/Background-wall.png-37a2a75b3259cb924a517a76f71f8274.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Background/Background-wall.png"
+dest_files=["res://.godot/imported/Background-wall.png-be5f62fabf1927f7a20ff572ef2c217b.ctex"]
 
 [params]
 

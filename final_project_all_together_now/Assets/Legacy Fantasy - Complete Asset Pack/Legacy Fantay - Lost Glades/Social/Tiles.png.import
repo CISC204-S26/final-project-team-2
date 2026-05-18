@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8b7a7n5di06q"
-path="res://.godot/imported/Tiles.png-9f8a3217b0262dcc9f52e0d2dbbda455.ctex"
+path="res://.godot/imported/Tiles.png-626cc4cc407c8cbd930d098d9ba5fe7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantay - Lost Glades/Social/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-9f8a3217b0262dcc9f52e0d2dbbda455.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantay - Lost Glades/Social/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-626cc4cc407c8cbd930d098d9ba5fe7f.ctex"]
 
 [params]
 

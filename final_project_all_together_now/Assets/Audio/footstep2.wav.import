@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d1cjulc2n70cs"
-path="res://.godot/imported/footstep2.wav-f82ff2c0896cb4a931d3940728b1f383.sample"
+path="res://.godot/imported/footstep2.wav-229ca0f6bfec87042c707383a3f44833.sample"
 
 [deps]
 
-source_file="res://ASSETS/Audio/footstep2.wav"
-dest_files=["res://.godot/imported/footstep2.wav-f82ff2c0896cb4a931d3940728b1f383.sample"]
+source_file="res://Assets/Audio/footstep2.wav"
+dest_files=["res://.godot/imported/footstep2.wav-229ca0f6bfec87042c707383a3f44833.sample"]
 
 [params]
 

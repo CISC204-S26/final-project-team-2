@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2ef3wbcfiwt6"
-path="res://.godot/imported/Dawson The Wise.png-c5fbf46a790f8895b6c2a64e5a81d5fa.ctex"
+path="res://.godot/imported/Dawson The Wise.png-ff98ec5c1239f9803e1f3bd58d17bc84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Dawson The Wise/Dawson The Wise.png"
-dest_files=["res://.godot/imported/Dawson The Wise.png-c5fbf46a790f8895b6c2a64e5a81d5fa.ctex"]
+source_file="res://Assets/Dawson The Wise/Dawson The Wise.png"
+dest_files=["res://.godot/imported/Dawson The Wise.png-ff98ec5c1239f9803e1f3bd58d17bc84.ctex"]
 
 [params]
 

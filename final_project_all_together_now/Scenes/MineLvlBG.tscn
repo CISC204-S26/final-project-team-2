@@ -15,6 +15,12 @@ position = Vector2(-288, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_4hh8s")
 
+[node name="Sprite2D10" type="Sprite2D" parent="FarBgLayer" unique_id=1332563443]
+texture_filter = 1
+position = Vector2(-672, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
 [node name="Sprite2D2" type="Sprite2D" parent="FarBgLayer" unique_id=1615155223]
 texture_filter = 1
 position = Vector2(95, -24)
@@ -39,12 +45,54 @@ position = Vector2(1248, -24)
 scale = Vector2(2, 2)
 texture = ExtResource("1_4hh8s")
 
+[node name="Sprite2D6" type="Sprite2D" parent="FarBgLayer" unique_id=10400768]
+texture_filter = 1
+position = Vector2(1248, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D7" type="Sprite2D" parent="FarBgLayer" unique_id=1992816398]
+texture_filter = 1
+position = Vector2(1632, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D8" type="Sprite2D" parent="FarBgLayer" unique_id=1273539432]
+texture_filter = 1
+position = Vector2(2016, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D9" type="Sprite2D" parent="FarBgLayer" unique_id=1684743302]
+texture_filter = 1
+position = Vector2(2400, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
+[node name="Sprite2D11" type="Sprite2D" parent="FarBgLayer" unique_id=61835772]
+texture_filter = 1
+position = Vector2(2784, -24)
+scale = Vector2(2, 2)
+texture = ExtResource("1_4hh8s")
+
 [node name="FarRockLayer" type="ParallaxLayer" parent="." unique_id=1752068671]
 motion_scale = Vector2(0.8, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="FarRockLayer" unique_id=1747573912]
 texture_filter = 1
 position = Vector2(-320, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D11" type="Sprite2D" parent="FarRockLayer" unique_id=2015090565]
+texture_filter = 1
+position = Vector2(-640, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D12" type="Sprite2D" parent="FarRockLayer" unique_id=1100993313]
+texture_filter = 1
+position = Vector2(-960, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("2_cxeff")
 
@@ -77,12 +125,48 @@ position = Vector2(1280, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("2_cxeff")
 
+[node name="Sprite2D7" type="Sprite2D" parent="FarRockLayer" unique_id=22096396]
+texture_filter = 1
+position = Vector2(1592, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D8" type="Sprite2D" parent="FarRockLayer" unique_id=1461945932]
+texture_filter = 1
+position = Vector2(1912, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D9" type="Sprite2D" parent="FarRockLayer" unique_id=169664875]
+texture_filter = 1
+position = Vector2(2224, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D10" type="Sprite2D" parent="FarRockLayer" unique_id=355962573]
+texture_filter = 1
+position = Vector2(2544, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
+[node name="Sprite2D13" type="Sprite2D" parent="FarRockLayer" unique_id=61563981]
+texture_filter = 1
+position = Vector2(2864, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_cxeff")
+
 [node name="CloseRockLayer" type="ParallaxLayer" parent="." unique_id=2116647079]
 motion_scale = Vector2(0.9, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="CloseRockLayer" unique_id=1742183686]
 texture_filter = 1
 position = Vector2(-480, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D11" type="Sprite2D" parent="CloseRockLayer" unique_id=937649636]
+texture_filter = 1
+position = Vector2(-832, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("3_jhm20")
 
@@ -113,5 +197,29 @@ texture = ExtResource("3_jhm20")
 [node name="Sprite2D6" type="Sprite2D" parent="CloseRockLayer" unique_id=1066115362]
 texture_filter = 1
 position = Vector2(1280, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D7" type="Sprite2D" parent="CloseRockLayer" unique_id=1638170814]
+texture_filter = 1
+position = Vector2(1632, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D8" type="Sprite2D" parent="CloseRockLayer" unique_id=619045366]
+texture_filter = 1
+position = Vector2(1984, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D9" type="Sprite2D" parent="CloseRockLayer" unique_id=1128926509]
+texture_filter = 1
+position = Vector2(2336, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_jhm20")
+
+[node name="Sprite2D10" type="Sprite2D" parent="CloseRockLayer" unique_id=1313252746]
+texture_filter = 1
+position = Vector2(2688, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("3_jhm20")

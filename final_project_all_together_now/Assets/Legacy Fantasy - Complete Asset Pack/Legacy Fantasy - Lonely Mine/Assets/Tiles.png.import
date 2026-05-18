@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbqmqow65srj0"
-path="res://.godot/imported/Tiles.png-33093c62606788e8d7269d3e8690697f.ctex"
+path="res://.godot/imported/Tiles.png-640dd386dad01f9d037109d1fec36d99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Assets/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-33093c62606788e8d7269d3e8690697f.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Lonely Mine/Assets/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-640dd386dad01f9d037109d1fec36d99.ctex"]
 
 [params]
 

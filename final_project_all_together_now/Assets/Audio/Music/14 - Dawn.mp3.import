@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dcotlv32132rx"
-path="res://.godot/imported/14 - Dawn.mp3-834c40fb524f36c3cdfc84ab770a6b2d.mp3str"
+path="res://.godot/imported/14 - Dawn.mp3-91557845256e7c2bdef26582dc3d1053.mp3str"
 
 [deps]
 
-source_file="res://ASSETS/Audio/Music/14 - Dawn.mp3"
-dest_files=["res://.godot/imported/14 - Dawn.mp3-834c40fb524f36c3cdfc84ab770a6b2d.mp3str"]
+source_file="res://Assets/Audio/Music/14 - Dawn.mp3"
+dest_files=["res://.godot/imported/14 - Dawn.mp3-91557845256e7c2bdef26582dc3d1053.mp3str"]
 
 [params]
 

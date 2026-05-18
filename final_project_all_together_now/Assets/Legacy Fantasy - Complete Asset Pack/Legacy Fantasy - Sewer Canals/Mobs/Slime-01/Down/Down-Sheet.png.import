@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bme6rt0bfbs5h"
-path="res://.godot/imported/Down-Sheet.png-9d0b8743cb4e06d1e40369a900b4591d.ctex"
+path="res://.godot/imported/Down-Sheet.png-88853f77bf5d5c99b11431c18f6057da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Mobs/Slime-01/Down/Down-Sheet.png"
-dest_files=["res://.godot/imported/Down-Sheet.png-9d0b8743cb4e06d1e40369a900b4591d.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Fantasy - Sewer Canals/Mobs/Slime-01/Down/Down-Sheet.png"
+dest_files=["res://.godot/imported/Down-Sheet.png-88853f77bf5d5c99b11431c18f6057da.ctex"]
 
 [params]
 

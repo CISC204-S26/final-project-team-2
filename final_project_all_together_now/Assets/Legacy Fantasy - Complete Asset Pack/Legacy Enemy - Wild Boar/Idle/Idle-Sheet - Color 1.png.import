@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm4ad17qpiubu"
-path="res://.godot/imported/Idle-Sheet - Color 1.png-078d68cbbcd2abaa6d432a96102352ad.ctex"
+path="res://.godot/imported/Idle-Sheet - Color 1.png-d92f95b3cdad702bd47789e7fa464ba1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ASSETS/Legacy Fantasy - Complete Asset Pack/Legacy Enemy - Wild Boar/Idle/Idle-Sheet - Color 1.png"
-dest_files=["res://.godot/imported/Idle-Sheet - Color 1.png-078d68cbbcd2abaa6d432a96102352ad.ctex"]
+source_file="res://Assets/Legacy Fantasy - Complete Asset Pack/Legacy Enemy - Wild Boar/Idle/Idle-Sheet - Color 1.png"
+dest_files=["res://.godot/imported/Idle-Sheet - Color 1.png-d92f95b3cdad702bd47789e7fa464ba1.ctex"]
 
 [params]
 
