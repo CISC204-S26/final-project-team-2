@@ -46,6 +46,22 @@ Portal Pixie"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TitleLabel2" type="Label" parent="." unique_id=687969518]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 160.0
+offset_top = 264.0
+offset_right = 552.0
+offset_bottom = 305.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_rohnd")
+theme_override_font_sizes/font_size = 25
+text = "& Dawson in a Wizard Hat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="MainButtons" type="VBoxContainer" parent="." unique_id=1371412271]
 anchors_preset = 8
 anchor_left = 0.5
