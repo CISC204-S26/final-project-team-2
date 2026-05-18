@@ -41,8 +41,8 @@ offset_bottom = 265.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_rohnd")
 theme_override_font_sizes/font_size = 75
-text = "Sword Boy &
-Fairy Girl"
+text = "Sword Girl &
+Portal Pixie"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -260,8 +260,8 @@ autoplay = true
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="_on_levels_button_pressed"]
 [connection signal="pressed" from="MainButtons/LevelsButton" to="." method="play_click_sound"]
 [connection signal="mouse_entered" from="MainButtons/OptionsButton" to="." method="play_hover_sound"]
-[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MainButtons/OptionsButton" to="." method="play_click_sound"]
+[connection signal="pressed" from="MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="mouse_entered" from="MainButtons/QuitButton" to="." method="play_hover_sound"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="MainButtons/QuitButton" to="." method="play_click_sound"]
