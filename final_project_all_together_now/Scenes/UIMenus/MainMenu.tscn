@@ -47,6 +47,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TitleLabel2" type="Label" parent="." unique_id=687969518]
+visible = false
 texture_filter = 1
 anchors_preset = 5
 anchor_left = 0.5
