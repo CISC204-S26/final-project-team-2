@@ -25,7 +25,6 @@ func _ready():
 	portal_timer.one_shot = true
 	portal_timer.timeout.connect(_on_portal_timer_timeout)
 	add_child(portal_timer)
-	# Set up drag direction line
 	drag_line = Line2D.new()
 	drag_line.width = 3.0
 	drag_line.default_color = Color(1, 0.5, 0, 0.8)
@@ -41,7 +40,6 @@ func _process(_delta):
 		cursor_sprite.flip_h = false
 	last_mouse_x = mouse_pos.x
 	cursor_sprite.global_position = mouse_pos
-	# Update drag arrow while dragging
 	if is_dragging_exit:
 		drag_line.visible = true
 		drag_line.points = [
@@ -72,7 +70,6 @@ func _input(event):
 				#_begin_place_exit_portal(exit_portal_pos)
 				# -------------------------------------------------------
 			else:
-				# Release — set launch direction
 				if is_dragging_exit and exit_portal:
 					var drag_end = get_global_mouse_position()
 					var direction = (drag_end - exit_portal_pos).normalized()

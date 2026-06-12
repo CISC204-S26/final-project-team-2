@@ -8,19 +8,16 @@ const GRAVITY = 980.0
 
 signal player_dead
 
-# Sets up interactables detector
 var interactables = []
 var was_on_floor := true
 var facing_left := false
 var is_landing := false
 
-#for health/hurt funcs
 var health = 3
 var is_dead := false
 var is_invincible := false
 var is_knockback := false
 
-# Footsteps
 var footstep_sound: AudioStreamPlayer
 var footstep_timer: float = 0.0
 var footstep_delay: float = 0.35
@@ -84,7 +81,6 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("interact"):
 		if interactables:
 			interactables.back().interact()
-	# Footstep Logic
 
 	if is_on_floor() and direction != 0 and not is_landing:
 		footstep_timer -= delta
@@ -141,11 +137,9 @@ func take_damage(amount: int, source_position: Vector2 = Vector2.ZERO):
 		return
 	print("TOOK DAMAGE")
 	health -= amount
-	# Check death
 	if health <= 0:
 		die()
 		return
-	# Knockback
 	var knockback_direction = -sign(global_position.x - source_position.x)
 	velocity.x = knockback_direction * 200
 	velocity.y = -150
