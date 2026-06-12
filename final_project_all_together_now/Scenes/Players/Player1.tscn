@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cebdd2bjchkkl"]
 
 [ext_resource type="Script" uid="uid://brmya2cqvo67l" path="res://Scripts/Player_Scripts/Player1.gd" id="1_3qydi"]
-[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://Assets/Player1/Idle-Sheet.png" id="2_dewec"]
-[ext_resource type="Texture2D" uid="uid://ddwf4lrr63yry" path="res://Assets/Player1/Dead-Sheet.png" id="2_tchc4"]
-[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://Assets/Player1/Run-Sheet.png" id="3_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://Assets/Player1/Jump-End-Sheet.png" id="3_52ee3"]
-[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://Assets/Player1/Jump-All-Sheet.png" id="4_5ixxa"]
-[ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://Assets/Player1/Jump-Start-Sheet.png" id="4_bhhdu"]
+[ext_resource type="Texture2D" uid="uid://xaa8g5hnsw8q" path="res://ASSETS/Player1/Idle-Sheet.png" id="2_dewec"]
+[ext_resource type="Texture2D" uid="uid://ddwf4lrr63yry" path="res://ASSETS/Player1/Dead-Sheet.png" id="2_tchc4"]
+[ext_resource type="Texture2D" uid="uid://bxpksvy14xl5t" path="res://ASSETS/Player1/Run-Sheet.png" id="3_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://cnsn215ur7f6b" path="res://ASSETS/Player1/Jump-End-Sheet.png" id="3_52ee3"]
+[ext_resource type="Texture2D" uid="uid://bdbp8wf4pf2dx" path="res://ASSETS/Player1/Jump-All-Sheet.png" id="4_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://f64ulyi32pgi" path="res://ASSETS/Player1/Jump-Start-Sheet.png" id="4_bhhdu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kyqiw"]
 radius = 64.070274
@@ -286,6 +286,14 @@ animations = [{
 radius = 9.0
 height = 36.0
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_nsbeo"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:JUMP_VELOCITY")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
 [node name="Player1" type="CharacterBody2D" unique_id=1088848127 groups=["player"]]
 collision_layer = 2
 script = ExtResource("1_3qydi")
@@ -306,6 +314,9 @@ animation = &"PlayerDeath"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=120210159]
 shape = SubResource("CapsuleShape2D_q3lat")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1127354341]
+replication_config = SubResource("SceneReplicationConfig_nsbeo")
 
 [connection signal="area_entered" from="InteractableDetector" to="." method="_on_interactable_detector_area_entered"]
 [connection signal="area_exited" from="InteractableDetector" to="." method="_on_interactable_detector_area_exited"]

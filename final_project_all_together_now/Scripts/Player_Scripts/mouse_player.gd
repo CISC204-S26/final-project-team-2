@@ -51,26 +51,41 @@ func _process(_delta):
 
 
 func _input(event):
+	# --- NETWORKING: comment out this block to run locally ---
+	#if NetworkManager.is_host:
+		#return
+	# ---------------------------------------------------------
+
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			place_entry_portal(get_global_mouse_position())
+			var pos = get_global_mouse_position()
+			# --- NETWORKING: swap these two lines to run locally ---
+			place_entry_portal.rpc(pos)
+			#place_entry_portal(pos)
+			# -------------------------------------------------------
 		elif event.button_index == MOUSE_BUTTON_RIGHT:
 			if event.pressed:
-				# Start drag — place exit portal here
 				exit_portal_pos = get_global_mouse_position()
 				is_dragging_exit = true
-				_begin_place_exit_portal(exit_portal_pos)
+				# --- NETWORKING: swap these two lines to run locally ---
+				begin_place_exit_portal.rpc(exit_portal_pos)
+				#_begin_place_exit_portal(exit_portal_pos)
+				# -------------------------------------------------------
 			else:
 				# Release — set launch direction
 				if is_dragging_exit and exit_portal:
 					var drag_end = get_global_mouse_position()
 					var direction = (drag_end - exit_portal_pos).normalized()
-					exit_portal.launch_direction = direction
+					# --- NETWORKING: swap these two lines to run locally ---
+					set_exit_launch_direction.rpc(direction)
+					#exit_portal.launch_direction = direction
+					# -------------------------------------------------------
 					print("Launch direction set: ", direction)
 				is_dragging_exit = false
 				drag_line.visible = false
 
 
+@rpc("any_peer", "call_local", "reliable")
 func place_entry_portal(pos: Vector2):
 	if _entry_closing:
 		return
@@ -80,8 +95,7 @@ func place_entry_portal(pos: Vector2):
 	if _is_in_collision(pos):
 		print("Cannot place entry portal here — inside collision!")
 		return
-	
-	
+
 	if entry_portal:
 		_entry_closing = true
 		var old_portal = entry_portal
@@ -99,7 +113,8 @@ func place_entry_portal(pos: Vector2):
 	_try_link_portals()
 
 
-func _begin_place_exit_portal(pos: Vector2):
+@rpc("any_peer", "call_local", "reliable")
+func begin_place_exit_portal(pos: Vector2):
 	if _exit_closing:
 		return
 	if _is_in_no_portal_zone(pos, true):
@@ -122,10 +137,16 @@ func _begin_place_exit_portal(pos: Vector2):
 	exit_portal = exit_portal_scene.instantiate()
 	get_tree().get_current_scene().add_child(exit_portal)
 	exit_portal.global_position = pos
-	exit_portal.launch_direction = Vector2.UP  # default until drag released
+	exit_portal.launch_direction = Vector2.UP
 	print("EXIT PORTAL PLACED AT: ", pos)
 	_try_link_portals()
 
+
+@rpc("any_peer", "call_local", "reliable")
+func set_exit_launch_direction(dir: Vector2):
+	if exit_portal:
+		exit_portal.launch_direction = dir
+		print("Launch direction set: ", dir)
 
 func _try_link_portals():
 	if entry_portal and exit_portal:
@@ -166,6 +187,7 @@ func _is_in_no_portal_zone(pos: Vector2, trigger_flash: bool = false) -> bool:
 	return false
 
 #THIS TO CLEAN UP ANY REMANING PORTALS, in general
+
 func _notification(what: int):
 	if what == NOTIFICATION_PREDELETE:
 		_cleanup_portals()
@@ -189,6 +211,6 @@ func _is_in_collision(pos: Vector2) -> bool:
 	query.position = pos
 	query.collide_with_bodies = true
 	query.collide_with_areas = false
-	query.collision_mask = 1  # set this to whatever layer the walls are on idk nor do i feel like checking
+	query.collision_mask = 1
 	var results = space.intersect_point(query)
 	return results.size() > 0
