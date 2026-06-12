@@ -183,7 +183,6 @@ func _is_in_no_portal_zone(pos: Vector2, trigger_flash: bool = false) -> bool:
 				return true
 	return false
 
-#THIS TO CLEAN UP ANY REMANING PORTALS, in general
 
 func _notification(what: int):
 	if what == NOTIFICATION_PREDELETE:
@@ -201,7 +200,6 @@ func _cleanup_portals():
 		exit_portal = null
 
 
-#checks if player places portal in colision zone
 func _is_in_collision(pos: Vector2) -> bool:
 	var space = get_world_2d().direct_space_state
 	var query = PhysicsPointQueryParameters2D.new()
